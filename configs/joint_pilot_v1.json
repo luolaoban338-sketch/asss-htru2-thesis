@@ -1,0 +1,50 @@
+{
+  "protocol_id": "joint-htru2-development-v1-20261001",
+  "purpose": "HTRU2 migration development validation, not confirmatory thesis evidence",
+  "dataset": "htru2",
+  "parent_run": "baseline-htru2-pilot-20261001-v1",
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "inner_folds": 3,
+  "utility_folds": 3,
+  "seed_root": 20260928,
+  "B": 4,
+  "M": 256,
+  "subsample_rho": 0.8,
+  "methods": [
+    "full",
+    "random_half",
+    "ordinary_half",
+    "robust_half"
+  ],
+  "lambda_grid": [
+    0.0,
+    0.5
+  ],
+  "eta_grid": [
+    0.0,
+    0.1
+  ],
+  "epsilon": 0.01,
+  "numeric_tolerance": 1e-12,
+  "exact_diagnostic": true,
+  "budget_rule": "Feasible equal-fold mean F1 >= full baseline - epsilon; minimize mean actual rho*k/d, then k, then maximize mean F1, then frozen candidate order; staged tolerance 1e-12",
+  "comparisons": [
+    "full",
+    "sample_only",
+    "feature_only",
+    "joint",
+    "sequential",
+    "joint_random",
+    "joint_ordinary",
+    "joint_robust"
+  ],
+  "sequential_rule": "Select method/rho using all features under the same full-baseline threshold, then select feature parameters within that method under that same threshold",
+  "timing": "Shared development search package; deduplicated subsets within method/partition; report actual fits and work, not independent per-arm runtime claims",
+  "official_adult_test_used": false
+}

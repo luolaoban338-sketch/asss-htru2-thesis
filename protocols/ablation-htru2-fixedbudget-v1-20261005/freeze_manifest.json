@@ -1,0 +1,40 @@
+{
+  "status": "scientific_design_frozen",
+  "frozen_utc": "2026-10-05T07:04:57.348716+00:00",
+  "protocol_id": "ablation-htru2-fixedbudget-v1-20261005",
+  "planned_run_id": "ablation-htru2-fixedbudget-20261005-v1",
+  "execution_started": false,
+  "execution_code_frozen": false,
+  "execution_readiness": "New runner, implementation gates, seed ledger and environment manifest required before fitting",
+  "design_sha256": {
+    "docs/18_ablation_protocol_v1.md": "72ebc5203935772474443bdc8a6244777616bcb4448bd0c09128f629211a8a25",
+    "configs/ablation_fixedbudget_v1.json": "f13eb9b0014cbdd34c6b0f65effdca2b729010d51d2da46998799bbf34419c38",
+    "protocols/ablation-htru2-fixedbudget-v1-20261005/protocol.md": "72ebc5203935772474443bdc8a6244777616bcb4448bd0c09128f629211a8a25",
+    "protocols/ablation-htru2-fixedbudget-v1-20261005/config.json": "f13eb9b0014cbdd34c6b0f65effdca2b729010d51d2da46998799bbf34419c38"
+  },
+  "inherited_sha256": {
+    "data/audit/htru2_table.csv": "96a68611046a035ee9f874670f602f3798e913151069484249556c66c99ad6b2",
+    "data/audit/audit_report.json": "5e196a73922ac5e3460778801410a7c0a18216b6ae5fd333f4b3990e4f1b71ed",
+    "data/audit/feature_dictionary.csv": "1e2d3f5c4e16f7462cf6eaa981c6c95ef88ce10c91bb067f5630722d47e4c912",
+    "data/raw/manifest.json": "f8767b396e5c07224d929100f146917216a9b572260d1369c230856b4c91c8aa",
+    "runs/baseline-htru2-pilot-20261001-v1/htru2/splits.json": "4ae7b12576bfc2121b47fd0294e21783421167bcc6b509dadc92bc377cc8c22f",
+    "runs/baseline-htru2-pilot-20261001-v1/manifest.json": "47d9655c63619a1f948b88bba67935e1ee8b6a5d026a1bc54b42ec942076a334",
+    "configs/baseline_pilot_v1.json": "8dccc91088bba2230d6f8ae8c9d0e866ee86695ed1a5fa2f34da9c171ed478a6",
+    "configs/joint_pilot_v1.json": "9cbcfe6401905af5994c1cc3dbc40b9c7c90adcb17ce632c85fedce5b1a7b06c",
+    "src/contracts.py": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+    "src/data.py": "90e44e11c166dda82a474fc0f9add1755be37ea0b5c0cc9b90e1a2b7bd928621",
+    "src/evaluation.py": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+    "src/preprocessing.py": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac",
+    "src/samplers.py": "cd973dcb9846bc2b2fdcaf2e0b9846594651cdf18947f275e42410ae692fc0be",
+    "experiments/contamination.py": "6563863f7a3b8c9d493e4ecf6551cee51fb210b4b1dc8917b8b7ab6a3d08892b",
+    "experiments/feature_path.py": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df",
+    "experiments/feature_utility.py": "24b4aec584b1fde3628aaa81d740822aa2abcf24963802e70064ba344ff4ec4f",
+    "experiments/joint_selection.py": "d7df3305c04a773f97899c15c9897f846f9a863b8ebf3653c4eeaa7764b0ab58",
+    "experiments/shapley.py": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+    "experiments/stability.py": "7d2db23c2d103f48dc7fb589a481c6bf122099459d2c8c24ed8018db6ac1e8b3",
+    "scripts/run_joint_pilot.py": "80b7f396c0354b9423bef5eb6ee4c0a7503bded6ab587cc39e72621fc6ea38d3",
+    "scripts/run_stability_pilot.py": "9eaa0c9484493d4e7f4d3aeefebd71836f71f6bf446d3c247f834ef1cc5b0a32"
+  },
+  "logistic_fit_attempt_cap": 260000,
+  "automatic_resume": false
+}

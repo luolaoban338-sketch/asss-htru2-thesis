@@ -1,0 +1,7 @@
+# Preserve archived source/config/data bytes on every platform.
+# Frozen SHA-256 contracts include the original newline sequences.
+* -text
+*.py diff
+*.md diff
+*.json diff
+*.csv diff

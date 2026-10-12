@@ -1,0 +1,19 @@
+{
+  "protocol_id": "joint-contamination-htru2-development-v1-20261003",
+  "purpose": "Fixed clean-budget joint-selection sensitivity to numeric training contamination; development only",
+  "reference_run": "joint-htru2-pilot-20261001-v1",
+  "joint_config": "configs/joint_pilot_v1.json",
+  "baseline_config": "configs/baseline_pilot_v1.json",
+  "protocol": "docs/14_joint_contamination_protocol.md",
+  "outer_folds": [0, 1, 2, 3, 4],
+  "rates": [0.0, 0.05, 0.1],
+  "draws": [0, 1, 2],
+  "clean_draw": 0,
+  "seed_root": 20260927,
+  "iqr_multiplier": 10.0,
+  "planned_conditions": 35,
+  "planned_arm_outputs": 280,
+  "retune_under_contamination": false,
+  "prespecified_replay": {"fold": 0, "rate": 0.05, "draw": 0},
+  "analysis": "Within-fold draw means followed by equal fold means; clean-minus-contaminated F1 and AUC; feature and row Jaccard; retain negative losses; descriptive only"
+}

@@ -1,0 +1,64 @@
+{
+  "datasets": {
+    "htru2": {
+      "rows": 17898,
+      "features": 8,
+      "positive": 1639,
+      "fields": [
+        {
+          "field": "Profile_mean",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 1
+        },
+        {
+          "field": "Profile_stdev",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 2
+        },
+        {
+          "field": "Profile_skewness",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 3
+        },
+        {
+          "field": "Profile_kurtosis",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 4
+        },
+        {
+          "field": "DM_mean",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 5
+        },
+        {
+          "field": "DM_stdev",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 6
+        },
+        {
+          "field": "DM_skewness",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 7
+        },
+        {
+          "field": "DM_kurtosis",
+          "role": "predictor",
+          "type": "numeric",
+          "source_column_1based": 8
+        }
+      ],
+      "group_policy": "Feature vector SHA256 only; not astronomical source identity",
+      "schema_conflict": "Readme reverses skewness/kurtosis descriptions relative to ARFF; original positions and ARFF names retained; physical interpretation restricted"
+    }
+  },
+  "processed_sha256": {
+    "htru2_table.csv": "96a68611046a035ee9f874670f602f3798e913151069484249556c66c99ad6b2"
+  }
+}

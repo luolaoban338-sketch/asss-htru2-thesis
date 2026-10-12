@@ -1,0 +1,143 @@
+{
+  "protocol_id": "ablation-htru2-fixedbudget-v1-20261005",
+  "planned_run_id": "ablation-htru2-fixedbudget-20261005-v1",
+  "status": "design_frozen_execution_not_started",
+  "scientific_scope": "development fixed-budget module effects; not confirmatory",
+  "source_baseline_run": "baseline-htru2-pilot-20261001-v1",
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "samplers": [
+    "random_half",
+    "ordinary_half",
+    "robust_half"
+  ],
+  "rho": 0.5,
+  "k": 4,
+  "d": 8,
+  "B": 4,
+  "M": 256,
+  "contribution_subsample_rho": 0.8,
+  "utility_folds": 3,
+  "inner_budget_search": false,
+  "lambda_enabled": 0.5,
+  "eta_enabled": 0.1,
+  "threshold": 0.5,
+  "descriptive_f1_loss_warning": 0.01,
+  "model": {
+    "penalty": "l2",
+    "C": 1.0,
+    "fit_intercept": true,
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tol": 1e-06,
+    "class_weight": null
+  },
+  "logical_csr": [
+    "111",
+    "011",
+    "101",
+    "110",
+    "001",
+    "100",
+    "010",
+    "000"
+  ],
+  "canonical_csr": [
+    "111",
+    "011",
+    "101",
+    "110",
+    "100",
+    "010"
+  ],
+  "aliases": {
+    "001": "101",
+    "000": "100"
+  },
+  "primary_contrasts": [
+    [
+      "111",
+      "011"
+    ],
+    [
+      "111",
+      "101"
+    ],
+    [
+      "111",
+      "110"
+    ]
+  ],
+  "predictive_root_seeds": [
+    2026100501,
+    2026100502,
+    2026100503
+  ],
+  "stability": {
+    "pool": "outer-fold-0 training only",
+    "resample_rho": 0.8,
+    "resample_root_seeds": [
+      2026100510,
+      2026100511,
+      2026100512,
+      2026100513,
+      2026100514,
+      2026100515,
+      2026100516,
+      2026100517,
+      2026100518,
+      2026100519
+    ],
+    "algorithm_root_seed": 2026100501,
+    "final_prediction_fits": 0,
+    "type": "fixed-budget"
+  },
+  "controls": [
+    "random_four_features_same_rows",
+    "half_rows_all_features",
+    "full_rows_all_features"
+  ],
+  "exact_diagnostics": true,
+  "exact_controls_selection": false,
+  "numeric_tolerance": 1e-12,
+  "seed_contract": "See docs/18_ablation_protocol_v1.md for top-level canonical JSON SHA256 and inherited FeatureUtility seed derivation; index b mandatory for permutation streams",
+  "main_schedule": {
+    "predictive_selectors": 45,
+    "predictive_games": 180,
+    "predictive_logical_records": 465,
+    "predictive_final_fit_cap": 375,
+    "stability_selectors": 30,
+    "stability_games": 120,
+    "stability_logical_ablation_selections": 240,
+    "stability_random_selections": 30,
+    "utility_fit_cap": 229500
+  },
+  "replay": {
+    "predictive_fold": 0,
+    "predictive_root_seed": 2026100501,
+    "stability_resample_index": 0,
+    "utility_games": 24,
+    "utility_fit_cap": 18360,
+    "final_fit_cap": 25
+  },
+  "audit_fit_reserve": 10000,
+  "minimum_main_game_audit_refits": 300,
+  "planned_logistic_fit_upper_bound": 258260,
+  "hard_logistic_fit_attempt_cap": 260000,
+  "constant_evaluations_main_and_replay": 972,
+  "separate_operation_counts": [
+    "KMeans fits",
+    "encoder fits"
+  ],
+  "workers_max": 2,
+  "numeric_threads_per_worker": 1,
+  "acceptance": "complete audited outputs, separate replays, unchanged resume, numeric and page QA; favorable effects not required",
+  "stop": "checkpoint and stop workers on quota exhaustion, explicit stop or fit cap; explicit continuation only",
+  "automatic_resume": false,
+  "execution_code_freeze_required": true
+}

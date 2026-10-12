@@ -1,0 +1,301 @@
+{
+  "created_utc": "2026-10-11T06:42:17.136971+00:00",
+  "status": "complete_main_schedule",
+  "run_id": "ablation-htru2-fixedbudget-20261005-v1",
+  "audits": [
+    {
+      "package": "predictive/unit-0-seed-2026100501",
+      "phase": "predictive",
+      "unit": 0,
+      "root": 2026100501,
+      "audit_sha256": "00f44ea5e101d2f622311fb8d574ddc4c2549634464bd704a2b505b5e7175f46",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-0-seed-2026100502",
+      "phase": "predictive",
+      "unit": 0,
+      "root": 2026100502,
+      "audit_sha256": "1c718425672da3d08e315846f98c0c9f0c0f5a02858f24002a74cc5cf8d79c36",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-0-seed-2026100503",
+      "phase": "predictive",
+      "unit": 0,
+      "root": 2026100503,
+      "audit_sha256": "2bdad36d9e32fa7ca1943fe35b1d1fb7f167dadfbe147f73fc4375ae581968d1",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-1-seed-2026100501",
+      "phase": "predictive",
+      "unit": 1,
+      "root": 2026100501,
+      "audit_sha256": "724c1c35b64886ee1d2274de4c233673c0f6df5a0b3568a3ded3109ccde2422c",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-1-seed-2026100502",
+      "phase": "predictive",
+      "unit": 1,
+      "root": 2026100502,
+      "audit_sha256": "121c3d4516f5d7c1aef287cef5b03a7d126560cd22437ba47916f22765254853",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-1-seed-2026100503",
+      "phase": "predictive",
+      "unit": 1,
+      "root": 2026100503,
+      "audit_sha256": "e3a03f54171d8d786c2cb91c8a41f63b5331d36853980246214bc53328823a38",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-2-seed-2026100501",
+      "phase": "predictive",
+      "unit": 2,
+      "root": 2026100501,
+      "audit_sha256": "8445fdea7f0e00316a093a12623f1d7f3680e4ad0673b3e8e165026afc1d7d63",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-2-seed-2026100502",
+      "phase": "predictive",
+      "unit": 2,
+      "root": 2026100502,
+      "audit_sha256": "b2d01e42c2dd864b4622429ccf82bb90734c2722d49fb5fe8c69c82dd78c661c",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-2-seed-2026100503",
+      "phase": "predictive",
+      "unit": 2,
+      "root": 2026100503,
+      "audit_sha256": "c05be4f23f3dc26b4c45bdbb782f1ec21c2d0e4a1108aa9e2be10ffc744e56c8",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-3-seed-2026100501",
+      "phase": "predictive",
+      "unit": 3,
+      "root": 2026100501,
+      "audit_sha256": "50d86211297020261d7998ffc556d327233cf29a24a09ac60dedfb3bb4403d4e",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-3-seed-2026100502",
+      "phase": "predictive",
+      "unit": 3,
+      "root": 2026100502,
+      "audit_sha256": "2f64dd42123926d323231b2afa0a60d02690aaaebf0be85d7b903c0d63b54e0a",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-3-seed-2026100503",
+      "phase": "predictive",
+      "unit": 3,
+      "root": 2026100503,
+      "audit_sha256": "c9f53f59b78494f12bb2547dbbe26623c8f8a60c67e3e825077e802c34c873b5",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-4-seed-2026100501",
+      "phase": "predictive",
+      "unit": 4,
+      "root": 2026100501,
+      "audit_sha256": "d2230aa40bc0547c580e2b3dc6b52d89de70ed9a2d626c45d9f0a9ac001f3e9f",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-4-seed-2026100502",
+      "phase": "predictive",
+      "unit": 4,
+      "root": 2026100502,
+      "audit_sha256": "9e4c65fc9f2e1be3f82b5b15e73ece3846afa4a1ef9043840da5fa066782d9f4",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "predictive/unit-4-seed-2026100503",
+      "phase": "predictive",
+      "unit": 4,
+      "root": 2026100503,
+      "audit_sha256": "e547aeb44bc28bf5e0cc15a379267deeeef7ad1297ca631db43d5ec5f9f9ce65",
+      "games": 12,
+      "reconstructed_final_models": 10,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-0-seed-2026100501",
+      "phase": "stability",
+      "unit": 0,
+      "root": 2026100501,
+      "audit_sha256": "f5f5fba1b03bb38d63f2c8174898913d45b9d2de6fe0030bccf3255074fc4060",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-1-seed-2026100501",
+      "phase": "stability",
+      "unit": 1,
+      "root": 2026100501,
+      "audit_sha256": "cdf1ea0c3458898dd80e01e622c3e5a23c72d37eafb1f2de1866e8961a648e82",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-2-seed-2026100501",
+      "phase": "stability",
+      "unit": 2,
+      "root": 2026100501,
+      "audit_sha256": "d7b4f30f9c76ae8a69b3204f57fbea9a50a772ca590901530768563aef2fc21c",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-3-seed-2026100501",
+      "phase": "stability",
+      "unit": 3,
+      "root": 2026100501,
+      "audit_sha256": "57910b89f9b95524e37f2e7afefbd49ba7f83fc18d79daba0b1d70f8e2eba9ce",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-4-seed-2026100501",
+      "phase": "stability",
+      "unit": 4,
+      "root": 2026100501,
+      "audit_sha256": "aaa4451a5698edab399ff1f86a2dadf85572b45603a24f0c55ebfb932cf55066",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-5-seed-2026100501",
+      "phase": "stability",
+      "unit": 5,
+      "root": 2026100501,
+      "audit_sha256": "1816000aa168486a1410083b743dd733faf86aeadcdf5e9bd5ce20bf0eb0d1e4",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-6-seed-2026100501",
+      "phase": "stability",
+      "unit": 6,
+      "root": 2026100501,
+      "audit_sha256": "2de06672aac787b7dcbe1a5905bf06ec33e612034f0994628c9b5eefe12b4079",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-7-seed-2026100501",
+      "phase": "stability",
+      "unit": 7,
+      "root": 2026100501,
+      "audit_sha256": "fd7b6438e07178d488332821ad5c03f38e56ce4bf8fb327147dd1346592ea93b",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-8-seed-2026100501",
+      "phase": "stability",
+      "unit": 8,
+      "root": 2026100501,
+      "audit_sha256": "b6a47604e52a0e10c66f535ebe8dc2d526bb9f9052f321e089168f30baa074d1",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    },
+    {
+      "package": "stability/unit-9-seed-2026100501",
+      "phase": "stability",
+      "unit": 9,
+      "root": 2026100501,
+      "audit_sha256": "e3d6911ef9505ca9bea9817e0485c4e02bb37031c127558887940b9323ad1916",
+      "games": 12,
+      "reconstructed_final_models": 0,
+      "direct_utility_refits": 12
+    }
+  ],
+  "predictive_records": 465,
+  "stability_selections": 270,
+  "complete_predictive_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "complete_stability": true,
+  "main_games_audited": 300,
+  "operation_counts_all_stage": [
+    {
+      "kind": "encoder",
+      "status": "success",
+      "attempts": 250070,
+      "seconds": 175.7000179001284
+    },
+    {
+      "kind": "kmeans",
+      "status": "success",
+      "attempts": 2808,
+      "seconds": 137.57994820003069
+    },
+    {
+      "kind": "logistic",
+      "status": "success",
+      "attempts": 248344,
+      "seconds": 796.9197554988964
+    }
+  ],
+  "five_fold_aggregation_emitted": true,
+  "delivery_final": false,
+  "inference": "Descriptive paired results only. Seeds averaged within folds, then five folds equally. No superiority p-values, confidence intervals or noninferiority claims.",
+  "source_sha256": {
+    "game_diagnostics.csv": "bf4f3deef96bfa0174136e481a8accf92a70123f36a009b8bb1522301cc5f762",
+    "module_selection_diagnostics.csv": "3e1e431945434b12429c81616ebb4a3a682de37cbb2a352333e3db95c7405e33",
+    "per_seed_contrasts.csv": "bee8385d8d1b0856e995bba91d34dd686ac2a76d49396ae2d1472f2553ced4fe",
+    "predictive_records.csv": "8d34fc3f91499bd8b235461faadf6741f69f7cd8a9823d68fb23085b3bc8bc19",
+    "predictive_summary.csv": "ca7de065172054555bd12dea642732c7c928aadca683fddd7e9b716039050d21",
+    "primary_contrasts.csv": "d57747cc5db6439b0e088ac9ee053c9be9818482c4101bcdbcaf00a0d108151d",
+    "stability_selections.csv": "933f864f15920bc3c8838435ce8123229b2d2733e82ca6cd860fac6fcea98392",
+    "stability_summary.json": "ac6ba0f5b6c350932071d86677fb019406e005068c95a4d311fb29b530af2e45"
+  }
+}

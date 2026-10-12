@@ -1,0 +1,30 @@
+{
+  "protocol_id": "feature-htru2-development-v1-20261001",
+  "purpose": "Implementation validation of sample-conditioned feature contributions and Monte Carlo variance correction; no outer evaluation or selected feature budget",
+  "dataset": "htru2",
+  "parent_run": "baseline-htru2-pilot-20261001-v1",
+  "parent_training_fold": 0,
+  "B": 4,
+  "subsample_rho": 0.8,
+  "M": 16,
+  "utility_folds": 3,
+  "seed_root": 20260927,
+  "methods": [
+    "full",
+    "random_half",
+    "ordinary_half",
+    "robust_half"
+  ],
+  "lambda_diagnostic": 0.5,
+  "exact_reference": true,
+  "permutation_design": "Independent iid uniform permutations for each method and resampling game; duplicates allowed",
+  "utility": "Equal-weight mean positive F1 across three utility validation folds; selected rows fixed within each fold across all coalitions",
+  "empty_utility": "Selected-training class prior probability, threshold 0.5, tie predicts positive",
+  "variance": "Across-B sample variance minus mean within-game marginal variance/M, clipped to zero",
+  "group_policy": "80% stratified row subsamples; within each subsample utility folds respect groups",
+  "outer_test_evaluated": false,
+  "official_adult_test_used": false,
+  "planned_games": 16,
+  "planned_logistic_fits": 12240,
+  "planned_constant_evaluations": 48
+}

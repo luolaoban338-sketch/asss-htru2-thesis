@@ -1,0 +1,25 @@
+{
+  "protocol_id": "stability-htru2-development-v1-20261001",
+  "purpose": "Ten full selection resamples within HTRU2 first outer training pool; development only",
+  "joint_config": "configs/joint_pilot_v1.json",
+  "outer_fold": 0,
+  "replicates": 10,
+  "resample_rho": 0.8,
+  "seed_root": 20260929,
+  "resampling": "Class-stratified rows without replacement; groups remain disjoint at every validation boundary",
+  "randomness": "Vary row resampling, inner partitions and selector seeds together; conditional combined stability, not isolated data-only stability",
+  "final_stage": "Rebuild all four selectors on each full resample; save eight chosen feature sets and budgets; no final classifier or held-out evaluation needed for feature stability",
+  "metrics": [
+    "Nogueira equation 2",
+    "all unordered pairwise Jaccard",
+    "feature frequencies",
+    "set sizes",
+    "selected budgets"
+  ],
+  "degenerate_nogueira": "null with explicit all_full/all_empty flag",
+  "empty_empty_jaccard": 1.0,
+  "inference": "Descriptive only; no tests or confidence intervals; 45 pairs do not constitute 45 independent runs",
+  "replay_replicate": 0,
+  "outer_test_evaluated": false,
+  "official_adult_test_used": false
+}

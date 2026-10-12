@@ -1,0 +1,27 @@
+{
+  "protocol_id": "contamination-htru2-development-v1-20261001",
+  "purpose": "Development sensitivity check of fixed sample selectors under numeric training contamination; not confirmatory thesis evidence",
+  "baseline_config": "configs/baseline_pilot_v1.json",
+  "baseline_reference_run": "baseline-htru2-pilot-20261001-v1",
+  "rates": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "draws": [
+    0,
+    1,
+    2
+  ],
+  "clean_draw": 0,
+  "seed_root": 20260927,
+  "iqr_multiplier": 10.0,
+  "row_count": "ceil(rate * training rows)",
+  "design": "Three prespecified contamination draws per fold. Within a draw, 5% is a prefix of 10%; identical rows, columns and signs across methods. Clean fits performed once per fold/method.",
+  "numeric_rule": "IQR from nonmissing clean training values using linear quantiles; exclude zero IQR columns. For each selected row choose uniformly among eligible observed numeric cells; error if none. Random sign +/- with equal probability. Add sign*10*IQR; no domain clipping.",
+  "test_rule": "Original full development test fold unchanged. Adult official test reserved.",
+  "analysis": "Paired F1 and AUC changes versus same-fold clean model; average draws within fold before fold summary. Fold SD descriptive only. No p-values, confidence intervals, or noninferiority claims.",
+  "planned_fits": 140,
+  "feature_selection": false,
+  "hyperparameter_search": false
+}

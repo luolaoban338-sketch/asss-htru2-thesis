@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-06T11:33:24.474141+00:00",
+  "tests": 9,
+  "test_output_sha256": "bd65b2de3b1c40f1960b34a0211f1f6b2053a68ec45a5b2d37a1bb6449cb6110",
+  "new_model_fits": 0,
+  "frozen_inherited_files_verified": 25,
+  "preserved_deliveries": {
+    "migration_delivery_manifest.json": {
+      "entries": 8075,
+      "manifest_sha256": "7bba5dfa63b641d232bc159250514f3419c84dd9019f4b5e3926bfa74e1bdae5"
+    },
+    "joint_contamination_delivery_manifest.json": {
+      "entries": 2860,
+      "manifest_sha256": "d00ca43b9bb909f50fbabd7471b26bf7d2679ae4fc813a0caac7bf6213a281ae"
+    },
+    "writing_20261005/delivery_manifest.json": {
+      "entries": 34,
+      "manifest_sha256": "c41aa3f4935a47d4d82e75ba583641a5f3946721e1b86aba6ee3bddb7afd9895"
+    }
+  },
+  "top_level_seed_keys": 625,
+  "utility_seed_keys": 700,
+  "seed_collision_check": "passed separately in both derivation namespaces",
+  "code_sha256": {
+    "src/contracts.py": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+    "src/data.py": "90e44e11c166dda82a474fc0f9add1755be37ea0b5c0cc9b90e1a2b7bd928621",
+    "src/evaluation.py": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+    "src/preprocessing.py": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac",
+    "src/samplers.py": "cd973dcb9846bc2b2fdcaf2e0b9846594651cdf18947f275e42410ae692fc0be",
+    "experiments/ablation.py": "0a7a01a53a6f1b290abbc981d1eb7090fe7736e4223bb7f303d6edb92f92b54a",
+    "experiments/contamination.py": "6563863f7a3b8c9d493e4ecf6551cee51fb210b4b1dc8917b8b7ab6a3d08892b",
+    "experiments/feature_path.py": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df",
+    "experiments/feature_utility.py": "24b4aec584b1fde3628aaa81d740822aa2abcf24963802e70064ba344ff4ec4f",
+    "experiments/joint_selection.py": "d7df3305c04a773f97899c15c9897f846f9a863b8ebf3653c4eeaa7764b0ab58",
+    "experiments/shapley.py": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+    "experiments/stability.py": "7d2db23c2d103f48dc7fb589a481c6bf122099459d2c8c24ed8018db6ac1e8b3",
+    "scripts/run_baselines.py": "71e6d435fb85d1e13d8e95367c6514e341bb4c11e30046598a1439dd9cdc46db",
+    "scripts/run_feature_pilot.py": "9281a3d8dc44f7062158f109b8ecd24da529765df38dc57bf729a784e6b9b72a",
+    "scripts/run_joint_pilot.py": "80b7f396c0354b9423bef5eb6ee4c0a7503bded6ab587cc39e72621fc6ea38d3",
+    "scripts/audit_joint_pilot.py": "b8df3a4e30e9c1dc9a1aafff17bfdaa291c5cc3ca420b5a211fdefa7cf04e761",
+    "scripts/run_ablation.py": "077d18a82747acb68a1fc01595473e9ebded96710ece47a272976f82352653c4",
+    "scripts/audit_ablation.py": "f87e013adb7f4513e8417891bee41844405c57ffa2a146839d14d567e381bfba",
+    "tests/test_ablation.py": "5105404cdcdce52f98022f535796c1e93b15ea75a20437e6776572be709916e6"
+  }
+}

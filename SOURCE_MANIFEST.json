@@ -1,0 +1,146 @@
+{
+  "snapshot_date": "2026-10-12",
+  "source_workspace": "thesis_htru2_20261001",
+  "purpose": "Curated thesis code sharing snapshot; not the complete experiment archive",
+  "unchanged_source_files": {
+    "configs/ablation_fixedbudget_v1.json": "f13eb9b0014cbdd34c6b0f65effdca2b729010d51d2da46998799bbf34419c38",
+    "configs/baseline_pilot_v1.json": "8dccc91088bba2230d6f8ae8c9d0e866ee86695ed1a5fa2f34da9c171ed478a6",
+    "configs/contamination_pilot_v1.json": "150e632f32c0430b1834ad62cde9ec4ff78b49038f96d166635f5435746a9232",
+    "configs/feature_pilot_v1.json": "32fed34ab5df575230603de4070499d24748f65c6d2af914280f9de64dbd053d",
+    "configs/joint_contamination_v1.json": "04b3797bed8fbb470ef769882ffefbd33e3151e1259a83296ef47127dcdbc656",
+    "configs/joint_pilot_v1.json": "9cbcfe6401905af5994c1cc3dbc40b9c7c90adcb17ce632c85fedce5b1a7b06c",
+    "configs/stability_pilot_v1.json": "2ca2f49548db4398d2a5b102a93b94c4ef7809c0122d09d3704a29baa868392d",
+    "data/audit/audit_report.json": "5e196a73922ac5e3460778801410a7c0a18216b6ae5fd333f4b3990e4f1b71ed",
+    "data/audit/feature_dictionary.csv": "1e2d3f5c4e16f7462cf6eaa981c6c95ef88ce10c91bb067f5630722d47e4c912",
+    "data/audit/htru2_table.csv": "96a68611046a035ee9f874670f602f3798e913151069484249556c66c99ad6b2",
+    "data/raw/HTRU_2.arff": "f8ea7956bdbb0ef83ce1d8ff807cdc1fe068b421452c6cf061b1af6e32459992",
+    "data/raw/HTRU_2.csv": "b13b4d8929e96ecd196e464c1c8a454c3ac2ffa631015f6388957531a9923f59",
+    "data/raw/Readme.txt": "691efe1b5b910401959a9b4f74ed0959dcd205d69c73cf524646e6f63a3eb86b",
+    "data/raw/htru2.zip": "ba442c076dd22a8952700f26e38499fc1806037dcf7bea0e125e6bfba393f379",
+    "data/raw/manifest.json": "f8767b396e5c07224d929100f146917216a9b572260d1369c230856b4c91c8aa",
+    "docs/00_htru2_protocol.md": "249b60331ab44674d337a44a5e246ec585e450e31b67494682087653600c0342",
+    "docs/07_contamination_protocol.md": "192d0ded6e5ec526d9322befa937cfb4aa4e6603583627e99f55a5f2346b0460",
+    "docs/08_feature_path_contract.md": "caa81e2da6003372b223f6fc6eadb5a47f0e7bfaf91e266590e2c5d05197ce5f",
+    "docs/09_joint_nested_protocol.md": "8715aa439718f45f1662d7b4a2138278872ace38d73d3808a059af8ae4078c38",
+    "docs/10_htru2_methods_en.md": "7cca6381fc24ab726de9f695a9777afa3db8e7e7b7f85f7545cefb84c400eacc",
+    "docs/11_complete_selection_stability_protocol.md": "d8775dedbb5683b1a65fbcd6dc48ee4ea912cdb18da60b5ce5b929d8b4a45b0f",
+    "docs/14_joint_contamination_protocol.md": "62f34b9ad9326eb1925c7cbc130560571636fcd1493ad7cec2d6064c84f7f3ee",
+    "docs/18_ablation_protocol_v1.md": "72ebc5203935772474443bdc8a6244777616bcb4448bd0c09128f629211a8a25",
+    "experiments/ablation.py": "0a7a01a53a6f1b290abbc981d1eb7090fe7736e4223bb7f303d6edb92f92b54a",
+    "experiments/contamination.py": "6563863f7a3b8c9d493e4ecf6551cee51fb210b4b1dc8917b8b7ab6a3d08892b",
+    "experiments/feature_path.py": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df",
+    "experiments/feature_utility.py": "24b4aec584b1fde3628aaa81d740822aa2abcf24963802e70064ba344ff4ec4f",
+    "experiments/joint_selection.py": "d7df3305c04a773f97899c15c9897f846f9a863b8ebf3653c4eeaa7764b0ab58",
+    "experiments/shapley.py": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+    "experiments/stability.py": "7d2db23c2d103f48dc7fb589a481c6bf122099459d2c8c24ed8018db6ac1e8b3",
+    "protocols/ablation-htru2-fixedbudget-v1-20261005/config.json": "f13eb9b0014cbdd34c6b0f65effdca2b729010d51d2da46998799bbf34419c38",
+    "protocols/ablation-htru2-fixedbudget-v1-20261005/freeze_manifest.json": "ac47db603d575081436b39949cb265a4d28e0c8c4508caa4d605ec7300d04590",
+    "protocols/ablation-htru2-fixedbudget-v1-20261005/protocol.md": "72ebc5203935772474443bdc8a6244777616bcb4448bd0c09128f629211a8a25",
+    "qa/ablation_20261006/implementation_gates.json": "a2c23ef2213a0710c489104a848d0faea035f007b3b303b5c1e10856671e99cd",
+    "requirements-experiments-lock.txt": "c6be8433bc5989360bc1525d274d8d2ce5d6da1b803574e0995da0a2b1c87503",
+    "runs/baseline-htru2-pilot-20261001-v1/htru2/splits.json": "4ae7b12576bfc2121b47fd0294e21783421167bcc6b509dadc92bc377cc8c22f",
+    "runs/baseline-htru2-pilot-20261001-v1/manifest.json": "47d9655c63619a1f948b88bba67935e1ee8b6a5d026a1bc54b42ec942076a334",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/decisions.complete.json": "b61555825832ae19a7f3269a485d6abd28384ba88c0a3b28bfaf3b8341d245c7",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/decisions.json": "d29258fbd9df2e34c2e63712892351e790f07e23e1ec4ddc83d0c6300fc63226",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-0.complete.json": "f286f69422e315b285941079227d57da8c6c0b8d9d040b3218467b9af41729f1",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-0.json": "d0ee818f6c7ea3e2394c5855f44d14328f713b758911048442d3ef01ad6d8f85",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-1.complete.json": "851ad704e1e0f6f205eff92c885fd0f5cae8e37eb114b7d1ad137440f3819df8",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-1.json": "8231aaff99efb8ed4090664ce16cb8563cd729c587a3a2d8456fe608f5dfcebc",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-2.complete.json": "8c0c7d467ddd82937c82453b5384b60b9ebff530d0e6d29aaaaaf83ca464f213",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-2.json": "2121c67942c5dfd09802f1ec7726440eacc6d57b107a194bd420d54485bc81b6",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-3.complete.json": "814a34f629927c7ef89b42eddab621067b21c5e85b1f0ef55a2f3c9b1fee932f",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/game-3.json": "46e3a60235dd05175ecdb647d6b48762b1580af313431026dae3c5ab939c353d",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/selector.complete.json": "71f342633cfc8e3d06b3be3743d7ce0b2331b38307c6b4729738a96049469e9a",
+    "runs/joint-htru2-pilot-20261001-v1/fold-0/refit/random_half/selector.json": "a228c5f5ba2f9d01e23d5bdbad2f4f56ce7d3f8c4ccf9efc678c73bd133765e5",
+    "scripts/audit_ablation.py": "f87e013adb7f4513e8417891bee41844405c57ffa2a146839d14d567e381bfba",
+    "scripts/audit_baseline_results.py": "ab36b62771ffdc4f17979a409a2a67b04feb503ab55aeac0df65100d16d8175c",
+    "scripts/audit_contamination_results.py": "9e71e81bd87a438bf3caa50d980355af52dd0202c7f1038140ffbf11566b0f34",
+    "scripts/audit_feature_pilot.py": "1c294c4ae34a25790ab117624cd99b1e1b14812eaedd38414ce6489c3f98ac9f",
+    "scripts/audit_joint_contamination.py": "3b261644fa36412b2a6e4b68b99e6f321b41768cccdc0fa292ec904791fb58ae",
+    "scripts/audit_joint_pilot.py": "b8df3a4e30e9c1dc9a1aafff17bfdaa291c5cc3ca420b5a211fdefa7cf04e761",
+    "scripts/audit_stability_pilot.py": "b4afffb669b1a0c4f0ea2290d990cf8d1bbceed62698df47618c7b7f81578067",
+    "scripts/check_ablation_replay.py": "404edf6d8fcb034ee13698bfe2ff788d18a1017752ba9706ed834d209beadc61",
+    "scripts/check_baseline_replay.py": "b39a19bbe7b66ba7ff345127039ec00d64b633459ce8fcbed806f94d8090e5dc",
+    "scripts/check_contamination_replay.py": "6541fda99984cb7caf7ebd89d11e9d51bde9e3b841fbfc59d4b9aa8cf1544ea0",
+    "scripts/check_joint_replay.py": "df0b2cf1b202fa5c80649ef5874fd84e7deb559ced015100f7ff92f314f613d1",
+    "scripts/check_stability_replay.py": "d8c2e3eda23fafa1dba04c309c87801c9524ac62d842545b88791901c2cec8b8",
+    "scripts/run_ablation.py": "077d18a82747acb68a1fc01595473e9ebded96710ece47a272976f82352653c4",
+    "scripts/run_baselines.py": "71e6d435fb85d1e13d8e95367c6514e341bb4c11e30046598a1439dd9cdc46db",
+    "scripts/run_contamination.py": "aaf89b547b77e910b949954d9258d32b452e5b944d15fb9af193db3fca051caf",
+    "scripts/run_feature_pilot.py": "9281a3d8dc44f7062158f109b8ecd24da529765df38dc57bf729a784e6b9b72a",
+    "scripts/run_joint_contamination.py": "817daba74016e78931054fe3d44e24f64224cc29a1adf8ee3d7809c4d370a626",
+    "scripts/run_joint_pilot.py": "80b7f396c0354b9423bef5eb6ee4c0a7503bded6ab587cc39e72621fc6ea38d3",
+    "scripts/run_stability_pilot.py": "9eaa0c9484493d4e7f4d3aeefebd71836f71f6bf446d3c247f834ef1cc5b0a32",
+    "scripts/summarize_ablation.py": "62061a4db9634f8128daecef60acdad7d382e31bda9f047f2cc06b013ba381f4",
+    "scripts/summarize_joint_pilot.py": "9e64d2d0707b747e307b82a0233844cd123c9edeb8c622b709483591b84f1cfa",
+    "scripts/summarize_stability_pilot.py": "78066bb6408e9318a943b868db9dc030c925ae89cf7bc2a7fd13732a393399ff",
+    "src/contracts.py": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+    "src/data.py": "90e44e11c166dda82a474fc0f9add1755be37ea0b5c0cc9b90e1a2b7bd928621",
+    "src/evaluation.py": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+    "src/preprocessing.py": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac",
+    "src/samplers.py": "cd973dcb9846bc2b2fdcaf2e0b9846594651cdf18947f275e42410ae692fc0be",
+    "tests/test_ablation.py": "5105404cdcdce52f98022f535796c1e93b15ea75a20437e6776572be709916e6",
+    "tests/test_baseline.py": "33003adfc9c9743611f8296abb215a4541b3c05de4c0df460acd9c2570db0018",
+    "tests/test_contamination.py": "0dd32f4fb42a0d4d3ed3f6d715608d4b481bd2626c3e7376c21b4959ca766de7",
+    "tests/test_contracts.py": "072de0be884bd754e16e2c47719049dee6a013e4ca8a042883fc134f99bb936d",
+    "tests/test_feature_path.py": "b2113c4514a8f88a2001971f84dce41511c5fff468397be01b3243348ed71777",
+    "tests/test_feature_utility.py": "4e7ca9c2242b53fbc2b57b7ecf654c5e2acf48aabbd71f202c525068f440d24b",
+    "tests/test_htru2_migration.py": "5488b54cd6ef98702aa4a9620574d60af240b43fe2a0a76c40b8736e0456119b",
+    "tests/test_joint_contamination.py": "7c3e9153f9350adad86f1faa891a54a8959b164117731389aad90abfff922fa4",
+    "tests/test_joint_selection.py": "03fb17024809b0c0c735e67abf9443b15b339d7def355c43ad5c0843486e5cc8",
+    "tests/test_stability.py": "6a729c296cb940d3e758ac116c2993c06be03653cedf11cf0903cffd71682935"
+  },
+  "relocated_evidence_files": {
+    "evidence/ablation_20261011/game_diagnostics.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/game_diagnostics.csv",
+      "sha256": "bf4f3deef96bfa0174136e481a8accf92a70123f36a009b8bb1522301cc5f762"
+    },
+    "evidence/ablation_20261011/module_selection_diagnostics.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/module_selection_diagnostics.csv",
+      "sha256": "3e1e431945434b12429c81616ebb4a3a682de37cbb2a352333e3db95c7405e33"
+    },
+    "evidence/ablation_20261011/numeric_checks.json": {
+      "source": "qa/ablation_20261011/full_snapshot/numeric_checks.json",
+      "sha256": "fbe6c40cbb8dd85a0e75317a12e98a653c0a2b44e9a09b88e6f8103f75fcc705"
+    },
+    "evidence/ablation_20261011/per_seed_contrasts.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/per_seed_contrasts.csv",
+      "sha256": "bee8385d8d1b0856e995bba91d34dd686ac2a76d49396ae2d1472f2553ced4fe"
+    },
+    "evidence/ablation_20261011/predictive_records.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/predictive_records.csv",
+      "sha256": "8d34fc3f91499bd8b235461faadf6741f69f7cd8a9823d68fb23085b3bc8bc19"
+    },
+    "evidence/ablation_20261011/predictive_summary.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/predictive_summary.csv",
+      "sha256": "ca7de065172054555bd12dea642732c7c928aadca683fddd7e9b716039050d21"
+    },
+    "evidence/ablation_20261011/primary_contrasts.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/primary_contrasts.csv",
+      "sha256": "d57747cc5db6439b0e088ac9ee053c9be9818482c4101bcdbcaf00a0d108151d"
+    },
+    "evidence/ablation_20261011/stability_selections.csv": {
+      "source": "qa/ablation_20261011/full_snapshot/stability_selections.csv",
+      "sha256": "933f864f15920bc3c8838435ce8123229b2d2733e82ca6cd860fac6fcea98392"
+    },
+    "evidence/ablation_20261011/stability_summary.json": {
+      "source": "qa/ablation_20261011/full_snapshot/stability_summary.json",
+      "sha256": "ac6ba0f5b6c350932071d86677fb019406e005068c95a4d311fb29b530af2e45"
+    },
+    "evidence/ablation_20261011/summary.json": {
+      "source": "qa/ablation_20261011/full_snapshot/summary.json",
+      "sha256": "901c49139c46c5708441f8df8682a818ad0774bf4fcc662d038a5cf77d230207"
+    },
+    "evidence/ablation_20261011/independent_aggregate_checks.json": {
+      "source": "qa/ablation_20261011/independent_aggregate_checks.json",
+      "sha256": "f9347e6bcd0b6e6ce7caa6f35bb1d65edd6f8620efde20b97cda1f5b4ed2993a"
+    }
+  },
+  "source_control_hashes": {
+    "ablation_state.json": "2a545305b19d1300ca52a40a8bce6200c8142534e88cf7d49d5cfcce74c055bc",
+    "RESUME_ABLATION.md": "74bea60a37968958591ddb831d8105dbd4ae5f271374f152aa0d37ca2859d841",
+    "STOP_ABLATION": "d30db901de499918fffaaf5b74d3be8bb573bc04b3a58b71cab17454904dd140",
+    "runs/ablation-htru2-fixedbudget-20261005-v1/fit_budget.sqlite3": "351100b4a069ee40c3f253c68b26e20753773587d22a1fe4b63c765fb4094865"
+  },
+  "derived_files": "New README, setup instructions, demo, packaging checks and ignore rules are listed in docs/SHARING_SCOPE.md"
+}

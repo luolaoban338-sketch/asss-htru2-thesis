@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "predictive_rows_verified": 465,
+  "stability_rows_verified": 270,
+  "paired_contrasts_verified": 180,
+  "selector_diagnostic_rows_verified": 600,
+  "game_rows_verified": 300,
+  "summary_sha256": "901c49139c46c5708441f8df8682a818ad0774bf4fcc662d038a5cf77d230207",
+  "scope": "source tables and explicit coverage; not full experiment delivery"
+}

@@ -1,0 +1,35 @@
+{
+  "created_at_utc": "2026-10-01T12:45:54.708011+00:00",
+  "purpose": "development validation of row-selection implementation, not final thesis evidence",
+  "config_sha256": "8dccc91088bba2230d6f8ae8c9d0e866ee86695ed1a5fa2f34da9c171ed478a6",
+  "code_sha256": {
+    "src/contracts.py": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+    "src/data.py": "90e44e11c166dda82a474fc0f9add1755be37ea0b5c0cc9b90e1a2b7bd928621",
+    "src/evaluation.py": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+    "src/preprocessing.py": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac",
+    "src/samplers.py": "cd973dcb9846bc2b2fdcaf2e0b9846594651cdf18947f275e42410ae692fc0be",
+    "scripts/run_baselines.py": "71e6d435fb85d1e13d8e95367c6514e341bb4c11e30046598a1439dd9cdc46db"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "raw_manifest": {
+    "source": "https://archive.ics.uci.edu/static/public/372/htru2.zip",
+    "retrieved_on": "2026-10-01",
+    "license": "CC BY 4.0",
+    "files": {
+      "htru2.zip": "ba442c076dd22a8952700f26e38499fc1806037dcf7bea0e125e6bfba393f379",
+      "HTRU_2.arff": "f8ea7956bdbb0ef83ce1d8ff807cdc1fe068b421452c6cf061b1af6e32459992",
+      "HTRU_2.csv": "b13b4d8929e96ecd196e464c1c8a454c3ac2ffa631015f6388957531a9923f59",
+      "Readme.txt": "691efe1b5b910401959a9b4f74ed0959dcd205d69c73cf524646e6f63a3eb86b"
+    }
+  },
+  "official_adult_test_used": false
+}

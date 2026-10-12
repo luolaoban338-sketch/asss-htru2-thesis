@@ -1,0 +1,82 @@
+{
+  "protocol_id": "baseline-htru2-development-v1-20261001",
+  "status": "fixed_before_first_model_run",
+  "purpose": "development validation of row-selection implementation, not final thesis evidence",
+  "datasets": [
+    "htru2"
+  ],
+  "methods": [
+    {
+      "name": "full",
+      "strategy": "stratified_random",
+      "rho": 1.0
+    },
+    {
+      "name": "random_half",
+      "strategy": "stratified_random",
+      "rho": 0.5
+    },
+    {
+      "name": "ordinary_half",
+      "strategy": "ordinary_geometry",
+      "rho": 0.5
+    },
+    {
+      "name": "robust_half",
+      "strategy": "robust_geometry",
+      "rho": 0.5
+    }
+  ],
+  "split": {
+    "class": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "shuffle": true
+  },
+  "seed_root": 20260925,
+  "model": {
+    "class": "LogisticRegression",
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tol": 1e-06,
+    "class_weight": null,
+    "fit_intercept": true
+  },
+  "threshold": 0.5,
+  "thread_limit": 1,
+  "sampler": {
+    "max_clusters": 10,
+    "n_init": 10,
+    "max_iter": 300,
+    "algorithm": "lloyd",
+    "clip_quantiles": [
+      0.01,
+      0.99
+    ],
+    "zero_iqr_scale": 1.0
+  },
+  "cluster_quota": "reserve one per effective cluster; allocate remaining proportional to cluster size by capped Hamilton rounds",
+  "within_cluster_selection": "stable distance and row-ID sort; floor(linspace(0,n_cluster-1,quota)); midpoint rank when quota=1",
+  "preprocessing": "fit on selected training rows only for classifier; numeric median imputation then population standard scaling; categorical mode imputation and full one-hot; unknown all zero; all-missing numeric=0 and categorical=__MISSING__",
+  "geometry_preprocessing": "fit on current full training partition; same imputation; ordinary numeric mean/std without clipping, robust numeric original median/IQR with 1%-99% clipping; one-hot blocks divided by sqrt(category count)",
+  "metrics": [
+    "positive_f1",
+    "roc_auc",
+    "accuracy",
+    "precision",
+    "recall",
+    "confusion_counts",
+    "actual_rho",
+    "original_d",
+    "encoded_d",
+    "sampler_seconds",
+    "fit_seconds",
+    "predict_seconds",
+    "total_seconds"
+  ],
+  "no_hyperparameter_search": true,
+  "feature_selection": false,
+  "official_adult_test_used": false,
+  "report_infeasible_and_failed": true
+}
