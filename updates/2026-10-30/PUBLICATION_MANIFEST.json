@@ -2,7 +2,7 @@
   "publication_date": "2026-10-30",
   "scope": "Curated public research update; no new fits; original evidence unchanged",
   "source_path_base": "Original thesis workspace, expressed with relative paths only",
-  "self_hash_note": "This manifest excludes its own hash. Advisor reports and additional delivery files are listed in REPORT_DELIVERY_MANIFEST.json.",
+  "self_hash_note": "This manifest excludes its own hash and covers the curated research update.",
   "files": [
     {
       "path": "code/method_validation/a3/__init__.py",
@@ -638,8 +638,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3436,
-      "sha256": "5cb2d2cff2a2561ae46c9d30d35afdb04e372cb265de660fa67c2ec78640ddab",
+      "bytes": 3123,
+      "sha256": "6081a3455ed8b97cca08ba6edb5e4b7299cc81c0cd0582789773d7c1b3a1359e",
       "kind": "generated"
     }
   ]

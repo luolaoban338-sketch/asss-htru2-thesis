@@ -2,12 +2,6 @@
 
 本目录汇集 9 月 30 日汇报之后的已完成研究资料，供导师和读者查看。根目录保留 10 月 12 日代码分享快照；这里追加后续源码、论文草稿章节、公开版研究报告和小型汇总结果。
 
-## 本次导师汇报
-
-[英文 A4 报告（7页）](advisor-report/Thesis_Progress_Report_EN_20261030.pdf) · [中文解释与问答（5页）](advisor-report/Thesis_Progress_Explanation_ZH_20261030.pdf)
-
-对应网页版位于 [advisor-report](advisor-report/)，覆盖2026年10月1日至29日的工作。
-
 ## 阅读入口
 
 | 内容 | 路径 |
