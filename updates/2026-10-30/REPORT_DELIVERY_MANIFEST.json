@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-30",
+  "scope": "English A4 report and Chinese explanatory companion; no new fits",
+  "pages": {
+    "english": 7,
+    "chinese": 5
+  },
+  "quality_checks": {
+    "numeric_source_review": "passed independently",
+    "english_pages_visually_inspected": 7,
+    "chinese_pages_visually_inspected": 5,
+    "overflow_or_missing_glyphs": false
+  },
+  "files": [
+    {
+      "path": "advisor-report/Thesis_Progress_Explanation_ZH_20261030.md",
+      "sha256": "39d5678e534c546ee578ecf64babc9b6fa9f3815a5eaa70d8fa5ef7b5e0e754b",
+      "bytes": 12969
+    },
+    {
+      "path": "advisor-report/Thesis_Progress_Explanation_ZH_20261030.pdf",
+      "sha256": "f9ee909d308b7424df5569b598d6d8699ec0c97ef9ead372cf063d9b771084f2",
+      "bytes": 300506
+    },
+    {
+      "path": "advisor-report/Thesis_Progress_Report_EN_20261030.md",
+      "sha256": "3428de980da47d73cb27c18e547eb14685dfeb48b9bf907b080847463b7b200b",
+      "bytes": 20307
+    },
+    {
+      "path": "advisor-report/Thesis_Progress_Report_EN_20261030.pdf",
+      "sha256": "dab87e5ed79dcc3f2071c710376b67aa653a1df3a7a6517d74e3a16b97aa4419",
+      "bytes": 80652
+    }
+  ],
+  "research_manifest_sha256": "79475b9250b1cae276a3460d79458aabd3ef60b7388d45fdd61d1dfd890fda77"
+}

@@ -1,0 +1,103 @@
+{
+  "protocol_id": "crossdataset-development-20261014-v1",
+  "seed_root": 20261014,
+  "methods": [
+    "full",
+    "random_half",
+    "ordinary_half",
+    "robust_half"
+  ],
+  "subsample_rho": 0.8,
+  "epsilon": 0.01,
+  "numeric_tolerance": 1e-12,
+  "exact_diagnostic": true,
+  "exact_max_features": 8,
+  "comparisons": [
+    "full",
+    "sample_only",
+    "feature_only",
+    "joint",
+    "sequential",
+    "joint_random",
+    "joint_ordinary",
+    "joint_robust"
+  ],
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "official_adult_test_used": false,
+  "timing": "Shared and deduplicated candidate search; no independent per-arm speed claims",
+  "budget_rule": "Inner mean F1 >= full - .01; minimize rho*k/d, then k, maximize F1, frozen candidate ID; tolerance 1e-12",
+  "purpose": "Prospectively frozen development comparison; execution is a later A2 task",
+  "B": 4,
+  "M": 64,
+  "utility_folds": 3,
+  "inner_folds": 3,
+  "lambda_grid": [
+    0.0,
+    0.5
+  ],
+  "eta_grid": [
+    0.0,
+    0.1
+  ],
+  "datasets": [
+    "wdbc",
+    "adult_train"
+  ],
+  "learners": [
+    "lr"
+  ],
+  "scientific_scope": "Five outer development folds; all arms share data, grids, model seeds, candidate score table; not independent confirmation",
+  "M_rationale": "Prospectively bounded high-dimensional extension; M64 is not claimed accurate because HTRU2 M256 passed",
+  "warnings": {
+    "predicted_dataset_model_runtime_seconds": 172800,
+    "adult_full_runtime_gate_required": true
+  },
+  "limits": {
+    "wdbc": {
+      "classifier_attempts": 2200000,
+      "encoder_attempts": 2300000,
+      "kmeans_attempts": 10000,
+      "wall_seconds": 172800,
+      "invocation_seconds": 3600,
+      "replay_reserve_attempts": 357992,
+      "audit_reserve_attempts": 1200
+    },
+    "adult_train": {
+      "classifier_attempts": 850000,
+      "encoder_attempts": 900000,
+      "kmeans_attempts": 10000,
+      "wall_seconds": 172800,
+      "invocation_seconds": 3600,
+      "replay_reserve_attempts": 135944,
+      "audit_reserve_attempts": 1200
+    }
+  },
+  "replay": "one complete outer fold in separate replay directory using the same dataset ledger",
+  "audit": "independent integrity and selected direct refits; reserve included in hard caps",
+  "execution_today": false,
+  "budget_bounds": {
+    "wdbc": {
+      "unique_nonempty_coalitions_per_game_max": 1857,
+      "main": 1789960,
+      "replay": 357992,
+      "audit": 1200,
+      "total": 2149152,
+      "retry_reserve": 50848
+    },
+    "adult_train": {
+      "unique_nonempty_coalitions_per_game_max": 705,
+      "main": 679720,
+      "replay": 135944,
+      "audit": 1200,
+      "total": 816864,
+      "retry_reserve": 33136
+    }
+  },
+  "audit_rule": "For every game choose smallest proper nonempty cached mask, independent of utility; refit 3 folds. Refit 8 final arms in each of 5 main and 1 replay fold. Same cumulative ledger."
+}

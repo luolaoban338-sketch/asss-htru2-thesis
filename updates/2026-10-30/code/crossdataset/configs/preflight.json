@@ -1,0 +1,68 @@
+{
+  "protocol_id": "crossdataset-A1-preflight-20261014-v1",
+  "seed_root": 20261014,
+  "methods": [
+    "full",
+    "random_half",
+    "ordinary_half",
+    "robust_half"
+  ],
+  "subsample_rho": 0.8,
+  "epsilon": 0.01,
+  "numeric_tolerance": 1e-12,
+  "exact_diagnostic": true,
+  "exact_max_features": 8,
+  "comparisons": [
+    "full",
+    "sample_only",
+    "feature_only",
+    "joint",
+    "sequential",
+    "joint_random",
+    "joint_ordinary",
+    "joint_robust"
+  ],
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "official_adult_test_used": false,
+  "timing": "Shared and deduplicated candidate search; no independent per-arm speed claims",
+  "budget_rule": "Inner mean F1 >= full - .01; minimize rho*k/d, then k, maximize F1, frozen candidate ID; tolerance 1e-12",
+  "purpose": "Engineering preflight on outer-fold-0 training probes only; not comparative scientific evidence",
+  "B": 2,
+  "M": 4,
+  "utility_folds": 2,
+  "inner_folds": 3,
+  "lambda_grid": [
+    0.5
+  ],
+  "eta_grid": [
+    0.1
+  ],
+  "packages": [
+    "wdbc-lr",
+    "wdbc-rf",
+    "adult_train-lr",
+    "adult_train-rf"
+  ],
+  "limits": {
+    "classifier_attempts": 10000,
+    "encoder_attempts": 12000,
+    "kmeans_attempts": 2000,
+    "wall_seconds": 3600,
+    "invocation_seconds": 900
+  },
+  "independent_refits": 4,
+  "replay": "wdbc-lr full-selector only; timing excluded from substantive comparison",
+  "executed_outer_training_folds": [
+    0
+  ],
+  "executed_probe_inner_folds": [
+    0
+  ],
+  "outer_test_evaluations": 0
+}

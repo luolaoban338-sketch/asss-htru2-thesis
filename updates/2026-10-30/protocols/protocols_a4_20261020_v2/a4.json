@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "protocol_id": "synthetic-csr-20261018-v1",
+  "date": "2026-10-18",
+  "status": "prospective_timing_revision_pending_execution_freeze",
+  "scope": "User-authorized import-timing correction and all 8 signal_noise_LR datasets",
+  "plan_id": "priority-revision-20261017-v3",
+  "source_bindings": [
+    {
+      "project_relative_path": "outputs/thesis_next_stage_20261017/weekly_budget.json",
+      "sha256": "3067c82d666efe79b15b23f9b16f885e914a2f0d33ad26bc3433fe616723f648"
+    },
+    {
+      "project_relative_path": "outputs/researchwrite/thesis-priority-revision-20261017/exports/后续实验优先级与额度计划_20261017.md",
+      "sha256": "f6650a75a0d97153de1cf1656126517a59a1e8fd20beb32f9fc65a52601b2a20"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/experiments/shapley.py",
+      "sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/experiments/feature_path.py",
+      "sha256": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/experiments/ablation.py",
+      "sha256": "0a7a01a53a6f1b290abbc981d1eb7090fe7736e4223bb7f303d6edb92f92b54a"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/experiments/feature_utility.py",
+      "sha256": "24b4aec584b1fde3628aaa81d740822aa2abcf24963802e70064ba344ff4ec4f"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/src/preprocessing.py",
+      "sha256": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/runs/ablation-htru2-fixedbudget-20261005-v1/code/experiments/shapley.py",
+      "sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/runs/ablation-htru2-fixedbudget-20261005-v1/code/experiments/feature_path.py",
+      "sha256": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/runs/ablation-htru2-fixedbudget-20261005-v1/code/experiments/ablation.py",
+      "sha256": "0a7a01a53a6f1b290abbc981d1eb7090fe7736e4223bb7f303d6edb92f92b54a"
+    },
+    {
+      "project_relative_path": "thesis_htru2_20261001/protocols/ablation-htru2-fixedbudget-v1-20261005/config.json",
+      "sha256": "f13eb9b0014cbdd34c6b0f65effdca2b729010d51d2da46998799bbf34419c38"
+    }
+  ],
+  "source_equivalence": {
+    "exact_and_permutation": "Historical shapley.py subset weights, iid permutation mean and ddof1/M variance; exact dimension guard remains 1<=d<=8",
+    "variance": "Observed sample variance across B minus mean MC variance, raw diagnostic and nonnegative-clipped selector variance",
+    "selection": "Historical forward_path: sum scores - eta/d sum pairwise absolute Spearman; original index tie break; full path retained even for negative increments",
+    "redundancy": "All synthetic predictors finite numeric; direct average ranks equal positive-affine standardized ranks, no encoder fit needed",
+    "new_scope": "B=4, d=6, M64, M16 prefix, training-only nested row schedules and exact finite-B diagnostic; no historical prediction or utility cache reused"
+  },
+  "d": 6,
+  "features": [
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5",
+    "X6"
+  ],
+  "layers": [
+    "signal_noise_LR",
+    "correlated_groups_LR",
+    "xor_RF",
+    "xor_LR"
+  ],
+  "data_seeds": [
+    2026102401,
+    2026102402,
+    2026102403,
+    2026102404,
+    2026102405,
+    2026102406,
+    2026102407,
+    2026102408
+  ],
+  "train_n": 600,
+  "test_n": 2000,
+  "generation": {
+    "signal_noise": {
+      "X": "6 mutually independent standard normals",
+      "p_y1": "sigmoid(1.5*X1+0.5*X2)",
+      "signal_indices_zero_based": [
+        0,
+        1
+      ],
+      "noise_indices_zero_based": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "correlated_groups": {
+      "X": "zero-mean joint Gaussian, unit diagonal; corr(X1,X2)=corr(X3,X4)=.9; all other cross-correlations zero",
+      "transform": "X2=.9*U1+sqrt(.19)*U2; X4=.9*U3+sqrt(.19)*U4, X1=U1,X3=U3,X5=U5,X6=U6",
+      "Z1": "(X1+X2)/sqrt(3.8)",
+      "Z2": "(X3+X4)/sqrt(3.8)",
+      "p_y1": "sigmoid(1.5*(Z1+Z2)/sqrt(2))",
+      "true_groups_zero_based": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "noise_indices_zero_based": [
+        4,
+        5
+      ]
+    },
+    "xor": {
+      "X": "6 mutually independent standard normals",
+      "y": "XOR(X1>0,X2>0), each label independently flipped with probability .05",
+      "signal_indices_zero_based": [
+        0,
+        1
+      ],
+      "noise_indices_zero_based": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "same_realization_for_LR_and_RF": true
+    },
+    "train_test": "Independent seed coordinates, train/test row IDs must carry split prefix in future persisted files",
+    "random_generator": "numpy.random.default_rng with frozen environment; generate arrays before Bernoulli/flip uniforms, as source code binds",
+    "persistence_today": "none; no-fit generated arrays exist only in memory"
+  },
+  "nested_design": {
+    "selection_resamples": 6,
+    "selection_fraction": 0.8,
+    "selection_rows": 480,
+    "B": 4,
+    "contribution_fraction": 0.8,
+    "contribution_rows": 384,
+    "utility_folds": 2,
+    "sampling": "stratified without replacement, Hamilton class allocation to floor(n*fraction+.5); original class ID tie break",
+    "folding": "shuffle members within class with one seed, numpy.array_split into two validation folds; complementary training rows",
+    "test_access": "Only after selection commitments are saved and hashed; test outcomes never tune any frozen choice",
+    "geometry_sampling": false,
+    "selection_algorithm_randomness": "Main permutation and model seeds fixed across q=0..5; contribution/partition data resamples vary; all CSR branches paired",
+    "random_control_stability": "Random feature path also fixed across q; its stability is conditional on fixed algorithm randomness and may equal one without recovery"
+  },
+  "utility": {
+    "metric": "arithmetic mean of the two held-out utility-fold F1 values",
+    "threshold": 0.5,
+    "empty_subset": "training-fold class prevalence constant, thresholded at .5; no classifier or encoder fit",
+    "nonempty_tables": "all 63 nonempty subsets, 2 fold fits per subset; full table reused for main and diagnostics",
+    "preprocessing": "one numeric standardizer per classifier attempt fit on that attempt's training rows only, mean and population SD, zero SD replaced by1; no missing values permitted",
+    "final_training_rows": "480 selector rows, same rows for all CSR/random/full-feature arms",
+    "selection_values": "Only frozen M64 permutations read table marginals; exact values are computed/reported only after selector commitment",
+    "fit_cache": "Deduplicate only identical layer/data/q/game/fold/mask/context within the declared run; never historical artifacts or cross-game data"
+  },
+  "learners": {
+    "LR": {
+      "class": "sklearn.linear_model.LogisticRegression",
+      "penalty": "l2",
+      "C": 1.0,
+      "fit_intercept": true,
+      "solver": "lbfgs",
+      "max_iter": 5000,
+      "tol": 1e-06,
+      "class_weight": null,
+      "random_state": "frozen seed coordinate",
+      "convergence_warning": "failed counted attempt; stop package, no grid expansion or silent retry"
+    },
+    "RF": {
+      "class": "sklearn.ensemble.RandomForestClassifier",
+      "n_estimators": 64,
+      "max_depth": 4,
+      "min_samples_leaf": 5,
+      "max_features": null,
+      "bootstrap": true,
+      "criterion": "gini",
+      "min_samples_split": 2,
+      "class_weight": null,
+      "n_jobs": 1,
+      "random_state": "frozen seed coordinate",
+      "retuning": "forbidden after weak XOR results"
+    },
+    "model_failure_policy": "Reserve before fit, record failure/incomplete status, stop and investigate; retries only explicit and charged against hard caps; no substitution of an easier scenario"
+  },
+  "selection": {
+    "k_values": [
+      1,
+      2,
+      3
+    ],
+    "primary_k": 2,
+    "main_M": 64,
+    "lambda": 0.5,
+    "eta": 0.1,
+    "logical_csr": [
+      "111",
+      "011",
+      "101",
+      "110",
+      "001",
+      "100",
+      "010",
+      "000"
+    ],
+    "structural_aliases": {
+      "001": "101",
+      "000": "100"
+    },
+    "C": "C1 uses max(0, sample_variance(phi_hat_b)-mean(mc_variance_b)); C0 uses uncorrected sample variance",
+    "S": "S1 subtracts lambda*SD; S0 uses mean contribution only",
+    "R": "R1 penalizes accumulated redundancy by eta/d; R0 eta0",
+    "controls": [
+      "random feature path, k1/k2/k3",
+      "all six features"
+    ],
+    "maximum_final_models_per_selector": 28,
+    "aliases_accounting": "Retain eight logical rows, mark 001=101 and 000=100; physical identical-model caching allowed, duplicates never independent evidence",
+    "truth_exact_test_forbidden_in_selection": true
+  },
+  "C_diagnostics": {
+    "streams": 20,
+    "M_values": [
+      16,
+      64
+    ],
+    "M16_prefix_of_M64": true,
+    "within_stream_B_independence": true,
+    "main_streams_separate": true,
+    "target": "ddof1 sample variance of exact Shapley contributions in the same four realized games",
+    "estimators": [
+      "uncorrected",
+      "raw_corrected",
+      "clipped_corrected"
+    ],
+    "summaries": [
+      "bias",
+      "MSE",
+      "clipping frequency",
+      "per-feature nested records"
+    ],
+    "additional_fits": 0,
+    "population_variance_claim": false,
+    "contamination_robustness_claim": false
+  },
+  "endpoints": {
+    "S_primary_contrast": [
+      "111",
+      "101"
+    ],
+    "S_primary_k": 2,
+    "S": [
+      "Nogueira",
+      "mean nested Jaccard",
+      "signal recall",
+      "weak-signal omission",
+      "noise inclusion",
+      "test F1"
+    ],
+    "R_primary_contrast": [
+      "111",
+      "110"
+    ],
+    "R_primary_k": 2,
+    "R": [
+      "two-group coverage",
+      "same-group excess",
+      "noise inclusion"
+    ],
+    "XOR": [
+      "joint recovery of both signal variables",
+      "test F1",
+      "test AUC",
+      "balanced accuracy"
+    ],
+    "other_ks_and_CSR": "prespecified secondary diagnostics; no selecting winning scenarios/learners",
+    "stable_wrong_sets": "stability must be interpreted together with recovery and prediction; not counted as benefit",
+    "statistical_unit": "generated dataset, eight independent seeds per scenario; LR/RF on XOR paired but reported separately",
+    "nested_repetitions": "6 resamples, 20 streams, 6 features, 15 Jaccard pairs are not independent sample-size multipliers",
+    "summary": "first aggregate inside dataset then show all eight paired values, mean, median, range, positive/negative/zero counts; no unplanned significance filtering",
+    "zero_or_negative_results_acceptable": true
+  },
+  "seed_manifest": {
+    "algorithm": "SHA256 canonical [protocol_id,*typed_coordinates], first8 big-endian modulo 2147483647",
+    "unique_coordinates": 13336,
+    "collision_check": "passed",
+    "records_sha256": "eaf152a9de15f60e5c27851156b64ba48d71d05a5609d981bbd1e9f39c1ff2aa",
+    "intentional_sharing": [
+      "all CSR labels and k values share a selector's rows/utility tables",
+      "XOR LR/RF share train/test data and nested partitions",
+      "main/model seeds fixed across six selection resamples",
+      "M16 is prefix of corresponding M64 sequence",
+      "random-feature path fixed across resamples; conditional stability only"
+    ]
+  },
+  "resource_inventory": {
+    "selectors": 192,
+    "items": {
+      "main_utility": 96768,
+      "main_final_model_bound": 5376,
+      "direct_audit": 1344,
+      "cold_replay": 2128,
+      "training_timing_probes": 32
+    },
+    "planned_classifier_attempt_bound": 105648,
+    "classifier_attempt_cap": 112000,
+    "planned_encoder_attempt_bound": 105648,
+    "encoder_attempt_cap": 112000,
+    "uncommitted_attempt_reserve": 6320,
+    "kmeans_attempt_cap": 0,
+    "LR_classifier_attempt_bound": 79228,
+    "RF_classifier_attempt_bound": 26420,
+    "redundancy_encoder_attempts": 0,
+    "previous_classifier_attempts": 32,
+    "previous_encoder_attempts": 32,
+    "cumulative_planned_classifier_attempt_bound": 105680,
+    "cumulative_planned_encoder_attempt_bound": 105680,
+    "remaining_global_classifier_cap": 111968,
+    "remaining_global_encoder_cap": 111968,
+    "v2_first_package_classifier_cap": 26436,
+    "v2_first_package_encoder_cap": 26436,
+    "cumulative_first_package_attempt_bound_each": 26468
+  },
+  "direct_audit_targets_per_selector": [
+    {
+      "kind": "utility",
+      "b": 0,
+      "fold": 0,
+      "mask": 1
+    },
+    {
+      "kind": "utility",
+      "b": 1,
+      "fold": 1,
+      "mask": 3
+    },
+    {
+      "kind": "utility",
+      "b": 2,
+      "fold": 0,
+      "mask": 7
+    },
+    {
+      "kind": "utility",
+      "b": 3,
+      "fold": 1,
+      "mask": 15
+    },
+    {
+      "kind": "utility",
+      "b": 0,
+      "fold": 0,
+      "mask": 31
+    },
+    {
+      "kind": "utility",
+      "b": 1,
+      "fold": 1,
+      "mask": 63
+    },
+    {
+      "kind": "final",
+      "csr": "111",
+      "k": 2
+    }
+  ],
+  "auditing": {
+    "direct_target_count": "192 selectors * 7 =1344; six fixed utility masks b=j%4/fold=j%2 plus final111 k2; no selection by observed errors",
+    "refit_compare": "Predictions, F1 and fitted preprocessing parameters for each target; tolerances1e-12 absolute /0 relative for numeric comparisons, exact labels/IDs/masks",
+    "cold_replay": "Each layer's root2026102401,q0 full selector:4*63*2 utility fits plus <=28final fits; new cache, same frozen data/partitions/seeds; compare all substantive artifacts",
+    "replay_total_bound": 2128,
+    "replay_refit_policy": "Cold replay is already independent model execution; no extra direct audits of replay promised in105648. Any additional replay refits consume the6352 uncommitted attempt reserve only after explicit inventory amendment and preserved caps",
+    "unchanged_resume": "Before/after ledger counts and artifact hashes must show zero new operations at each delivered boundary"
+  },
+  "timing": {
+    "probe_total": 32,
+    "per_learner": 16,
+    "probe_data": "LR:signal_noise seed2026102401 q0 selection rows; RF:xor same seed/q; only480 training rows",
+    "probe_masks": [
+      1,
+      3,
+      7,
+      63,
+      1,
+      3,
+      7,
+      63,
+      1,
+      3,
+      7,
+      63,
+      1,
+      3,
+      7,
+      63
+    ],
+    "probe_seed": "coordinate(timing_probe,learner,index0..15)",
+    "measure": "Initialize sklearn estimator/exception classes once before counted operations; measure initialization separately. Count encoder fit plus training transform and classifier construction/fit in every pair.",
+    "projection": "LR=max16*79228/3600; RF=max16*26420/3600. Total=LR+RF+init_seconds*41/3600; RF gate=RF+init_seconds*11/3600.",
+    "total_warning_hours": 12,
+    "RF_warning_hours": 6,
+    "invocation_cap_hours": 1,
+    "warning_failure": "stop and defer; retain all prescribed scenarios pending, never claim whole stage complete",
+    "today_status": "Prospective v2 correction; no v2 model fits at revision creation",
+    "wall_time_guarantee": false,
+    "initialization_invocation_bound": 41,
+    "RF_initialization_invocation_bound": 11,
+    "first_package_invocation_bound": 11,
+    "initialization_inventory": {
+      "full_main_datasets": 32,
+      "full_layer_direct_audits": 4,
+      "full_cold_replays": 4,
+      "combined_probe": 1
+    },
+    "initialization_policy": "Import only; no warm-up fitting, no test generation, no discarded measured probe. Each invocation persists initialization duration before any fit reservation.",
+    "initializer_receipt": "run_root/initialization/<invocation>.json",
+    "probe_repeat_policy": "Exactly one new complete 32-probe package in v2; retain all 32 previous attempts in cumulative accounting; no adaptive re-probing."
+  },
+  "storage": {
+    "datasets": "large_file_store/datasets/thesis_method_validation_20261018/a4",
+    "models": "large_file_store/models/thesis_method_validation_20261018/a4",
+    "runs": "large_file_store/runs/thesis_method_validation_20261018/a4",
+    "archives": "large_file_store/archives/thesis_method_validation_20261018",
+    "scratch": "large_file_store/scratch/thesis_method_validation_20261018/a4"
+  },
+  "execution_gate": {
+    "fits_authorized_today": false,
+    "STOP_removal_authorized": false,
+    "automatic_resume": false,
+    "remaining_before_first_fit": [
+      "independent v2 readiness acceptance",
+      "v2 execution freeze and new STOP release",
+      "fresh counted 32-probe timing gate pass before all 8 main datasets"
+    ],
+    "scope_boundary": "Execution authorization separately binds new v2 source/protocol. All prior records and STOPs remain sealed."
+  },
+  "protocol_revision_id": "synthetic-csr-timing-preload-20261020-v2",
+  "revision_of": {
+    "path": "project/thesis_method_validation_20261018/protocols/a4.json",
+    "sha256": "91fe0fd95d0016043444729be53760cbd0821d54e1e9b13f0640ecfef3ac54bb"
+  },
+  "seed_namespace_policy": "Original protocol_id retained solely to preserve the complete existing seed coordinates",
+  "previous_attempts": {
+    "status": "passed",
+    "payload_files": 265,
+    "run_root": "large_file_store/runs/thesis_method_validation_20261018/a4/a4-signal-noise-lr-20261020-v1",
+    "ledger": "large_file_store/runs/thesis_method_validation_20261018/a4/a4-signal-noise-lr-20261020-v1/ledger.sqlite",
+    "ledger_sha256": "9311be395fa15775ed99431b891d9477c421322819ec409e6b1f928ceaf9007b",
+    "classifier": 32,
+    "encoder": 32,
+    "kmeans": 0,
+    "old_failed_gate": {
+      "total_projected_hours": 28.331686090107755,
+      "RF_projected_hours": 0.4954938900000002,
+      "total_warning_hours": 12,
+      "RF_warning_hours": 6,
+      "invocation_cap_hours": 1,
+      "status": "stop_defer",
+      "projection_only": true,
+      "authorizes_execution": false
+    },
+    "old_report_sha256": "92739de31928d943a2fb744ec10cb7dbbae9084e4870f65b01bdcfc126550374",
+    "archive_receipt_sha256": "17a1f423a9afdf3fddfd5e3187f21db9d067cd867694f3dd13a541fe79c24b39",
+    "old_state_sha256": "7b035417c505736f64cc4191117e15af9cc0f5f7661f23b97c26dbcaf7f46c2a",
+    "old_resume_sha256": "d692d247a2a5e321ef8fa7c111eb6692843a8923ce1fbaafb449775f5936cb75",
+    "old_execution_stop_sha256": "081a1158627e728003acd140b8f6f6d749ef4b35330cf472e7d26b3d5b3f928c",
+    "old_run_stop_sha256": "86eacfa4b20eae23358539128131195256ccea202f270ebe1654b240641b9190"
+  }
+}

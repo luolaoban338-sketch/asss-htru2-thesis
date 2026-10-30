@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "plan_id": "a3-powershap-formal-plan-20261029-v1",
+  "date": "2026-10-29",
+  "development_only": true,
+  "data": {
+    "dataset": "HTRU2",
+    "n": 17898,
+    "d": 8,
+    "positive_n": 1639,
+    "predictors": [
+      "Profile_mean",
+      "Profile_stdev",
+      "Profile_skewness",
+      "Profile_kurtosis",
+      "DM_mean",
+      "DM_stdev",
+      "DM_skewness",
+      "DM_kurtosis"
+    ],
+    "data_source": {
+      "path": "project/thesis_htru2_20261001/data/audit/htru2_table.csv",
+      "sha256": "96a68611046a035ee9f874670f602f3798e913151069484249556c66c99ad6b2",
+      "size": 3840059
+    },
+    "outer_partitions": {
+      "path": "project/thesis_htru2_20261001/runs/baseline-htru2-pilot-20261001-v1/htru2/splits.json",
+      "sha256": "4ae7b12576bfc2121b47fd0294e21783421167bcc6b509dadc92bc377cc8c22f",
+      "size": 3614569
+    },
+    "split_seed": 840980351,
+    "folds": [
+      {
+        "fold": 0,
+        "train_n": 14318,
+        "test_n": 3580
+      },
+      {
+        "fold": 1,
+        "train_n": 14318,
+        "test_n": 3580
+      },
+      {
+        "fold": 2,
+        "train_n": 14319,
+        "test_n": 3579
+      },
+      {
+        "fold": 3,
+        "train_n": 14319,
+        "test_n": 3579
+      },
+      {
+        "fold": 4,
+        "train_n": 14318,
+        "test_n": 3580
+      }
+    ],
+    "data_role": "previously examined development data",
+    "group_definition": "feature-vector hash, not astronomical source identity",
+    "descriptor_caveat": "Original column positions and ARFF names retained; Readme descriptor-order discrepancy limits physical interpretation.",
+    "historical_predictions_reused": false,
+    "new_data_copy_required": false,
+    "historical_predictions_reused_scope": "The inherited false flag describes original A3 production, which did not reuse earlier pilot predictions; this new secondary comparison reuses delivered A3 traditional predictions as explicitly declared in pairing."
+  },
+  "outer_fold_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "package": {
+    "name": "powershap",
+    "version": "0.1.0.1",
+    "source_commit": "88a6195da367df6a645b9ec8a59bd55e49e0bf5a",
+    "source_record": "source_review.json"
+  },
+  "selector": {
+    "power_iterations": 10,
+    "power_alpha": 0.01,
+    "val_size": 0.2,
+    "power_req_iterations": 0.99,
+    "include_all": false,
+    "automatic": true,
+    "force_convergence": false,
+    "limit_convergence_its": 0,
+    "limit_automatic": 10,
+    "limit_incremental_iterations": 10,
+    "limit_recursive_automatic": 3,
+    "stratify": false,
+    "cv": null,
+    "show_progress": false,
+    "verbose": false,
+    "k_policy": "Original features with native p_value < 0.01; report actual k without top-4 truncation or padding",
+    "completion_policy": "Persist final power requirement and total iterations. No significant features is a native terminal outcome. If significant features remain with required iterations exceeding performed iterations when recursion or resource cap stops, mark incomplete_native_power_requirement and do not report a completed native selector.",
+    "statistical_validity": {
+      "finite_required": [
+        "impact",
+        "p_value",
+        "effect_size",
+        "power_0.01_alpha",
+        "0.99_power_its_req"
+      ],
+      "significant_original_feature_power_minimum": 0.99,
+      "absolute_tolerance": 1e-10,
+      "required_iterations_ceiling_le_performed": true,
+      "warnings": "Any power-solver ConvergenceWarning, RuntimeWarning, nonfinite output or invalid p/power outside [0,1] fails the gate; retain raw native output without repair.",
+      "no_significant_features": "Native no-feature terminal outcome only if statistics remain valid; zero stored power for untested nonsignificant features is expected."
+    }
+  },
+  "internal_model": {
+    "class": "CatBoostClassifier",
+    "iterations": 250,
+    "depth": 6,
+    "learning_rate": 0.1,
+    "loss_function": "Logloss",
+    "od_type": "Iter",
+    "od_wait": 25,
+    "use_best_model": true,
+    "thread_count": 1,
+    "task_type": "CPU",
+    "verbose": false,
+    "allow_writing_files": false,
+    "seed": "native per-iteration random_seed assigned by official wrapper",
+    "preprocessing": "No fitted encoder for native numeric tree selector; input finite-value and dimensional checks only",
+    "choice_basis": "Fixed prospective CatBoost arm of the native library; not selected or tuned against existing outer-test results",
+    "effective_params": "Persist and verify all effective parameters after native copy/set_params against the frozen model and expected iteration seed. Reject unexpected fit kwargs or groups."
+  },
+  "native_data_rules": {
+    "row_order": "Frozen outer-training row order, persist exact row identities",
+    "holdout": "Native val_size 0.2, stratify false, cv null; sort native split indices as official wrapper does",
+    "seed_behavior": "Preserve native random-feature/model cumulative iteration seeds starting at 0; preserve native local-batch-index holdout seeds. Persist both sequences and row hashes. Do not replace with a newly chosen random seed.",
+    "groups": null,
+    "allowed_fit_kwargs": {}
+  },
+  "handoff": {
+    "format": "Canonical UTF-8 JSON, no pickled native objects",
+    "fields": [
+      "plan_spec_sha256",
+      "plan_id",
+      "execution_manifest_sha256",
+      "native_environment_sha256",
+      "data_sha256",
+      "split_sha256",
+      "outer_fold",
+      "train_row_ids_sha256",
+      "ordered_feature_names",
+      "selected_indices",
+      "native_complete",
+      "statistics_valid",
+      "actual_iterations",
+      "selector_result_sha256"
+    ],
+    "validation": "Persist exclusively and hash before any outer-test evaluation. Verify original index range0..7, ascending unique indices, name/index match, current fold/train/data/split/source identity and passed native completion. LR process reloads bound data itself; selector receives training only."
+  },
+  "downstream": {
+    "config": {
+      "class": "LogisticRegression",
+      "C": 1.0,
+      "penalty": "l2",
+      "solver": "lbfgs",
+      "max_iter": 5000,
+      "tol": 1e-06,
+      "fit_intercept": true,
+      "class_weight": null,
+      "seed": "seed(outer_fold, final_model), identical across all seven arms",
+      "numeric_threads": 1
+    },
+    "encoder": "Convert selected outer-training numeric columns to float; require finite nonempty input; center=mean(axis=0), scale=std(axis=0,ddof=0), replace exactly-zero scale with1; transform=(X-center)/scale. No median or imputation. Fit only this fold's selected training columns.",
+    "final_model_seeds": [
+      2001538975,
+      146698179,
+      1337579919,
+      1783273933,
+      1950432870
+    ],
+    "threshold": 0.5,
+    "prediction_rule": "p>=0.5",
+    "empty_selection": "p=outer-training positive prevalence; no encoder or classifier fit; audit prevalence independently; never pad",
+    "nonempty_fit_counts": "One fresh encoder and one common LR per main/replay/audit fold",
+    "frozen_source_reuse": "Read-only import or exact hashed source binding; new variable-k adapter; do not modify seven-arm fixed-k final_evaluate"
+  },
+  "pairing": {
+    "endpoint": "ASSS111 minus native variable-k F1 by fold, plus arithmetic mean of five paired contrasts",
+    "secondary": [
+      "ROC-AUC",
+      "AP",
+      "actual k",
+      "selected features",
+      "native completion",
+      "selection, final fit, prediction, audit and archive costs"
+    ],
+    "comparators": "Current delivered A3 traditional seven-arm predictions only, bound by dataset, row IDs, fold, learner config, final seeds and source hashes; do not use earlier pilot/COMPAS outputs",
+    "same_k_claim_allowed": false,
+    "confirmatory_claim_allowed": false,
+    "folds_independent": false,
+    "statistics": "Descriptive folds and unweighted mean only; no inferential p-value, CI or equivalence claim. Native p-values belong to selector, not prediction comparison. For F1 signs compute exact fractions from confusion counts. Report partial/failing folds without complete-case five-fold claims.",
+    "loss_line": 0.01,
+    "loss_line_role": "Descriptive reference only; not equivalence or noninferiority margin",
+    "reuse_delivered_A3_predictions": true,
+    "reuse_earlier_pilot_predictions": false,
+    "provenance_requirement": "Bind every reused final result and prediction artifact to an immutable delivery/execution manifest, dataset hash, heldout row IDs and order, labels, fold, LR configuration and final seed; independently reconstruct paired metrics from bound labels and probabilities before comparison."
+  },
+  "resources": {
+    "native_catboost_max": 240,
+    "downstream_LR_max": 11,
+    "classifier_max": 251,
+    "encoder_max": 11,
+    "kmeans_max": 0,
+    "historical_gate_classifier_excluded_from_new_cap": 20,
+    "historical_A3_traditional_classifier": 19006,
+    "historical_A3_traditional_encoder": 19012,
+    "cumulative_A3_classifier_if_all_max": 19277,
+    "cumulative_A3_encoder_if_all_max": 19023,
+    "first_package": {
+      "fold": 0,
+      "native_calls": 2,
+      "catboost_max": 80,
+      "LR_max": 3,
+      "classifier_max": 83,
+      "encoder_max": 3
+    },
+    "later_fold": {
+      "native_calls": 1,
+      "catboost_max": 40,
+      "LR_max": 2,
+      "classifier_max": 42,
+      "encoder_max": 2
+    },
+    "no_retry": true,
+    "reserve_before_each_fit": true,
+    "failed_and_interrupted_counted": true,
+    "simulated_test_operations_counted_as_real": false,
+    "concurrent_fit_workers": 1,
+    "numeric_threads": 1,
+    "physical_catboost_trees_reported_separately": true
+  },
+  "verification": {
+    "raw_native": "Independent reconstruction of every saved raw SHAP array, native float32 conversion/aggregation order, p/effect/power/required-iterations, selected set, per-iteration rows/seeds/model parameters and ledger; no tolerance relaxation",
+    "cold_replay": "Fresh independent process, caches and output roots for full formal fold0 selector plus common LR; no reuse of yesterday probe or native fitted objects; compare selections, raw arrays, stats, row identities, probabilities and seeds",
+    "direct_refits": "One independent common-LR + encoder refit for each nonempty main fold; for empty branch independently reconstruct training prevalence with0 fits",
+    "downstream_tolerances": {
+      "absolute": 1e-12,
+      "relative": 0,
+      "source": "audit_a3_20261024/independent.py assert_close and audit.py; inherited, never relaxed after results",
+      "finite_floats_required": true,
+      "nonfloat_values_dictionary_keys_and_sequence_lengths": "exact equality",
+      "scope": [
+        "main versus independent direct-refit probabilities",
+        "encoder center and scale",
+        "semantic LR fitted state and get_params",
+        "independent F1 ROC-AUC and AP against stored metrics"
+      ],
+      "semantic_state_fields": [
+        "center_",
+        "scale_",
+        "coef_",
+        "intercept_",
+        "classes_",
+        "n_iter_",
+        "n_features_in_",
+        "get_params(deep=False)"
+      ],
+      "model_serialization_rule": "Compare checked semantic state, not pickle/joblib byte equality; immutable stored artifact bytes remain hash protected."
+    },
+    "resume": "Cache-only zero-new-operation invocation; before/after all payload hashes and ledger unchanged",
+    "failure_preservation": "Keep original training gate float32-audit failure; prospective new auditor may correctly implement native semantics, with new version and no-fit fixtures",
+    "delivery": [
+      "independent aggregate reconstruction",
+      "all five fold endpoints or explicit partial failure status",
+      "numeric document QA",
+      "every rendered page inspected",
+      "ZIP CRC size SHA256",
+      "full extraction and restored hashes",
+      "unchanged sources",
+      "WAL checkpoint and absent sidecars",
+      "STOP set; all workers exited"
+    ],
+    "native_tolerances": {
+      "raw_mean_absolute_shap_after_float32_cast": {
+        "absolute": 1e-12,
+        "relative": 1e-12
+      },
+      "p_values": {
+        "absolute": 1e-15,
+        "relative": 0
+      },
+      "impact_effect_achieved_power": {
+        "absolute": 1e-10,
+        "relative": 1e-10
+      },
+      "required_iteration_roots": {
+        "absolute": 1e-06,
+        "relative": 1e-10,
+        "ceil_equality": "exact"
+      },
+      "native_cold_replay": "Exact raw arrays, statistics, selected indices, row identities, input hashes and seeds",
+      "source": "audit_a3_3_20261028_reporting/audit.py; native float32 aggregation defined independently in numeric.py; no after-result relaxation"
+    }
+  },
+  "scope_exclusions": [
+    "A2 remaining WDBC",
+    "Adult",
+    "new probes or hyperparameter search",
+    "A4 synthesis or stage closure",
+    "thesis completion"
+  ]
+}

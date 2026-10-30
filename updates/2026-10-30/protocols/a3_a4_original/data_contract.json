@@ -1,0 +1,59 @@
+{
+  "dataset": "HTRU2",
+  "n": 17898,
+  "d": 8,
+  "positive_n": 1639,
+  "predictors": [
+    "Profile_mean",
+    "Profile_stdev",
+    "Profile_skewness",
+    "Profile_kurtosis",
+    "DM_mean",
+    "DM_stdev",
+    "DM_skewness",
+    "DM_kurtosis"
+  ],
+  "data_source": {
+    "path": "project/thesis_htru2_20261001/data/audit/htru2_table.csv",
+    "sha256": "96a68611046a035ee9f874670f602f3798e913151069484249556c66c99ad6b2",
+    "size": 3840059
+  },
+  "outer_partitions": {
+    "path": "project/thesis_htru2_20261001/runs/baseline-htru2-pilot-20261001-v1/htru2/splits.json",
+    "sha256": "4ae7b12576bfc2121b47fd0294e21783421167bcc6b509dadc92bc377cc8c22f",
+    "size": 3614569
+  },
+  "split_seed": 840980351,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 14318,
+      "test_n": 3580
+    },
+    {
+      "fold": 1,
+      "train_n": 14318,
+      "test_n": 3580
+    },
+    {
+      "fold": 2,
+      "train_n": 14319,
+      "test_n": 3579
+    },
+    {
+      "fold": 3,
+      "train_n": 14319,
+      "test_n": 3579
+    },
+    {
+      "fold": 4,
+      "train_n": 14318,
+      "test_n": 3580
+    }
+  ],
+  "data_role": "previously examined development data",
+  "group_definition": "feature-vector hash, not astronomical source identity",
+  "descriptor_caveat": "Original column positions and ARFF names retained; Readme descriptor-order discrepancy limits physical interpretation.",
+  "historical_predictions_reused": false,
+  "new_data_copy_required": false
+}

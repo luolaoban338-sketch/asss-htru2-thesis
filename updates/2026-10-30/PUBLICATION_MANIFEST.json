@@ -1,0 +1,646 @@
+{
+  "publication_date": "2026-10-30",
+  "scope": "Curated public research update; no new fits; original evidence unchanged",
+  "source_path_base": "Original thesis workspace, expressed with relative paths only",
+  "self_hash_note": "This manifest excludes its own hash. Advisor reports and additional delivery files are listed in REPORT_DELIVERY_MANIFEST.json.",
+  "files": [
+    {
+      "path": "code/method_validation/a3/__init__.py",
+      "bytes": 81,
+      "sha256": "ec1ce485e20f7d505ad9f1e23c3c2dae80a72187f7947f4f577f820a0316b77f",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/a3/__init__.py",
+      "source_sha256": "ec1ce485e20f7d505ad9f1e23c3c2dae80a72187f7947f4f577f820a0316b77f",
+      "source_bytes": 81
+    },
+    {
+      "path": "code/method_validation/a3/design.py",
+      "bytes": 5237,
+      "sha256": "d6248b885f2492970fb2eb6b789a95bce54ba83cde12df09a692aeb0e7706e33",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/a3/design.py",
+      "source_sha256": "d6248b885f2492970fb2eb6b789a95bce54ba83cde12df09a692aeb0e7706e33",
+      "source_bytes": 5237
+    },
+    {
+      "path": "code/method_validation/a3/selection.py",
+      "bytes": 19186,
+      "sha256": "ee20c4f4c7cdc3a591182460098fa3824b0de35596282bd76647227ce51b4d32",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/a3/selection.py",
+      "source_sha256": "ee20c4f4c7cdc3a591182460098fa3824b0de35596282bd76647227ce51b4d32",
+      "source_bytes": 19186
+    },
+    {
+      "path": "code/method_validation/a3/shapley_bound.py",
+      "bytes": 2859,
+      "sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/a3/shapley_bound.py",
+      "source_sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+      "source_bytes": 2859
+    },
+    {
+      "path": "code/method_validation/a4/__init__.py",
+      "bytes": 77,
+      "sha256": "731ecc57e2ff4fb116c051ae6bad960ca8b234482495c09b0a3ab29cfa9ddde7",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/a4/__init__.py",
+      "source_sha256": "731ecc57e2ff4fb116c051ae6bad960ca8b234482495c09b0a3ab29cfa9ddde7",
+      "source_bytes": 77
+    },
+    {
+      "path": "code/method_validation/a4/core.py",
+      "bytes": 23043,
+      "sha256": "e51d346b687ad5d222bf145ae1e00f2935e42ad179455a22e570af6ddbf10efa",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/a4/core.py",
+      "source_sha256": "e51d346b687ad5d222bf145ae1e00f2935e42ad179455a22e570af6ddbf10efa",
+      "source_bytes": 23043
+    },
+    {
+      "path": "code/method_validation/tests/test_a3.py",
+      "bytes": 8718,
+      "sha256": "e1cb1d3d2b75dfbbd5274422f39e125783bd794b82035ea41cd10388686e2cda",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/tests/test_a3.py",
+      "source_sha256": "e1cb1d3d2b75dfbbd5274422f39e125783bd794b82035ea41cd10388686e2cda",
+      "source_bytes": 8718
+    },
+    {
+      "path": "code/method_validation/tests/test_a4.py",
+      "bytes": 11320,
+      "sha256": "2320c77f5703d4a0f1397f12416a0f48895349acb8eb4a5750c88f977f817b4a",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/tests/test_a4.py",
+      "source_sha256": "2320c77f5703d4a0f1397f12416a0f48895349acb8eb4a5750c88f977f817b4a",
+      "source_bytes": 11320
+    },
+    {
+      "path": "code/method_validation/execution_a3_3_formal_20261029/native.py",
+      "bytes": 16077,
+      "sha256": "47acdbc086e7778773b94f82a071fddb2985194368dcfd1344c4e9b3b94400f0",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/execution_a3_3_formal_20261029/native.py",
+      "source_sha256": "47acdbc086e7778773b94f82a071fddb2985194368dcfd1344c4e9b3b94400f0",
+      "source_bytes": 16077
+    },
+    {
+      "path": "code/method_validation/execution_a3_3_formal_20261029/downstream.py",
+      "bytes": 6897,
+      "sha256": "558a2ca8a3b5580cf27cf58418004823042106a9eadd8cddf0d25a95595290ae",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/execution_a3_3_formal_20261029/downstream.py",
+      "source_sha256": "558a2ca8a3b5580cf27cf58418004823042106a9eadd8cddf0d25a95595290ae",
+      "source_bytes": 6897
+    },
+    {
+      "path": "code/crossdataset/src/budget.py",
+      "bytes": 7391,
+      "sha256": "c7b4c1142bcc3a67dd83a7d3ec619629cd954a702e2bcec776d6f7e12f73c1bf",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/budget.py",
+      "source_sha256": "c7b4c1142bcc3a67dd83a7d3ec619629cd954a702e2bcec776d6f7e12f73c1bf",
+      "source_bytes": 7391
+    },
+    {
+      "path": "code/crossdataset/src/contracts.py",
+      "bytes": 5063,
+      "sha256": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/contracts.py",
+      "source_sha256": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+      "source_bytes": 5063
+    },
+    {
+      "path": "code/crossdataset/src/data.py",
+      "bytes": 9694,
+      "sha256": "650c57985542628671ba6be605928fbbf169a5f50b45318eb7afa949ce95394d",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/data.py",
+      "source_sha256": "650c57985542628671ba6be605928fbbf169a5f50b45318eb7afa949ce95394d",
+      "source_bytes": 9694
+    },
+    {
+      "path": "code/crossdataset/src/evaluation.py",
+      "bytes": 1556,
+      "sha256": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/evaluation.py",
+      "source_sha256": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+      "source_bytes": 1556
+    },
+    {
+      "path": "code/crossdataset/src/models.py",
+      "bytes": 2471,
+      "sha256": "ba3373e67ea98d291b4132930486110cf9962a22e00b3038e882da315f84a717",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/models.py",
+      "source_sha256": "ba3373e67ea98d291b4132930486110cf9962a22e00b3038e882da315f84a717",
+      "source_bytes": 2471
+    },
+    {
+      "path": "code/crossdataset/src/preprocessing.py",
+      "bytes": 4579,
+      "sha256": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/preprocessing.py",
+      "source_sha256": "8f65aaf2ef46d57a9974de976d14eaf9955fd615eef90a7395fc1d0089f0e8ac",
+      "source_bytes": 4579
+    },
+    {
+      "path": "code/crossdataset/src/samplers.py",
+      "bytes": 4667,
+      "sha256": "cd973dcb9846bc2b2fdcaf2e0b9846594651cdf18947f275e42410ae692fc0be",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/src/samplers.py",
+      "source_sha256": "cd973dcb9846bc2b2fdcaf2e0b9846594651cdf18947f275e42410ae692fc0be",
+      "source_bytes": 4667
+    },
+    {
+      "path": "code/crossdataset/experiments/feature_path.py",
+      "bytes": 2647,
+      "sha256": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/experiments/feature_path.py",
+      "source_sha256": "213c5053de1cb1d7469782b34a6f8d496c3b2b0590c483a731104b7ec427a8df",
+      "source_bytes": 2647
+    },
+    {
+      "path": "code/crossdataset/experiments/feature_utility.py",
+      "bytes": 7780,
+      "sha256": "49dfd1849a298dd06f160e2633a28262df0c9c104de33f8f36ad916079a4c447",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/experiments/feature_utility.py",
+      "source_sha256": "49dfd1849a298dd06f160e2633a28262df0c9c104de33f8f36ad916079a4c447",
+      "source_bytes": 7780
+    },
+    {
+      "path": "code/crossdataset/experiments/joint_selection.py",
+      "bytes": 4770,
+      "sha256": "d7df3305c04a773f97899c15c9897f846f9a863b8ebf3653c4eeaa7764b0ab58",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/experiments/joint_selection.py",
+      "source_sha256": "d7df3305c04a773f97899c15c9897f846f9a863b8ebf3653c4eeaa7764b0ab58",
+      "source_bytes": 4770
+    },
+    {
+      "path": "code/crossdataset/experiments/shapley.py",
+      "bytes": 2859,
+      "sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/experiments/shapley.py",
+      "source_sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+      "source_bytes": 2859
+    },
+    {
+      "path": "code/crossdataset/tests/test_budget.py",
+      "bytes": 2714,
+      "sha256": "a174640625b3efe2d359dc9efa453c7a6a1214293f117ccb3652a62a81d3a69a",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/tests/test_budget.py",
+      "source_sha256": "a174640625b3efe2d359dc9efa453c7a6a1214293f117ccb3652a62a81d3a69a",
+      "source_bytes": 2714
+    },
+    {
+      "path": "code/crossdataset/tests/test_data_partitions.py",
+      "bytes": 7697,
+      "sha256": "f23fba64c00991fc276d4371a4ae549af238283d5aa974152308a316d9366314",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/tests/test_data_partitions.py",
+      "source_sha256": "f23fba64c00991fc276d4371a4ae549af238283d5aa974152308a316d9366314",
+      "source_bytes": 7697
+    },
+    {
+      "path": "code/crossdataset/tests/test_models_diagnostics.py",
+      "bytes": 13947,
+      "sha256": "f3b16e88586a638c3e35e6e98684c8a2f9825d03e206e39ef820fa7335e64c8b",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/tests/test_models_diagnostics.py",
+      "source_sha256": "f3b16e88586a638c3e35e6e98684c8a2f9825d03e206e39ef820fa7335e64c8b",
+      "source_bytes": 13947
+    },
+    {
+      "path": "code/crossdataset/tests/test_runner_contracts.py",
+      "bytes": 11981,
+      "sha256": "15e62b4da291977cd0812c96c82db0dcf2c6c951603088eacc08fc9d6f6d6d85",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/tests/test_runner_contracts.py",
+      "source_sha256": "15e62b4da291977cd0812c96c82db0dcf2c6c951603088eacc08fc9d6f6d6d85",
+      "source_bytes": 11981
+    },
+    {
+      "path": "code/crossdataset/configs/baseline.json",
+      "bytes": 2448,
+      "sha256": "2dc100d019d2d24493550d5f2aeb6982f06e0041e9a244bb707398db84b25fe5",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/configs/baseline.json",
+      "source_sha256": "2dc100d019d2d24493550d5f2aeb6982f06e0041e9a244bb707398db84b25fe5",
+      "source_bytes": 2448
+    },
+    {
+      "path": "code/crossdataset/configs/baseline_inherited.json",
+      "bytes": 2424,
+      "sha256": "8dccc91088bba2230d6f8ae8c9d0e866ee86695ed1a5fa2f34da9c171ed478a6",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/configs/baseline_inherited.json",
+      "source_sha256": "8dccc91088bba2230d6f8ae8c9d0e866ee86695ed1a5fa2f34da9c171ed478a6",
+      "source_bytes": 2424
+    },
+    {
+      "path": "code/crossdataset/configs/comparison.json",
+      "bytes": 2992,
+      "sha256": "f48d84aa42106892942f0e0ec22713966a4eeaa5017cf11390c33cf90c94127d",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/configs/comparison.json",
+      "source_sha256": "f48d84aa42106892942f0e0ec22713966a4eeaa5017cf11390c33cf90c94127d",
+      "source_bytes": 2992
+    },
+    {
+      "path": "code/crossdataset/configs/learners.json",
+      "bytes": 443,
+      "sha256": "2f129e06673f61dbc78c8f03da348f3725e5563d107b5230a97089e44d818252",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/configs/learners.json",
+      "source_sha256": "2f129e06673f61dbc78c8f03da348f3725e5563d107b5230a97089e44d818252",
+      "source_bytes": 443
+    },
+    {
+      "path": "code/crossdataset/configs/preflight.json",
+      "bytes": 1588,
+      "sha256": "1ce803f118759fc68531f6bb6d1f8a879f4ddbceccb02a24959a21f0d0728eb4",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/configs/preflight.json",
+      "source_sha256": "1ce803f118759fc68531f6bb6d1f8a879f4ddbceccb02a24959a21f0d0728eb4",
+      "source_bytes": 1588
+    },
+    {
+      "path": "environments/downstream_requirements.txt",
+      "bytes": 161,
+      "sha256": "c6be8433bc5989360bc1525d274d8d2ce5d6da1b803574e0995da0a2b1c87503",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_crossdataset_20261014/requirements-experiments-lock.txt",
+      "source_sha256": "c6be8433bc5989360bc1525d274d8d2ce5d6da1b803574e0995da0a2b1c87503",
+      "source_bytes": 161
+    },
+    {
+      "path": "environments/native_powershap_requirements.txt",
+      "bytes": 560,
+      "sha256": "4029ba5b0ac8b59c890af1d3c530c1c495692d0c2b884f600724967f3b6c6bd7",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a3_3_gate_20261028/requirements.lock.txt",
+      "source_sha256": "4029ba5b0ac8b59c890af1d3c530c1c495692d0c2b884f600724967f3b6c6bd7",
+      "source_bytes": 560
+    },
+    {
+      "path": "environments/observed_versions.json",
+      "bytes": 1309,
+      "sha256": "abc73f59c7fcd6a5e041b25394a8c0c584970fae832789492b6e33847fc99573",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a3_3_formal_20261029/environments.json",
+      "source_sha256": "955308c00ce091b8996ce9a583fc4f3640be7dee48bd33c72d9d071103c0dfd5",
+      "source_bytes": 16224,
+      "changes": [
+        "Extracted Python/package versions only; interpreter paths and setup logs excluded."
+      ]
+    },
+    {
+      "path": "protocols/a3_a4_original/a3.json",
+      "bytes": 8611,
+      "sha256": "2ab6496462183d3d9c32017794482cd7875fd90bd9acf6107499e4c6010f30d1",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/protocols/a3.json",
+      "source_sha256": "f0277a01d81b32c4f7c70229d5d3b9478fff632daf54c8dc204c3661c716c840",
+      "source_bytes": 8851,
+      "changes": [
+        "Local artifact paths mapped to project/ or large_file_store/; scientific fields unchanged. Historical protocol status retained."
+      ]
+    },
+    {
+      "path": "protocols/a3_a4_original/a4.json",
+      "bytes": 16034,
+      "sha256": "137515fd8c0e1b755092f4276a37d47ac7ac2e93a9941d80bfa415f61cddd2cc",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/protocols/a4.json",
+      "source_sha256": "91fe0fd95d0016043444729be53760cbd0821d54e1e9b13f0640ecfef3ac54bb",
+      "source_bytes": 16537,
+      "changes": [
+        "Local artifact paths mapped to project/ or large_file_store/; scientific fields unchanged. Historical protocol status retained."
+      ]
+    },
+    {
+      "path": "protocols/protocols_a4_20261020_v2/a4.json",
+      "bytes": 18693,
+      "sha256": "5c4962e4dcf6ea52d378c98d44ea6b8b0d13e6cb16930ae6f264f2d2b38b66ec",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/protocols_a4_20261020_v2/a4.json",
+      "source_sha256": "187140c12deb44db728f6b4e95d53e29b28c6f9e7aefb580d75e40e68339b3df",
+      "source_bytes": 19319,
+      "changes": [
+        "Local artifact paths mapped to project/ or large_file_store/; scientific fields unchanged. Historical protocol status retained."
+      ]
+    },
+    {
+      "path": "protocols/a3_a4_original/data_contract.json",
+      "bytes": 1456,
+      "sha256": "ecea821c407c548de00cbd21de39389eff39e9e8303537ec702040801a0cff31",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/protocols/data_contract.json",
+      "source_sha256": "32b8380eddfb8996cd9904cf12d24a2532bc31e11e6586da28b6ae1a6bd6f7a0",
+      "source_bytes": 1600,
+      "changes": [
+        "Local artifact paths mapped to project/ or large_file_store/; scientific fields unchanged. Historical protocol status retained."
+      ]
+    },
+    {
+      "path": "protocols/native_powershap_scientific_spec.json",
+      "bytes": 12842,
+      "sha256": "52c69e251ac0c639bff6e2cfad336d8d8941ea574683b66ec84d1a9cbe2178af",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/execution_a3_3_formal_20261029/frozen_spec.json",
+      "source_sha256": "0b3484a1406502a30c460f29cd16072d5e9827847359be59d1b56d19fee365a8",
+      "source_bytes": 20120,
+      "changes": [
+        "Selected scientific sections only; account, activation, runtime, authorization and path-binding controls excluded."
+      ]
+    },
+    {
+      "path": "manuscript/10_htru2_methods_en.md",
+      "bytes": 10959,
+      "sha256": "7cca6381fc24ab726de9f695a9777afa3db8e7e7b7f85f7545cefb84c400eacc",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_htru2_20261001/docs/10_htru2_methods_en.md",
+      "source_sha256": "7cca6381fc24ab726de9f695a9777afa3db8e7e7b7f85f7545cefb84c400eacc",
+      "source_bytes": 10959
+    },
+    {
+      "path": "manuscript/21_htru2_results_integrated_en_20261012.md",
+      "bytes": 16715,
+      "sha256": "3333bfb8e27ac56ace1a03447740a906b6cae57ba731ab9fc73038d6bfd2d369",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_htru2_20261001/docs/21_htru2_results_integrated_en_20261012.md",
+      "source_sha256": "3333bfb8e27ac56ace1a03447740a906b6cae57ba731ab9fc73038d6bfd2d369",
+      "source_bytes": 16715
+    },
+    {
+      "path": "manuscript/22_htru2_discussion_en_20261012.md",
+      "bytes": 9338,
+      "sha256": "ffa6939f59897ed8abce20a5b185da1c3cb330ebbabd789410bec5559b3a6ab4",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_htru2_20261001/docs/22_htru2_discussion_en_20261012.md",
+      "source_sha256": "ffa6939f59897ed8abce20a5b185da1c3cb330ebbabd789410bec5559b3a6ab4",
+      "source_bytes": 9338
+    },
+    {
+      "path": "manuscript/23_methods_evidence_consistency_20261013.md",
+      "bytes": 14521,
+      "sha256": "58c173e2db02d97ea1e288b69fcec2797c6ffbfe1b97e7f6047100663ef06af0",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_htru2_20261001/docs/23_methods_evidence_consistency_20261013.md",
+      "source_sha256": "58c173e2db02d97ea1e288b69fcec2797c6ffbfe1b97e7f6047100663ef06af0",
+      "source_bytes": 14521
+    },
+    {
+      "path": "reports/HTRU2_Ablation_Report_20261012.md",
+      "bytes": 12238,
+      "sha256": "e7aca124a138f79e24efedb68dc4e736d8fecb97d4c37ce3ec390bd42242ae70",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_htru2_20261001/exports/HTRU2_Ablation_Report_20261012.md",
+      "source_sha256": "66ec1655ad0f1bb4000735d9664b6f27136329c82e0cbd4437ab68617a42b1fa",
+      "source_bytes": 12059,
+      "changes": {
+        "removed_original_line_ranges": [],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      },
+      "formatting_note": "Trailing blank lines removed from the public derived report only."
+    },
+    {
+      "path": "reports/A2_Development_Progress_20261017.md",
+      "bytes": 8529,
+      "sha256": "a4cdd27e349b304ee944978e3c7c9a31412147f583d290198c9f2bee6000fcef",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_crossdataset_20261014/exports/A2_Development_Progress_20261017.md",
+      "source_sha256": "28ae72f8a883461b30bdb0fb4cb9543e1fa9e74e66e4ada99ddeef3361c6d3d5",
+      "source_bytes": 9511,
+      "changes": {
+        "removed_original_line_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            82,
+            91
+          ],
+          [
+            123,
+            123
+          ]
+        ],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/A3_2_Fold_4_20261024.md",
+      "bytes": 10111,
+      "sha256": "2aa1cd34f4d6397a0d8e9b38f86b45d05d0f6909a7fef9de7dc9bc4cad27193b",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/exports/A3_2_Fold_4_20261024.md",
+      "source_sha256": "71c7d2caaa602affdb2b173b36f51c336def274c7eb888f794e75313ac6c1439",
+      "source_bytes": 10441,
+      "changes": {
+        "removed_original_line_ranges": [
+          [
+            141,
+            141
+          ]
+        ],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/A3_3_Formal_Comparison_20261029.md",
+      "bytes": 6301,
+      "sha256": "afb489bdaf5fa43b67e1b2e329979917ce784e44ba6c99a42c2de30b65233f87",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/exports/A3_3_Formal_Comparison_20261029.md",
+      "source_sha256": "dfbfb5778c0bc1274ce2c4b04e10290b5049e768eaa96af72eb09aa2b36e93b6",
+      "source_bytes": 6339,
+      "changes": {
+        "removed_original_line_ranges": [
+          [
+            66,
+            66
+          ]
+        ],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/A4_1_Signal_Noise_20261020_v2.md",
+      "bytes": 13350,
+      "sha256": "ace64e8145b36a2c56802882c489a3e824bcbf2cba186959ecf43385f31030a9",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/exports/A4_1_Signal_Noise_20261020_v2.md",
+      "source_sha256": "aa1519859e655d3314e2346fa547f94005f8d9af789bcbf0d618351c70574c1f",
+      "source_bytes": 13185,
+      "changes": {
+        "removed_original_line_ranges": [],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/A4_2a_Correlated_Groups_20261025.md",
+      "bytes": 14963,
+      "sha256": "ce7f34481035e4835c0d4ebbd9b9aadbcc1f0844e5e991759eca0d8eed5a78f3",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/exports/A4_2a_Correlated_Groups_20261025.md",
+      "source_sha256": "3556dc8f52f9010404da4517935b2d14d6eaf63f2a8021604311ab4476681f60",
+      "source_bytes": 14828,
+      "changes": {
+        "removed_original_line_ranges": [],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/A4_2b_XOR_RF_20261026.md",
+      "bytes": 11657,
+      "sha256": "fd4645ce7b9a9530c2e01590a3f92cc68e7f92014bf4131768c405157befd175",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/exports/A4_2b_XOR_RF_20261026.md",
+      "source_sha256": "be26b37ac368a0bb21aba238373f8b56f11403f6e33163c8bead184ecffa298d",
+      "source_bytes": 11864,
+      "changes": {
+        "removed_original_line_ranges": [
+          [
+            156,
+            156
+          ]
+        ],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/A4_2b_XOR_LR_20261027.md",
+      "bytes": 12053,
+      "sha256": "456ee0377cc14bedc757f96a4b4c57ed2657acbe7a5ddf1f01f52bdc5183e5d3",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/exports/A4_2b_XOR_LR_20261027.md",
+      "source_sha256": "72c00036b2e2f8bcdbcd4a13f128805e5454d38f30446017bc91002db596ae2a",
+      "source_bytes": 12243,
+      "changes": {
+        "removed_original_line_ranges": [
+          [
+            164,
+            164
+          ]
+        ],
+        "path_mapping": "project/ and large_file_store/ if present",
+        "added_public_copy_notice": true
+      }
+    },
+    {
+      "path": "results/a3_traditional_five_fold.json",
+      "bytes": 11625,
+      "sha256": "7442b50ed11a6dda1551ae49f624a233b0ee3c3ecf0b3f834ecb80fa3dbf3e3c",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a3_20261024/report_inputs.json",
+      "source_sha256": "bc03f1d947db19acee8dae6864ebea88c337c9f7b466a44b742f52a259180502",
+      "source_bytes": 27021,
+      "changes": [
+        "Selected five-fold metrics, paired contrasts, definitions and scientific counts; local paths and account data omitted."
+      ]
+    },
+    {
+      "path": "results/a3_native_powershap_five_fold.json",
+      "bytes": 31820,
+      "sha256": "01793bc71bf264162ea2d629579ebf9466cf912715f6ed6648f7714e2f7eab86",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a3_3_formal_20261029/aggregate.json",
+      "source_sha256": "aa572935b94233c0041bcde8ce51f2a87eb511f0c7edc52f8d200b888da42f81",
+      "source_bytes": 33085,
+      "changes": [
+        "JSON reformatted; local artifact paths mapped where present; all scientific fields and numeric values preserved."
+      ]
+    },
+    {
+      "path": "results/a4_signal_noise_lr.json",
+      "bytes": 291877,
+      "sha256": "add4c5304628e0c4cba172d253ee283aee7d1c1354be0962a1551bf62bba7de0",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a4_20261020_v2/independent_summary.json",
+      "source_sha256": "bac42b04c0594eac950c9804730ce3a74a92db7f4cd32fb223ff212680b956f4",
+      "source_bytes": 303329,
+      "changes": [
+        "JSON reformatted; local artifact paths mapped where present; all scientific fields and numeric values preserved."
+      ]
+    },
+    {
+      "path": "results/a4_correlated_groups_lr.json",
+      "bytes": 438498,
+      "sha256": "1a9b7032c215f472d1e487a1860db9fcd1434c8e5f4f8b64f8d9dc836981acb5",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a4_20261025/report_only_summary.json",
+      "source_sha256": "89e2af6a6f5c27968c98f4b9ac2c8a1567680270b66c86bfd72e0f9cb1f045ef",
+      "source_bytes": 438515,
+      "changes": [
+        "JSON reformatted; local artifact paths mapped where present; all scientific fields and numeric values preserved."
+      ]
+    },
+    {
+      "path": "results/a4_xor_rf.json",
+      "bytes": 700977,
+      "sha256": "5116f0cbf339a8aca037043c13681a3c0224b6f4b071089916756f352544bc17",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a4_20261026/independent_summary.json",
+      "source_sha256": "669fc23dab15015024137cea707edcf60d6cb0de56ebc896001f49ebb9f12778",
+      "source_bytes": 727980,
+      "changes": [
+        "JSON reformatted; local artifact paths mapped where present; all scientific fields and numeric values preserved."
+      ]
+    },
+    {
+      "path": "results/a4_xor_lr.json",
+      "bytes": 734704,
+      "sha256": "792d20cd702faf64762add17b19ce8d338ba3ae25fb2b9fb058cf0bbc16136a2",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a4_20261027/independent_summary.json",
+      "source_sha256": "1c8b24aa0c59a386e227085e8bd21b6c9506b3962cd8fc1b0f5e9faa5fb62b40",
+      "source_bytes": 761705,
+      "changes": [
+        "JSON reformatted; local artifact paths mapped where present; all scientific fields and numeric values preserved."
+      ]
+    },
+    {
+      "path": "results/native_powershap_per_fold.csv",
+      "bytes": 402,
+      "sha256": "1f2131468ca4b20b706cd06d91d756d6d75e6d4f89bed142163028e32ca6f35c",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/qa/a3_3_formal_20261029/aggregate.json",
+      "source_sha256": "aa572935b94233c0041bcde8ce51f2a87eb511f0c7edc52f8d200b888da42f81",
+      "source_bytes": 33085,
+      "changes": [
+        "Flat view of native per-fold metrics; no recalculation."
+      ]
+    },
+    {
+      "path": "code/README.md",
+      "bytes": 1485,
+      "sha256": "f37c64c2691ada7106e5b14163e2dd1714d2dd97b1d66afd6ed34af532e17367",
+      "kind": "generated"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3436,
+      "sha256": "5cb2d2cff2a2561ae46c9d30d35afdb04e372cb265de660fa67c2ec78640ddab",
+      "kind": "generated"
+    }
+  ]
+}

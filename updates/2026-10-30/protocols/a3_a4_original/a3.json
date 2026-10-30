@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "protocol_id": "a3-htru2-traditional-20261018-v1",
+  "date": "2026-10-18",
+  "timezone": "Europe/Moscow",
+  "status": "A3.0_candidate_no_fit_specification",
+  "execution_authorized": false,
+  "automatic_resume": false,
+  "development_evaluation_only": true,
+  "root_seed": 2026101801,
+  "outer_fold_order": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "outer_split_binding": "Historical audited HTRU2 five-fold splits; exact data/split identity in protocols/data_contract.json and sources/bindings.json.",
+  "rho": 1.0,
+  "k": 4,
+  "B": 4,
+  "M": 256,
+  "utility_folds": 3,
+  "contribution_resample_fraction": 0.8,
+  "lambda": 0.5,
+  "eta": 0.1,
+  "redundancy_penalty_normalizer": "original d=8",
+  "threshold": 0.5,
+  "methods": [
+    "ASSS111",
+    "mean_shapley100_alias000",
+    "L1_coefficient_top4",
+    "RF_MDI_top4",
+    "forward_CV_top4",
+    "random4",
+    "all_features_context"
+  ],
+  "aliases": {
+    "000": "mean_shapley100_alias000"
+  },
+  "common_downstream": {
+    "class": "LogisticRegression",
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tol": 1e-06,
+    "fit_intercept": true,
+    "class_weight": null,
+    "seed": "seed(outer_fold, final_model), identical across all seven arms",
+    "numeric_threads": 1
+  },
+  "l1_selector": {
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "solver": "liblinear",
+    "penalty": "l1",
+    "max_iter": 5000,
+    "tol": 1e-06,
+    "intercept_scaling": 1.0,
+    "fit_intercept": true,
+    "class_weight": null,
+    "selection": "Per C/per inner fold: encoder+L1 ranking fitted only to inner train; top4; fresh encoder+common LR fitted to same inner train; mean validation F1 selects C; final ranking rebuilt on complete outer training pool.",
+    "tie_C": "first ascending C grid index",
+    "coefficient_zero_or_tie": "original feature order; report zero_count and tie_count"
+  },
+  "rf_selector": {
+    "n_estimators": 64,
+    "max_depth": 4,
+    "min_samples_leaf": 5,
+    "max_features": null,
+    "bootstrap": true,
+    "n_jobs": 1,
+    "importance": "MDI",
+    "final_predictor": "common downstream LR"
+  },
+  "forward_selector": {
+    "inner_folds": 3,
+    "criterion": "mean common-LR validation F1",
+    "steps": 4,
+    "negative_increment_policy": "continue to four",
+    "tie_policy": "original feature order",
+    "preprocessing": "fresh encoder on each candidate inner training fold"
+  },
+  "failure_policy": "ConvergenceWarning becomes failed counted attempt; exceptions fail current unit; no hidden retries, retuning, seed replacement or C rescue.",
+  "inner_fold_algorithm": "Sort each class by row ID, one seeded RNG permutes class0 then class1, np.array_split into3, sort each validation set, complementary training sets.",
+  "test_information_boundary": "Selectors only receive TrainingPool; loader must bind exact train/test/group IDs, prove singleton groups and no missing data, save immutable selections before held-out metrics.",
+  "endpoints": {
+    "primary": "Five paired per-fold F1 contrasts ASSS111 minus every same-k traditional arm; all folds plus mean.",
+    "secondary": [
+      "AUC",
+      "AP",
+      "selected feature sets",
+      "actual k",
+      "selection/final/prediction/audit timings",
+      "fit attempts and cache hits"
+    ],
+    "loss_line": 0.01,
+    "loss_line_interpretation": "descriptive only",
+    "all_features_context": "k=8 context, excluded from same-k claim"
+  },
+  "resource_inventory": {
+    "rows": [
+      {
+        "phase": "main",
+        "component": "utility",
+        "classifier": 15300,
+        "encoder": 15300
+      },
+      {
+        "phase": "main",
+        "component": "l1_inner",
+        "classifier": 150,
+        "encoder": 150
+      },
+      {
+        "phase": "main",
+        "component": "l1_rebuild",
+        "classifier": 5,
+        "encoder": 5
+      },
+      {
+        "phase": "main",
+        "component": "rf_selector",
+        "classifier": 5,
+        "encoder": 5
+      },
+      {
+        "phase": "main",
+        "component": "forward",
+        "classifier": 390,
+        "encoder": 390
+      },
+      {
+        "phase": "main",
+        "component": "final",
+        "classifier": 35,
+        "encoder": 35
+      },
+      {
+        "phase": "main",
+        "component": "redundancy",
+        "classifier": 0,
+        "encoder": 5
+      },
+      {
+        "phase": "replay",
+        "component": "complete_fold_0",
+        "classifier": 3177,
+        "encoder": 3178
+      },
+      {
+        "phase": "audit",
+        "component": "all_final_models",
+        "classifier": 35,
+        "encoder": 35
+      },
+      {
+        "phase": "audit",
+        "component": "full_coalition_all_utility_folds",
+        "classifier": 60,
+        "encoder": 60
+      },
+      {
+        "phase": "probe",
+        "component": "lr_and_rf_16_each",
+        "classifier": 32,
+        "encoder": 32
+      }
+    ],
+    "planned": {
+      "classifier": 19189,
+      "encoder": 19195
+    },
+    "caps": {
+      "classifier": 25000,
+      "encoder": 30000,
+      "kmeans": 0
+    },
+    "failure_reserve": {
+      "classifier": 5811,
+      "encoder": 10805
+    },
+    "unit": "One explicit top-level estimator.fit or encoder.fit attempt, including failures.",
+    "rf_internal_tree_fits": {
+      "nominal_trees_per_successful_forest": 64,
+      "planned_forest_attempts": 22,
+      "nominal_tree_starts": 1408,
+      "not_equated_with_LR_fits": true
+    },
+    "replay_cache_policy": "Cold replay shares no fitted objects, preprocessing or utility cache with main.",
+    "audit_targets": "Every final arm/fold; every full-feature coalition in B=4 games and 3 utility folds per outer fold.",
+    "constant_utility_evaluations": {
+      "main": 60,
+      "cold_replay": 12,
+      "classifier_fits": 0
+    },
+    "no_retry": true
+  },
+  "wall_time_gates": {
+    "total_warning_hours": 12,
+    "outer_package_warning_hours": 2,
+    "maximum_single_invocation_hours": 1,
+    "training_probe": "16 LR-family plus16 fixed RF fits; each uses all8 features and the complete bound outer-fold0 TRAIN pool with a fresh numeric encoder. LR indices0..5 use common L2 LR C1; indices6..15 use L1/liblinear with C_grid[(i-6)//2], two repetitions per C. RF indices0..15 use fixed RF. Use corresponding probe_lr/probe_rf seeds. No test input or metric. Record row counts, each duration and weighted projections separately for common LR, every L1 C and RF across selection/final/audit/replay before main. Repeated full-pool timing is a conservative gate, not an unbiased end-to-end cost estimate.",
+    "on_limit": "checkpoint finished immutable units; record in-progress failed/started operations; no next unit",
+    "watchdog_status": "must be implemented and tested before any actual fit; Python post-fit timing alone is not a wall-time kill guarantee"
+  },
+  "audit": {
+    "direct_refits": "7 final arms each fold + full-feature utility coalition for each of4 contribution games and3 utility folds each fold",
+    "cold_replay": "All seven methods, contributions, preprocessing and finals of outer fold0, same seeds but fresh caches/estimators.",
+    "replay_audit": "Compare replay selections, deterministic scores/probabilities and substantive artifacts with main; no additional replay-specific refits.",
+    "no_operation_resume": "Required before A3.1 delivery; independent audit must not count unit-test simulated operations as real attempts"
+  },
+  "PowerSHAP": {
+    "status": "deferred",
+    "imported": false,
+    "fits_authorized": false,
+    "gate": "Separately freeze lawful package/version/source commit/API, native variable-k rules, learner, automatic mode, thresholds, complete internal fit accounting, resource caps and training-only feasibility."
+  },
+  "known_execution_gates": [
+    "Explicit A3.1 continuation",
+    "Current usage/reserve gate before indivisible package",
+    "Verified source/data/split and environment freeze",
+    "Root durable ledger with pre-reserve and failure accounting",
+    "F storage writable and resolved paths verified",
+    "One-thread execution and tested watchdog",
+    "Training-only probe within frozen operation/time budgets",
+    "Immutable result/selection persistence and restore-safe resume",
+    "Independent audit/replay command implementation and first-package validation"
+  ],
+  "storage_binding": "protocols/storage.json is authoritative; future execution must resolve and verify its effective paths before writing.",
+  "C_fallback": false,
+  "source_references": "a3/source_binding.json",
+  "seed_inventory": "a3/seed_inventory.json"
+}

@@ -1,10 +1,25 @@
-# ASSS and joint sample–feature selection on HTRU2
+# Thesis research: joint sample-feature selection and ASSS
 
-Research code for an English master's thesis investigating Adaptive Stable Shapley Selection (ASSS) and joint sample–feature selection. This repository contains the current HTRU2 development implementation, frozen configurations, tests, and selected evidence tables.
+**Latest update: 30 October 2026.** Research materials for *A Unified Framework for Robust Strategic Sample and Feature Selection*. Author: Feiyang Luo; supervisor: Chi Zhao.
 
-**Status:** development validation, not final thesis-wide validation. The code-sharing snapshot was prepared on 12 October 2026. The latest included fixed-budget ablation evidence is dated 11 October 2026. Document integration and final delivery remain pending.
+## Read the latest advisor report
 
-## Start here
+| Material | Open |
+| --- | --- |
+| English A4 progress report, 7 pages | [PDF](updates/2026-10-30/advisor-report/Thesis_Progress_Report_EN_20261030.pdf) · [Readable text](updates/2026-10-30/advisor-report/Thesis_Progress_Report_EN_20261030.md) |
+| 中文解释、开场稿与导师问答，5页 | [PDF](updates/2026-10-30/advisor-report/Thesis_Progress_Explanation_ZH_20261030.pdf) · [网页版](updates/2026-10-30/advisor-report/Thesis_Progress_Explanation_ZH_20261030.md) |
+| Code, protocols, manuscript chapters and result extracts | [30 October research update](updates/2026-10-30/) |
+| File provenance and hashes | [Research manifest](updates/2026-10-30/PUBLICATION_MANIFEST.json) · [Report manifest](updates/2026-10-30/REPORT_DELIVERY_MANIFEST.json) |
+
+The reports cover work since the 30 September meeting. Traditional HTRU2 and native PowerSHAP five-fold comparisons and all four prespecified synthetic layers have been delivered. WDBC is complete for folds 0-2 only; folds 3-4 are deferred, and Adult remains runtime-gated. A3/A4 synthesis, whole-stage closure and the thesis remain incomplete.
+
+The evidence does not establish overall ASSS superiority. On HTRU2, ASSS matches Mean Shapley and falls below the stronger baselines. The synthetic studies support a specified variance-estimation correction and a correlated-group redundancy effect, while showing mixed or adverse stability-penalty results. These are descriptive development findings.
+
+**Repository structure.** The original repository-root implementation and frozen inputs remain the 12 October sharing snapshot. New research materials are appended under `updates/2026-10-30`; its code is an inspection snapshot, not a complete standalone reproduction environment. Original full experiment archives are retained locally. No experiments were rerun to prepare this publication.
+
+这是公开研究资料入口，访问不需要邀请或关注。导师可直接打开上面的PDF或网页版。关注作者、Star或Watch仅用于后续跟踪，并非查看权限条件。论文尚未完成，结果及其限制均按实际证据报告。
+
+## Run the historical HTRU2 demonstration
 
 1. Read this README and [the scope of this sharing snapshot](docs/SHARING_SCOPE.md).
 2. Install Python 3.12 and the pinned dependencies below.
