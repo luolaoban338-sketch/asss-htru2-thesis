@@ -1,0 +1,26 @@
+{
+  "plan_id": "a3-a4-synthesis-closure-20261030-v1",
+  "package": "P4",
+  "status": "P4_scoped_closure_and_full_archive_restoration_verified",
+  "scheduled_date": "2026-11-03",
+  "actual_delivery_date": "2026-11-01",
+  "P1_accepted": true,
+  "P2_accepted": true,
+  "P3_accepted": true,
+  "P4_accepted": true,
+  "A3_current_scope_closed": true,
+  "A4_current_scope_closed": true,
+  "full_R09_completed": false,
+  "thesis_complete": false,
+  "scope": [
+    "A3 HTRU2 development method comparisons",
+    "A4 four synthetic diagnostic settings"
+  ],
+  "restored_files": 857,
+  "new_classifier_fits": 0,
+  "new_encoder_fits": 0,
+  "new_kmeans_fits": 0,
+  "new_model_predictions": 0,
+  "historical_stop_markers_preserved": 26,
+  "historical_sqlite_ledgers_preserved": 12
+}

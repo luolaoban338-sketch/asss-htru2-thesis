@@ -1,0 +1,293 @@
+{
+  "development_pool_cap_per_outer_fold": 8000,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "complete_original_outer_tests_retained": true,
+  "learner": "lr",
+  "methods": [
+    "full",
+    "robust_half"
+  ],
+  "rho": [
+    1.0,
+    0.5
+  ],
+  "arms": [
+    "full",
+    "sample_only",
+    "feature_only",
+    "joint"
+  ],
+  "B": 4,
+  "M": 64,
+  "inner_folds": 3,
+  "utility_folds": 3,
+  "lambda_grid": [
+    0.5
+  ],
+  "eta_grid": [
+    0.1
+  ],
+  "k_grid": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "subsample_rho": 0.8,
+  "epsilon": 0.01,
+  "numeric_tolerance": 1e-12,
+  "additional_main_seed_repeats": 0,
+  "seed_root": 2026110701,
+  "single_worker_and_single_numerical_thread": true,
+  "exact_diagnostic_dimension_limit": 8,
+  "official_adult_test_used": false,
+  "protocol_id": "adult-reduced-fourcell-20261107-v1",
+  "proposal_id": "adult-reduced-fourcell-20261107-proposal-v1",
+  "dataset": "adult_train",
+  "fixed_additional_reference": {
+    "complete_outer_training_rows": true,
+    "learner": "same_fixed_lr",
+    "used_in_pool_candidate_decisions": false,
+    "classifier_main_replay_audit": 12,
+    "purpose": "Report both loss versus pool-full and loss versus complete-outer-training full reference."
+  },
+  "budget": {
+    "primary_M64": {
+      "M": 64,
+      "nonempty_coalitions_per_game_bound": 705,
+      "selectors_per_fold": 8,
+      "games_per_fold": 32,
+      "utility_classifiers_per_fold": 67680,
+      "candidate_classifiers_per_fold": 72,
+      "final_classifiers_per_fold": 4,
+      "clean_classifier_per_main_or_replay_fold": 67756,
+      "direct_audit_classifier_per_bundle": 100,
+      "full_outer_training_reference_classifier_and_audit_total": 12,
+      "redundancy_encoders_per_bundle": 8,
+      "geometry_encoders_per_bundle": 52,
+      "extra_encoders_per_bundle": 60,
+      "kmeans_per_bundle": 104,
+      "main": {
+        "classifier": 338785,
+        "encoder": 339085,
+        "kmeans": 520
+      },
+      "replay": {
+        "classifier": 67757,
+        "encoder": 67817,
+        "kmeans": 104
+      },
+      "audit": {
+        "classifier": 606,
+        "encoder": 966,
+        "kmeans": 624
+      },
+      "clean_total": {
+        "classifier": 407148,
+        "encoder": 407868,
+        "kmeans": 1248
+      },
+      "projection_clean_counts": {
+        "utility_classifier_cycles": 406080,
+        "other_classifier_cycles_including_direct_audits": 1056,
+        "complete_outer_training_reference_cycles_including_audit": 12,
+        "game_initializations_including_audit_reconstruction": 384,
+        "selector_geometry_and_redundancy_including_audit": 96
+      },
+      "note": "Inherited theoretical upper bound retained for provenance; effective execution counts use resource_contract.json and projection.py exact frozen counts."
+    },
+    "execution_caps_excluding_probe": {
+      "classifier": 345270,
+      "encoder": 347270,
+      "kmeans": 1400
+    },
+    "execution_role_caps": {
+      "main": {
+        "classifier": 287667,
+        "encoder": 288659,
+        "kmeans": 600
+      },
+      "replay": {
+        "classifier": 56943,
+        "encoder": 57111,
+        "kmeans": 120
+      },
+      "audit": {
+        "classifier": 660,
+        "encoder": 1500,
+        "kmeans": 680
+      }
+    },
+    "retry_reserve_including_failed_interrupted_redone_attempts": {
+      "classifier": 42852,
+      "encoder": 44132,
+      "kmeans": 152
+    },
+    "future_timing_probe": {
+      "folds": 5,
+      "production_contexts_per_fold": 2,
+      "samplers": 2,
+      "repetitions": 3,
+      "packages": 60,
+      "unique_masks_per_package": 21,
+      "utility_folds": 3,
+      "additional_full_outer_training_reference_timing_cases": 15,
+      "classifier_per_package": 64,
+      "clean_counts": {
+        "classifier": 3855,
+        "encoder": 4035,
+        "kmeans": 240
+      },
+      "hard_caps": {
+        "classifier": 4200,
+        "encoder": 4500,
+        "kmeans": 300
+      },
+      "retry_reserve": {
+        "classifier": 345,
+        "encoder": 465,
+        "kmeans": 60
+      },
+      "cumulative_wall_seconds_cap": 7200,
+      "invocation_seconds_cap": 1800,
+      "complete_all_packages_required": true,
+      "automatic_retries": false,
+      "model_cache_policy": "No classifier/model-result reuse across the 60 timing packages; OS cache state recorded, not claimed flushed."
+    },
+    "total_future_caps_including_probe": {
+      "classifier": 349470,
+      "encoder": 351770,
+      "kmeans": 1700
+    },
+    "time_gate": {
+      "status": "unmeasured_not_passed",
+      "cumulative_total_seconds_cap": 172800,
+      "execution_invocation_seconds_cap": 3600,
+      "formula": "T_old_probe + T_new_probe + 3.75*(301350*tU + 1056*tO + 12*tR + 42840*tO + 12*tR + 44132*tE + 152*tK + 384*tG + 96*tS) + 3600",
+      "t_other": "max(t_utility, t_full_candidate, t_direct_audit_cycle_when_available)",
+      "t_max_cycle": "max(t_utility, t_other, t_reference)",
+      "measured_parameters_required": [
+        "t_utility",
+        "t_full_candidate",
+        "t_reference",
+        "t_encoder",
+        "t_kmeans",
+        "t_game_setup",
+        "t_selector_setup",
+        "T_probe_actual"
+      ],
+      "legacy_rate_cannot_issue_new_gate": true,
+      "multipliers_are_engineering_allowances_not_statistical_or_absolute_bounds": true,
+      "double_charging_retry_encoder_and_kmeans_is_deliberately_conservative": true,
+      "fail_if_projection_exceeds_cap_or_any_package_missing": true,
+      "before_each_package": "Require actual_elapsed + updated_conservative_remaining_projection + closure_reserve <= 172800; preserve audit/replay operation reserves.",
+      "check_before_every_operation": true,
+      "cooperative_time_limit_may_overrun_within_active_fit": true,
+      "new_launch_watchdog_required": true
+    },
+    "exact_resource_contract": "resource_contract.json",
+    "classifier_buckets_by_role": {
+      "main": {
+        "reference": {
+          "clean": 5,
+          "retry": 5,
+          "total_cap": 10
+        },
+        "pool": {
+          "clean": 251639,
+          "retry": 36018,
+          "total_cap": 287657
+        }
+      },
+      "replay": {
+        "reference": {
+          "clean": 1,
+          "retry": 1,
+          "total_cap": 2
+        },
+        "pool": {
+          "clean": 50167,
+          "retry": 6774,
+          "total_cap": 56941
+        }
+      },
+      "audit": {
+        "reference": {
+          "clean": 6,
+          "retry": 6,
+          "total_cap": 12
+        },
+        "pool": {
+          "clean": 600,
+          "retry": 48,
+          "total_cap": 648
+        }
+      }
+    }
+  },
+  "expected_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.16.3",
+    "sklearn": "1.7.2",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "old_frozen_root": "project\\thesis_crossdataset_20261014",
+  "stage_root": "project\\thesis_adult_exact_20261110",
+  "role_names": [
+    "probe",
+    "main",
+    "replay",
+    "audit"
+  ],
+  "timing_gate_required_for": [
+    "main",
+    "replay",
+    "audit"
+  ],
+  "source_table": "project\\thesis_crossdataset_20261014\\data\\audit\\adult_train_table.csv",
+  "learner_parameters": {
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tol": 1e-06,
+    "class_weight": null,
+    "fit_intercept": true
+  },
+  "sampler": {
+    "max_clusters": 10,
+    "n_init": 10,
+    "max_iter": 300,
+    "algorithm": "lloyd",
+    "clip_quantiles": [
+      0.01,
+      0.99
+    ],
+    "zero_iqr_scale": 1.0
+  },
+  "threshold": 0.5,
+  "data_source": {
+    "table": "project\\thesis_crossdataset_20261014\\data\\audit\\adult_train_table.csv",
+    "table_sha256": "1cf642bcc5f9390d1943a414f9373f083f945ca858546090a239b0f9b3d8f96c",
+    "dictionary": "project\\thesis_crossdataset_20261014\\data\\audit\\adult_train_dictionary.json",
+    "dictionary_sha256": "a4479289e22ab9a28708a0fea4eb238d2c37c47508333756f79c60e83589f7d5"
+  },
+  "execution_revision": "exact-resources-v3-20261110"
+}

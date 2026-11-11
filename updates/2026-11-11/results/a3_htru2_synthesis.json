@@ -1,0 +1,1814 @@
+{
+  "rows": [
+    {
+      "fold": 0,
+      "method": "ASSS111",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 2001538975,
+      "f1": 0.865625,
+      "auc": 0.9733997032685685,
+      "ap": 0.9172908533312412,
+      "tp": 277,
+      "fp": 14,
+      "fn": 72,
+      "tn": 3217,
+      "f1_exact": "277/320",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\ce738628448357cd634c09577ce3c346b40b1c472bf9116a5acb92151d14e240.json",
+      "prediction_sha256": "c43b3e853337a33858ac89375a5c8817113245d5bf5d69098068af7f96b28927"
+    },
+    {
+      "fold": 0,
+      "method": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 2001538975,
+      "f1": 0.865625,
+      "auc": 0.9733997032685685,
+      "ap": 0.9172908533312412,
+      "tp": 277,
+      "fp": 14,
+      "fn": 72,
+      "tn": 3217,
+      "f1_exact": "277/320",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\361d86e7cd8cfe764cd899c4adc1c3dd334dbbb87bd85449e75ca25afa9cfb96.json",
+      "prediction_sha256": "8afcb783489d728b1fc98ec074aa43df5724a664fbc63476301db4faa2260db4"
+    },
+    {
+      "fold": 0,
+      "method": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 2001538975,
+      "f1": 0.86697965571205,
+      "auc": 0.9761985209543295,
+      "ap": 0.9160830271125754,
+      "tp": 277,
+      "fp": 13,
+      "fn": 72,
+      "tn": 3218,
+      "f1_exact": "554/639",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\a7ae71b9f98f02dfae25a18554ba806c6162a420e5885a464250bcc0bb3e42cb.json",
+      "prediction_sha256": "0261f137a828f41325c8707b90aa466903e0dd40ae0ecef8ba7c34ed9ea933e0"
+    },
+    {
+      "fold": 0,
+      "method": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_stdev",
+        "Profile_skewness",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 2001538975,
+      "f1": 0.8647798742138365,
+      "auc": 0.9747813756242134,
+      "ap": 0.921292585260386,
+      "tp": 275,
+      "fp": 12,
+      "fn": 74,
+      "tn": 3219,
+      "f1_exact": "275/318",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\45aae95ca12dac08f7077c05b91f7c7f2b5b7790b63b05fcd6b5ef954450003d.json",
+      "prediction_sha256": "0f63447ce26cd8f940116213663d14c0fdfc8ec36c6e61d7ff9c464cb03f0993"
+    },
+    {
+      "fold": 0,
+      "method": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_skewness",
+        "DM_mean",
+        "DM_kurtosis"
+      ],
+      "seed": 2001538975,
+      "f1": 0.86875,
+      "auc": 0.9703037994216133,
+      "ap": 0.921586120454839,
+      "tp": 278,
+      "fp": 13,
+      "fn": 71,
+      "tn": 3218,
+      "f1_exact": "139/160",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\d78e3a642da3da41915cdea9bd9219907aba4334ea9ac315b35d8c2c7d854984.json",
+      "prediction_sha256": "8a14288511a0176b24ba6aa59c2265fd38affb74b2c28f037adfa65881729413"
+    },
+    {
+      "fold": 0,
+      "method": "random4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "selected_features": [
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_kurtosis"
+      ],
+      "seed": 2001538975,
+      "f1": 0.860248447204969,
+      "auc": 0.9717777015108827,
+      "ap": 0.9200056324380538,
+      "tp": 277,
+      "fp": 18,
+      "fn": 72,
+      "tn": 3213,
+      "f1_exact": "277/322",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\6b98d9a836de2fc9359a03fc27564493dc3b981ec8b9f7768b5ee0d8e59b9912.json",
+      "prediction_sha256": "b9aad6b25748b5fd2a3d78701abc6c664007b8f5ba0ac2cc795e31743ec2e993"
+    },
+    {
+      "fold": 0,
+      "method": "all_features_context",
+      "group": "all_8_context",
+      "actual_k": 8,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 2001538975,
+      "f1": 0.8691588785046729,
+      "auc": 0.9750208182018927,
+      "ap": 0.9170332647215645,
+      "tp": 279,
+      "fp": 14,
+      "fn": 70,
+      "tn": 3217,
+      "f1_exact": "93/107",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-20261019-v1\\main\\fold_0\\predictions\\8754d24a63d864fbb9632f9632470fb78a6bfa929eb762b8d6377fecbd3bd9e7.json",
+      "prediction_sha256": "073e7db8bcd5e776042d5eb8055008eece2a3ba612fff1df1061dec493baf50c"
+    },
+    {
+      "fold": 0,
+      "method": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_stdev"
+      ],
+      "seed": 2001538975,
+      "f1": 0.8615863141524106,
+      "auc": 0.9748248300179404,
+      "ap": 0.9217014421026924,
+      "tp": 277,
+      "fp": 17,
+      "fn": 72,
+      "tn": 3214,
+      "f1_exact": "554/643",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-powershap-formal-20261029-v1\\downstream_main_f0\\predictions.json",
+      "prediction_sha256": "035177b77df170dfdb1d7e4ffd57a9f107c84064bfb172c6778ccb3794c2b8f5"
+    },
+    {
+      "fold": 1,
+      "method": "ASSS111",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 146698179,
+      "f1": 0.8660869565217392,
+      "auc": 0.9753112936634969,
+      "ap": 0.9190115407739483,
+      "tp": 249,
+      "fp": 14,
+      "fn": 63,
+      "tn": 3254,
+      "f1_exact": "498/575",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\ce738628448357cd634c09577ce3c346b40b1c472bf9116a5acb92151d14e240.json",
+      "prediction_sha256": "f74072c625015e3b9ab0203f3ad9dc667019be8d9c13f05dae05cb3043244fdf"
+    },
+    {
+      "fold": 1,
+      "method": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 146698179,
+      "f1": 0.8660869565217392,
+      "auc": 0.9753112936634969,
+      "ap": 0.9190115407739483,
+      "tp": 249,
+      "fp": 14,
+      "fn": 63,
+      "tn": 3254,
+      "f1_exact": "498/575",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\361d86e7cd8cfe764cd899c4adc1c3dd334dbbb87bd85449e75ca25afa9cfb96.json",
+      "prediction_sha256": "24bbb325ecaf32da463bc9fe16db3fa4d12257ba646871cd59aeb09a64a9b29c"
+    },
+    {
+      "fold": 1,
+      "method": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 146698179,
+      "f1": 0.8817567567567568,
+      "auc": 0.974262859743276,
+      "ap": 0.9233672898288471,
+      "tp": 261,
+      "fp": 19,
+      "fn": 51,
+      "tn": 3249,
+      "f1_exact": "261/296",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\a7ae71b9f98f02dfae25a18554ba806c6162a420e5885a464250bcc0bb3e42cb.json",
+      "prediction_sha256": "76855f2f83c51cfdd8aff998d0a304b644e43cc192e2a5ebb2a9a8f1d7283241"
+    },
+    {
+      "fold": 1,
+      "method": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "DM_stdev"
+      ],
+      "seed": 146698179,
+      "f1": 0.8694158075601375,
+      "auc": 0.974579645670527,
+      "ap": 0.9229230601366987,
+      "tp": 253,
+      "fp": 17,
+      "fn": 59,
+      "tn": 3251,
+      "f1_exact": "253/291",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\45aae95ca12dac08f7077c05b91f7c7f2b5b7790b63b05fcd6b5ef954450003d.json",
+      "prediction_sha256": "1ba0d0b12ed2d363ffff0451480e80fa3e44ac7974d1ae871de75fcacc81d958"
+    },
+    {
+      "fold": 1,
+      "method": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_skewness",
+        "DM_mean",
+        "DM_kurtosis"
+      ],
+      "seed": 146698179,
+      "f1": 0.8760907504363001,
+      "auc": 0.9735380770799987,
+      "ap": 0.9249529303528307,
+      "tp": 251,
+      "fp": 10,
+      "fn": 61,
+      "tn": 3258,
+      "f1_exact": "502/573",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\d78e3a642da3da41915cdea9bd9219907aba4334ea9ac315b35d8c2c7d854984.json",
+      "prediction_sha256": "bb4b901cd4438a620b3d0eb6d4d7e25a0d29482d9e8bdd2c62dff8af0be3d0fd"
+    },
+    {
+      "fold": 1,
+      "method": "random4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_kurtosis"
+      ],
+      "seed": 146698179,
+      "f1": 0.8816466552315609,
+      "auc": 0.9738175940746321,
+      "ap": 0.9235838085660047,
+      "tp": 257,
+      "fp": 14,
+      "fn": 55,
+      "tn": 3254,
+      "f1_exact": "514/583",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\6b98d9a836de2fc9359a03fc27564493dc3b981ec8b9f7768b5ee0d8e59b9912.json",
+      "prediction_sha256": "d95f6b4c19277dc5dcb4e3dfc2063b276aaf015ba018c888869b4aa65428a4e9"
+    },
+    {
+      "fold": 1,
+      "method": "all_features_context",
+      "group": "all_8_context",
+      "actual_k": 8,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 146698179,
+      "f1": 0.8836424957841484,
+      "auc": 0.9741177070583434,
+      "ap": 0.9183197763920747,
+      "tp": 262,
+      "fp": 19,
+      "fn": 50,
+      "tn": 3249,
+      "f1_exact": "524/593",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold1-20261021-v1\\main\\fold_1\\predictions\\8754d24a63d864fbb9632f9632470fb78a6bfa929eb762b8d6377fecbd3bd9e7.json",
+      "prediction_sha256": "2376b71619689445468e5296ce059425a3ebfe790055ac1ae82a919b34698cda"
+    },
+    {
+      "fold": 1,
+      "method": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "actual_k": 6,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 146698179,
+      "f1": 0.8809523809523809,
+      "auc": 0.9744933386686752,
+      "ap": 0.9195685659357574,
+      "tp": 259,
+      "fp": 17,
+      "fn": 53,
+      "tn": 3251,
+      "f1_exact": "37/42",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-powershap-formal-20261029-v1\\downstream_main_f1\\predictions.json",
+      "prediction_sha256": "1753c31af7275e173ee895c1d02e671c440b5ff7f39276e528339ce1cb9bbb38"
+    },
+    {
+      "fold": 2,
+      "method": "ASSS111",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 1337579919,
+      "f1": 0.863481228668942,
+      "auc": 0.9774125498619208,
+      "ap": 0.9217196730235201,
+      "tp": 253,
+      "fp": 13,
+      "fn": 67,
+      "tn": 3246,
+      "f1_exact": "253/293",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\ce738628448357cd634c09577ce3c346b40b1c472bf9116a5acb92151d14e240.json",
+      "prediction_sha256": "2381a32b9030d3281beaa680c096906169045e5c2ac8db17f6d1b57fc7682b00"
+    },
+    {
+      "fold": 2,
+      "method": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 1337579919,
+      "f1": 0.863481228668942,
+      "auc": 0.9774125498619208,
+      "ap": 0.9217196730235201,
+      "tp": 253,
+      "fp": 13,
+      "fn": 67,
+      "tn": 3246,
+      "f1_exact": "253/293",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\361d86e7cd8cfe764cd899c4adc1c3dd334dbbb87bd85449e75ca25afa9cfb96.json",
+      "prediction_sha256": "eb5a31468f9c24322991fc51cc1685eb647bafd8c0aa10f5cac324f34ed98ca0"
+    },
+    {
+      "fold": 2,
+      "method": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1337579919,
+      "f1": 0.8668941979522184,
+      "auc": 0.9796151043264806,
+      "ap": 0.9290924084075175,
+      "tp": 254,
+      "fp": 12,
+      "fn": 66,
+      "tn": 3247,
+      "f1_exact": "254/293",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\a7ae71b9f98f02dfae25a18554ba806c6162a420e5885a464250bcc0bb3e42cb.json",
+      "prediction_sha256": "961dd1e445955cfdeeb8b4290915d41a7d4062a4223ff9c681a1411e7980a97c"
+    },
+    {
+      "fold": 2,
+      "method": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1337579919,
+      "f1": 0.8668941979522184,
+      "auc": 0.9796151043264806,
+      "ap": 0.9290924084075175,
+      "tp": 254,
+      "fp": 12,
+      "fn": 66,
+      "tn": 3247,
+      "f1_exact": "254/293",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\45aae95ca12dac08f7077c05b91f7c7f2b5b7790b63b05fcd6b5ef954450003d.json",
+      "prediction_sha256": "4f5376b7ae81c06f8fae369fe05ab702b12cd9025014919d7afd5b86e054b1a8"
+    },
+    {
+      "fold": 2,
+      "method": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_kurtosis"
+      ],
+      "seed": 1337579919,
+      "f1": 0.8711864406779661,
+      "auc": 0.9766157180116599,
+      "ap": 0.9298870522751885,
+      "tp": 257,
+      "fp": 13,
+      "fn": 63,
+      "tn": 3246,
+      "f1_exact": "257/295",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\d78e3a642da3da41915cdea9bd9219907aba4334ea9ac315b35d8c2c7d854984.json",
+      "prediction_sha256": "b8c258f8ba01bbd67f5d4ae96771755f316db9b951fe731e362430a40432908e"
+    },
+    {
+      "fold": 2,
+      "method": "random4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_stdev",
+        "Profile_skewness",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1337579919,
+      "f1": 0.8644939965694682,
+      "auc": 0.9791001841055539,
+      "ap": 0.9290577203322524,
+      "tp": 252,
+      "fp": 11,
+      "fn": 68,
+      "tn": 3248,
+      "f1_exact": "504/583",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\6b98d9a836de2fc9359a03fc27564493dc3b981ec8b9f7768b5ee0d8e59b9912.json",
+      "prediction_sha256": "6aaa44f258e072409d6f39b93c9c5006f325e2d335247c519f38a463bf1cc77e"
+    },
+    {
+      "fold": 2,
+      "method": "all_features_context",
+      "group": "all_8_context",
+      "actual_k": 8,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 1337579919,
+      "f1": 0.8707482993197279,
+      "auc": 0.9792162089598035,
+      "ap": 0.9309458351298359,
+      "tp": 256,
+      "fp": 12,
+      "fn": 64,
+      "tn": 3247,
+      "f1_exact": "128/147",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold2-20261022-v1\\main\\fold_2\\predictions\\8754d24a63d864fbb9632f9632470fb78a6bfa929eb762b8d6377fecbd3bd9e7.json",
+      "prediction_sha256": "ade2dec946cfdb47b7addef8ebc60fe7092c4d6da85ae191d806359ba4fde14f"
+    },
+    {
+      "fold": 2,
+      "method": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "actual_k": 6,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1337579919,
+      "f1": 0.8707482993197279,
+      "auc": 0.9804090595274624,
+      "ap": 0.9303593073597801,
+      "tp": 256,
+      "fp": 12,
+      "fn": 64,
+      "tn": 3247,
+      "f1_exact": "128/147",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-powershap-formal-20261029-v1\\downstream_main_f2\\predictions.json",
+      "prediction_sha256": "f098091ec2555f99558ef073a6cf501beb6b7a314ce5fbeb7daf3efd064950df"
+    },
+    {
+      "fold": 3,
+      "method": "ASSS111",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8486956521739131,
+      "auc": 0.9685698205732683,
+      "ap": 0.9021183804319324,
+      "tp": 244,
+      "fp": 20,
+      "fn": 67,
+      "tn": 3248,
+      "f1_exact": "488/575",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\ce738628448357cd634c09577ce3c346b40b1c472bf9116a5acb92151d14e240.json",
+      "prediction_sha256": "885391098558589222744f1108cb3910be29500cd108a24780ebc75ad2033a73"
+    },
+    {
+      "fold": 3,
+      "method": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8486956521739131,
+      "auc": 0.9685698205732683,
+      "ap": 0.9021183804319324,
+      "tp": 244,
+      "fp": 20,
+      "fn": 67,
+      "tn": 3248,
+      "f1_exact": "488/575",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\361d86e7cd8cfe764cd899c4adc1c3dd334dbbb87bd85449e75ca25afa9cfb96.json",
+      "prediction_sha256": "915e14f6fe090e5636554c54a4719bdb097e78309aa566d9173e0ba54ad3be8f"
+    },
+    {
+      "fold": 3,
+      "method": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8610169491525423,
+      "auc": 0.9774939292447076,
+      "ap": 0.9167390054229206,
+      "tp": 254,
+      "fp": 25,
+      "fn": 57,
+      "tn": 3243,
+      "f1_exact": "254/295",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\a7ae71b9f98f02dfae25a18554ba806c6162a420e5885a464250bcc0bb3e42cb.json",
+      "prediction_sha256": "c15ae12083848a7ca0a2a681f1db3b6b3023004712f5d8bf4cb3f3111365fc0d"
+    },
+    {
+      "fold": 3,
+      "method": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "DM_stdev"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8556701030927835,
+      "auc": 0.9734854597047469,
+      "ap": 0.9089182144208618,
+      "tp": 249,
+      "fp": 22,
+      "fn": 62,
+      "tn": 3246,
+      "f1_exact": "83/97",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\45aae95ca12dac08f7077c05b91f7c7f2b5b7790b63b05fcd6b5ef954450003d.json",
+      "prediction_sha256": "8a4a527aa34280dbd70f1db91b55eec0bebb57054ddea16b4a05eea2774afc60"
+    },
+    {
+      "fold": 3,
+      "method": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_kurtosis"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8537005163511188,
+      "auc": 0.9740659695301216,
+      "ap": 0.9126319595908228,
+      "tp": 248,
+      "fp": 22,
+      "fn": 63,
+      "tn": 3246,
+      "f1_exact": "496/581",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\d78e3a642da3da41915cdea9bd9219907aba4334ea9ac315b35d8c2c7d854984.json",
+      "prediction_sha256": "30e232510ed82ca496f88c0fa559e5c55f3ca8cdc15b3b57bb597c7dc2325c89"
+    },
+    {
+      "fold": 3,
+      "method": "random4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8542024013722127,
+      "auc": 0.9738239264503891,
+      "ap": 0.9082419130080545,
+      "tp": 249,
+      "fp": 23,
+      "fn": 62,
+      "tn": 3245,
+      "f1_exact": "498/583",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\6b98d9a836de2fc9359a03fc27564493dc3b981ec8b9f7768b5ee0d8e59b9912.json",
+      "prediction_sha256": "bfd7579c05ed6815c6c263da9631377e76b5441a2d8e6d652e89489eff47af6a"
+    },
+    {
+      "fold": 3,
+      "method": "all_features_context",
+      "group": "all_8_context",
+      "actual_k": 8,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 1783273933,
+      "f1": 0.8639455782312925,
+      "auc": 0.9765808561634401,
+      "ap": 0.9176838076289764,
+      "tp": 254,
+      "fp": 23,
+      "fn": 57,
+      "tn": 3245,
+      "f1_exact": "127/147",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold3-20261023-v1\\main\\fold_3\\predictions\\8754d24a63d864fbb9632f9632470fb78a6bfa929eb762b8d6377fecbd3bd9e7.json",
+      "prediction_sha256": "e688fbc1538cc9c239f31a66ac98405adfe97e681363caedf2f04fb5a3a36eb8"
+    },
+    {
+      "fold": 3,
+      "method": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "actual_k": 6,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1783273933,
+      "f1": 0.863481228668942,
+      "auc": 0.9763821053418711,
+      "ap": 0.9171012048939101,
+      "tp": 253,
+      "fp": 22,
+      "fn": 58,
+      "tn": 3246,
+      "f1_exact": "253/293",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-powershap-formal-20261029-v1\\downstream_main_f3\\predictions.json",
+      "prediction_sha256": "dd239082d67ba2bd975fc86bfcb14b43176b0c0407d7d535f7cb4f8dafa96649"
+    },
+    {
+      "fold": 4,
+      "method": "ASSS111",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8651162790697674,
+      "auc": 0.973423386884711,
+      "ap": 0.917754785123506,
+      "tp": 279,
+      "fp": 19,
+      "fn": 68,
+      "tn": 3214,
+      "f1_exact": "186/215",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\ce738628448357cd634c09577ce3c346b40b1c472bf9116a5acb92151d14e240.json",
+      "prediction_sha256": "fcbbd54161dbcdcbca1eb5945bae0ee6d689146e6313f0418ac0bbb2b64c513e"
+    },
+    {
+      "fold": 4,
+      "method": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8651162790697674,
+      "auc": 0.973423386884711,
+      "ap": 0.917754785123506,
+      "tp": 279,
+      "fp": 19,
+      "fn": 68,
+      "tn": 3214,
+      "f1_exact": "186/215",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\361d86e7cd8cfe764cd899c4adc1c3dd334dbbb87bd85449e75ca25afa9cfb96.json",
+      "prediction_sha256": "19d34976a16800fcba3f25e2fbcccce1a346f20674869f44b9273c8d84739fc8"
+    },
+    {
+      "fold": 4,
+      "method": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_features": [
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8858447488584474,
+      "auc": 0.9763961524302248,
+      "ap": 0.9291450470826649,
+      "tp": 291,
+      "fp": 19,
+      "fn": 56,
+      "tn": 3214,
+      "f1_exact": "194/219",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\a7ae71b9f98f02dfae25a18554ba806c6162a420e5885a464250bcc0bb3e42cb.json",
+      "prediction_sha256": "04dfbcf939e68ec3088db65259f9ae284e3595540914bd7e09883c72008043c6"
+    },
+    {
+      "fold": 4,
+      "method": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "selected_features": [
+        "Profile_stdev",
+        "Profile_skewness",
+        "DM_stdev",
+        "DM_kurtosis"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8611111111111112,
+      "auc": 0.9742630705860226,
+      "ap": 0.9262675020389884,
+      "tp": 279,
+      "fp": 22,
+      "fn": 68,
+      "tn": 3211,
+      "f1_exact": "31/36",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\45aae95ca12dac08f7077c05b91f7c7f2b5b7790b63b05fcd6b5ef954450003d.json",
+      "prediction_sha256": "426704dc6d6cd19184a71730ea03a5e399c3e09af8d1c5fd60f4c50db3d766ae"
+    },
+    {
+      "fold": 4,
+      "method": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8672839506172839,
+      "auc": 0.9720444158805402,
+      "ap": 0.9258413526710354,
+      "tp": 281,
+      "fp": 20,
+      "fn": 66,
+      "tn": 3213,
+      "f1_exact": "281/324",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\d78e3a642da3da41915cdea9bd9219907aba4334ea9ac315b35d8c2c7d854984.json",
+      "prediction_sha256": "486e9a4b82dae924494631ac8f5326b477bec0c17e2a3860deb1f794963347e9"
+    },
+    {
+      "fold": 4,
+      "method": "random4",
+      "group": "fixed_k4_primary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 1950432870,
+      "f1": 0.834920634920635,
+      "auc": 0.9669911601451531,
+      "ap": 0.8933552671215272,
+      "tp": 263,
+      "fp": 20,
+      "fn": 84,
+      "tn": 3213,
+      "f1_exact": "263/315",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\6b98d9a836de2fc9359a03fc27564493dc3b981ec8b9f7768b5ee0d8e59b9912.json",
+      "prediction_sha256": "ea32dc6ef2c576c87f033218474460bb8d84e2f2fe16ee9746f81dc5bcbafc2b"
+    },
+    {
+      "fold": 4,
+      "method": "all_features_context",
+      "group": "all_8_context",
+      "actual_k": 8,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_stdev",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_mean",
+        "DM_stdev",
+        "DM_skewness",
+        "DM_kurtosis"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8841463414634146,
+      "auc": 0.9747230247154034,
+      "ap": 0.9288059661014425,
+      "tp": 290,
+      "fp": 19,
+      "fn": 57,
+      "tn": 3214,
+      "f1_exact": "145/164",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-htru2-traditional-fold4-20261024-v1\\main\\fold_4\\predictions\\8754d24a63d864fbb9632f9632470fb78a6bfa929eb762b8d6377fecbd3bd9e7.json",
+      "prediction_sha256": "40161df6d54cb00a1ace04fc94c1428e21669604eabab95fca99d248dc0f57c5"
+    },
+    {
+      "fold": 4,
+      "method": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "actual_k": 4,
+      "selected_indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "selected_features": [
+        "Profile_mean",
+        "Profile_skewness",
+        "Profile_kurtosis",
+        "DM_stdev"
+      ],
+      "seed": 1950432870,
+      "f1": 0.8672839506172839,
+      "auc": 0.9754566337240865,
+      "ap": 0.9268304596116432,
+      "tp": 281,
+      "fp": 20,
+      "fn": 66,
+      "tn": 3213,
+      "f1_exact": "281/324",
+      "prediction_path": "large_file_store\\runs\\thesis_method_validation_20261018\\a3-powershap-formal-20261029-v1\\downstream_main_f4\\predictions.json",
+      "prediction_sha256": "1ab685c3f387fad44d8703dfbdcbdd35128c7c0734ba7932349f19688d46d3c9"
+    }
+  ],
+  "paired": [
+    {
+      "fold": 0,
+      "comparator": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.0,
+      "delta_auc": 0.0,
+      "delta_ap": 0.0,
+      "delta_f1_exact": "0",
+      "direction": 0
+    },
+    {
+      "fold": 0,
+      "comparator": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.0013546557120500782,
+      "delta_auc": -0.002798817685760957,
+      "delta_ap": 0.0012078262186657751,
+      "delta_f1_exact": "-277/204480",
+      "direction": -1
+    },
+    {
+      "fold": 0,
+      "comparator": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.000845125786163522,
+      "delta_auc": -0.0013816723556449029,
+      "delta_ap": -0.0040017319291448805,
+      "delta_f1_exact": "43/50880",
+      "direction": 1
+    },
+    {
+      "fold": 0,
+      "comparator": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.003125,
+      "delta_auc": 0.003095903846955239,
+      "delta_ap": -0.004295267123597846,
+      "delta_f1_exact": "-1/320",
+      "direction": -1
+    },
+    {
+      "fold": 0,
+      "comparator": "random4",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.005376552795031056,
+      "delta_auc": 0.001622001757685787,
+      "delta_ap": -0.002714779106812615,
+      "delta_f1_exact": "277/51520",
+      "direction": 1
+    },
+    {
+      "fold": 0,
+      "comparator": "all_features_context",
+      "group": "all_8_context",
+      "delta_f1": -0.003533878504672897,
+      "delta_auc": -0.0016211149333241748,
+      "delta_ap": 0.0002575886096766178,
+      "delta_f1_exact": "-121/34240",
+      "direction": -1
+    },
+    {
+      "fold": 0,
+      "comparator": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "delta_f1": 0.004038685847589424,
+      "delta_auc": -0.0014251267493718967,
+      "delta_ap": -0.004410588771451285,
+      "delta_f1_exact": "831/205760",
+      "direction": 1
+    },
+    {
+      "fold": 1,
+      "comparator": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.0,
+      "delta_auc": 0.0,
+      "delta_ap": 0.0,
+      "delta_f1_exact": "0",
+      "direction": 0
+    },
+    {
+      "fold": 1,
+      "comparator": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.015669800235017628,
+      "delta_auc": 0.0010484339202209148,
+      "delta_ap": -0.004355749054898772,
+      "delta_f1_exact": "-2667/170200",
+      "direction": -1
+    },
+    {
+      "fold": 1,
+      "comparator": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.0033288510383983265,
+      "delta_auc": 0.0007316479929698749,
+      "delta_ap": -0.00391151936275036,
+      "delta_f1_exact": "-557/167325",
+      "direction": -1
+    },
+    {
+      "fold": 1,
+      "comparator": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.010003793914561044,
+      "delta_auc": 0.0017732165834981606,
+      "delta_ap": -0.00594138957888235,
+      "delta_f1_exact": "-3296/329475",
+      "direction": -1
+    },
+    {
+      "fold": 1,
+      "comparator": "random4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.01555969870982176,
+      "delta_auc": 0.0014936995888648052,
+      "delta_ap": -0.004572267792056439,
+      "delta_f1_exact": "-5216/335225",
+      "direction": -1
+    },
+    {
+      "fold": 1,
+      "comparator": "all_features_context",
+      "group": "all_8_context",
+      "delta_f1": -0.017555539262409266,
+      "delta_auc": 0.0011935866051534516,
+      "delta_ap": 0.0006917643818735719,
+      "delta_f1_exact": "-5986/340975",
+      "direction": -1
+    },
+    {
+      "fold": 1,
+      "comparator": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "delta_f1": -0.014865424430641821,
+      "delta_auc": 0.0008179549948217346,
+      "delta_ap": -0.0005570251618091104,
+      "delta_f1_exact": "-359/24150",
+      "direction": -1
+    },
+    {
+      "fold": 2,
+      "comparator": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.0,
+      "delta_auc": 0.0,
+      "delta_ap": 0.0,
+      "delta_f1_exact": "0",
+      "direction": 0
+    },
+    {
+      "fold": 2,
+      "comparator": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.0034129692832764505,
+      "delta_auc": -0.0022025544645597472,
+      "delta_ap": -0.007372735383997409,
+      "delta_f1_exact": "-1/293",
+      "direction": -1
+    },
+    {
+      "fold": 2,
+      "comparator": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.0034129692832764505,
+      "delta_auc": -0.0022025544645597472,
+      "delta_ap": -0.007372735383997409,
+      "delta_f1_exact": "-1/293",
+      "direction": -1
+    },
+    {
+      "fold": 2,
+      "comparator": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.007705212009024122,
+      "delta_auc": 0.0007968318502609151,
+      "delta_ap": -0.008167379251668438,
+      "delta_f1_exact": "-666/86435",
+      "direction": -1
+    },
+    {
+      "fold": 2,
+      "comparator": "random4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.001012767900526288,
+      "delta_auc": -0.0016876342436330516,
+      "delta_ap": -0.007338047308732332,
+      "delta_f1_exact": "-173/170819",
+      "direction": -1
+    },
+    {
+      "fold": 2,
+      "comparator": "all_features_context",
+      "group": "all_8_context",
+      "delta_f1": -0.007267070650785912,
+      "delta_auc": -0.001803659097882715,
+      "delta_ap": -0.009226162106315772,
+      "delta_f1_exact": "-313/43071",
+      "direction": -1
+    },
+    {
+      "fold": 2,
+      "comparator": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "delta_f1": -0.007267070650785912,
+      "delta_auc": -0.002996509665541547,
+      "delta_ap": -0.008639634336260027,
+      "delta_f1_exact": "-313/43071",
+      "direction": -1
+    },
+    {
+      "fold": 3,
+      "comparator": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.0,
+      "delta_auc": 0.0,
+      "delta_ap": 0.0,
+      "delta_f1_exact": "0",
+      "direction": 0
+    },
+    {
+      "fold": 3,
+      "comparator": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.01232129697862933,
+      "delta_auc": -0.008924108671439224,
+      "delta_ap": -0.014620624990988262,
+      "delta_f1_exact": "-418/33925",
+      "direction": -1
+    },
+    {
+      "fold": 3,
+      "comparator": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.006974450918870462,
+      "delta_auc": -0.004915639131478522,
+      "delta_ap": -0.006799833988929471,
+      "delta_f1_exact": "-389/55775",
+      "direction": -1
+    },
+    {
+      "fold": 3,
+      "comparator": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.0050048641772057175,
+      "delta_auc": -0.005496148956853242,
+      "delta_ap": -0.010513579158890396,
+      "delta_f1_exact": "-1672/334075",
+      "direction": -1
+    },
+    {
+      "fold": 3,
+      "comparator": "random4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.005506749198299649,
+      "delta_auc": -0.005254105877120718,
+      "delta_ap": -0.006123532576122082,
+      "delta_f1_exact": "-1846/335225",
+      "direction": -1
+    },
+    {
+      "fold": 3,
+      "comparator": "all_features_context",
+      "group": "all_8_context",
+      "delta_f1": -0.015249926057379473,
+      "delta_auc": -0.0080110355901718,
+      "delta_ap": -0.015565427197044013,
+      "delta_f1_exact": "-1289/84525",
+      "direction": -1
+    },
+    {
+      "fold": 3,
+      "comparator": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "delta_f1": -0.014785576495028936,
+      "delta_auc": -0.00781228476860274,
+      "delta_ap": -0.01498282446197774,
+      "delta_f1_exact": "-2491/168475",
+      "direction": -1
+    },
+    {
+      "fold": 4,
+      "comparator": "mean_shapley100_alias000",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.0,
+      "delta_auc": 0.0,
+      "delta_ap": 0.0,
+      "delta_f1_exact": "0",
+      "direction": 0
+    },
+    {
+      "fold": 4,
+      "comparator": "L1_coefficient_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.020728469788680048,
+      "delta_auc": -0.0029727655455138446,
+      "delta_ap": -0.011390261959158932,
+      "delta_f1_exact": "-976/47085",
+      "direction": -1
+    },
+    {
+      "fold": 4,
+      "comparator": "RF_MDI_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.004005167958656331,
+      "delta_auc": -0.0008396837013115999,
+      "delta_ap": -0.008512716915482499,
+      "delta_f1_exact": "31/7740",
+      "direction": 1
+    },
+    {
+      "fold": 4,
+      "comparator": "forward_CV_top4",
+      "group": "fixed_k4_primary",
+      "delta_f1": -0.0021676715475165086,
+      "delta_auc": 0.001378971004170726,
+      "delta_ap": -0.008086567547529455,
+      "delta_f1_exact": "-151/69660",
+      "direction": -1
+    },
+    {
+      "fold": 4,
+      "comparator": "random4",
+      "group": "fixed_k4_primary",
+      "delta_f1": 0.030195644149132523,
+      "delta_auc": 0.0064322267395579,
+      "delta_ap": 0.024399518001978704,
+      "delta_f1_exact": "409/13545",
+      "direction": 1
+    },
+    {
+      "fold": 4,
+      "comparator": "all_features_context",
+      "group": "all_8_context",
+      "delta_f1": -0.01903006239364719,
+      "delta_auc": -0.0012996378306924239,
+      "delta_ap": -0.011051180977936559,
+      "delta_f1_exact": "-671/35260",
+      "direction": -1
+    },
+    {
+      "fold": 4,
+      "comparator": "native_PowerSHAP",
+      "group": "variable_k_secondary",
+      "delta_f1": -0.0021676715475165086,
+      "delta_auc": -0.0020332468393755576,
+      "delta_ap": -0.009075674488137286,
+      "delta_f1_exact": "-151/69660",
+      "direction": -1
+    }
+  ],
+  "summary": [
+    {
+      "method": "ASSS111",
+      "ks": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_f1": 0.8618010232868724,
+      "mean_auc": 0.9736233508503931,
+      "mean_ap": 0.9155790465368295
+    },
+    {
+      "method": "mean_shapley100_alias000",
+      "ks": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_f1": 0.8618010232868724,
+      "mean_auc": 0.9736233508503931,
+      "mean_ap": 0.9155790465368295
+    },
+    {
+      "method": "L1_coefficient_top4",
+      "ks": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_f1": 0.872498461686403,
+      "mean_auc": 0.9767933133398037,
+      "mean_ap": 0.9228853555709051
+    },
+    {
+      "method": "RF_MDI_top4",
+      "ks": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_f1": 0.8635742187860174,
+      "mean_auc": 0.9753449311823981,
+      "mean_ap": 0.9216987540528905
+    },
+    {
+      "method": "forward_CV_top4",
+      "ks": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_f1": 0.8674023316165338,
+      "mean_auc": 0.9733135959847867,
+      "mean_ap": 0.9229798830689433
+    },
+    {
+      "method": "random4",
+      "ks": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_f1": 0.8591024270597691,
+      "mean_auc": 0.9731021132573222,
+      "mean_ap": 0.9148488682931786
+    },
+    {
+      "method": "all_features_context",
+      "ks": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "mean_f1": 0.8743283186606513,
+      "mean_auc": 0.9759317230197766,
+      "mean_ap": 0.9225577299947788
+    },
+    {
+      "method": "native_PowerSHAP",
+      "ks": [
+        4,
+        6,
+        6,
+        6,
+        4
+      ],
+      "mean_f1": 0.868810434742149,
+      "mean_auc": 0.9763131934560071,
+      "mean_ap": 0.9231121959807567
+    }
+  ],
+  "paired_summary": [
+    {
+      "comparator": "mean_shapley100_alias000",
+      "mean_delta_f1": 0.0,
+      "mean_delta_f1_exact": "0",
+      "mean_delta_auc": 0.0,
+      "mean_delta_ap": 0.0,
+      "positive": 0,
+      "tie": 5,
+      "negative": 0
+    },
+    {
+      "comparator": "L1_coefficient_top4",
+      "mean_delta_f1": -0.010697438399530705,
+      "mean_delta_f1_exact": "-2525289350396719/236064864884616000",
+      "mean_delta_auc": -0.0031699624894105717,
+      "mean_delta_ap": -0.00730630903407552,
+      "positive": 0,
+      "tie": 0,
+      "negative": 5
+    },
+    {
+      "comparator": "RF_MDI_top4",
+      "mean_delta_f1": -0.0017731954991450772,
+      "mean_delta_f1_exact": "-190195673051/107261536104000",
+      "mean_delta_auc": -0.0017215803320049794,
+      "mean_delta_ap": -0.006119707516060923,
+      "positive": 2,
+      "tie": 0,
+      "negative": 3
+    },
+    {
+      "comparator": "forward_CV_top4",
+      "mean_delta_f1": -0.005601308329661479,
+      "mean_delta_f1_exact": "-6886362948037261/1229420439430344000",
+      "mean_delta_auc": 0.0003097548656063598,
+      "mean_delta_ap": -0.007400836532113697,
+      "positive": 0,
+      "tie": 0,
+      "negative": 5
+    },
+    {
+      "comparator": "random4",
+      "mean_delta_f1": 0.002698596227103176,
+      "mean_delta_f1_exact": "32824859207/12163679352000",
+      "mean_delta_auc": 0.0005212375930709445,
+      "mean_delta_ap": 0.0007301782436510473,
+      "positive": 2,
+      "tie": 0,
+      "negative": 3
+    },
+    {
+      "comparator": "all_features_context",
+      "mean_delta_f1": -0.012527295373778948,
+      "mean_delta_f1_exact": "-3701942120008261/295510084942744000",
+      "mean_delta_auc": -0.0023083721693835323,
+      "mean_delta_ap": -0.006978683457949231,
+      "positive": 0,
+      "tie": 0,
+      "negative": 5
+    },
+    {
+      "comparator": "native_PowerSHAP",
+      "mean_delta_f1": -0.0070094114552767504,
+      "mean_delta_f1_exact": "-141533714401/20191954104000",
+      "mean_delta_auc": -0.0026898426056140012,
+      "mean_delta_ap": -0.00753314944392709,
+      "positive": 1,
+      "tie": 0,
+      "negative": 4
+    }
+  ],
+  "identity": [
+    {
+      "fold": 0,
+      "train_n": 14318,
+      "test_n": 3580,
+      "positive": 349,
+      "train_ids_sha256": "b875effa54437044b1fb37dc78ef0d727787d4d1fd117a87c4357c27dd375e52",
+      "test_ids_sha256": "e3bbc50aad7d9ae443ebb6e5dffc26d603b22af699a05926f4c1ceb58cacce27",
+      "labels_sha256": "81cabdf01756034ea1988776f9271b487854e24a6c5476572c3b50c1e28302bf",
+      "seed": 2001538975
+    },
+    {
+      "fold": 1,
+      "train_n": 14318,
+      "test_n": 3580,
+      "positive": 312,
+      "train_ids_sha256": "7df1c0e12dd8e88faf354533392738b9b43e668c176d3156183d8ed36106fcd4",
+      "test_ids_sha256": "ba9fc8f5f03d98683e15af259b526986a2b04e66bdba929b736eca24c6541666",
+      "labels_sha256": "9999c9d1498141f53244e8eaf5cc0d7fb591226305150b5968a909c4afacdfb8",
+      "seed": 146698179
+    },
+    {
+      "fold": 2,
+      "train_n": 14319,
+      "test_n": 3579,
+      "positive": 320,
+      "train_ids_sha256": "34e39bc6d4bc97e8bb24761ef22966eebf772d27ec9c749638c7a5f7318a8a69",
+      "test_ids_sha256": "63f42fccde8342994b9fb829de5850df522fb76d0d9299e35d0354e948cebde4",
+      "labels_sha256": "63124b692e7a2707a9c3e11082e0d09395cdb9b5db515426abd220433cba8c4a",
+      "seed": 1337579919
+    },
+    {
+      "fold": 3,
+      "train_n": 14319,
+      "test_n": 3579,
+      "positive": 311,
+      "train_ids_sha256": "32b578f98579890e711a145a1731ec54666661407115d6dbe011584599155482",
+      "test_ids_sha256": "e78d70269ef47b4c44ef6c60e14ca092247e9a79373e246c5886b4745ec2d3f3",
+      "labels_sha256": "330ff3fc26ec004b483def37646fd3f37e77e224f5b058df3f1304cbf760ed19",
+      "seed": 1783273933
+    },
+    {
+      "fold": 4,
+      "train_n": 14318,
+      "test_n": 3580,
+      "positive": 347,
+      "train_ids_sha256": "6efd8e9ca6405c7137e263f5e30a9304ac96058633e08a48410b60377ab6f23f",
+      "test_ids_sha256": "c23898ecc417883584a386c3f9d7e83897cac72242d41fc62388d7cd1340ebfe",
+      "labels_sha256": "b71d1793614588ad17d6c32c4d1d2738efbbd9afe55e3dfac60b4a580214aa74",
+      "seed": 1950432870
+    }
+  ],
+  "downstream": {
+    "class": "LogisticRegression",
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tol": 1e-06,
+    "fit_intercept": true,
+    "class_weight": null,
+    "seed": "seed(outer_fold, final_model), identical across all seven arms",
+    "numeric_threads": 1
+  },
+  "threshold": 0.5,
+  "tolerance_absolute": 1e-12,
+  "code_sha256": "085fddd1868a3340299cfa18cf42b8e1763a7650069798e559257c01bc9397b9",
+  "source_lock_sha256": "f8765d8dde2bd0790d94858d145d5d5571da0863f24925936705429c81f3fb0c"
+}

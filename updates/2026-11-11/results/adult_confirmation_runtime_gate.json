@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "freeze_sha256": "cf6f82241847b674e24cfea814aa95ddf91f423e7064abbc4d14c8d2b9ccdc15",
+  "resource_contract_id": "adult-exact-resources-v3-20261110",
+  "timing_tasks_complete": 75,
+  "independent_checks_passed": true,
+  "measured_parameters": {
+    "t_utility": 0.0937365999998292,
+    "t_full_candidate": 0.16011379999963538,
+    "t_reference": 0.7782787000005555,
+    "t_encoder": 0.07280320000018037,
+    "t_kmeans": 0.12383730000055948,
+    "t_game_setup": 0.3818343000002642,
+    "t_selector_setup": 0.30255919999945036,
+    "T_probe_actual": 515.9715755000041
+  },
+  "projected_total_seconds": 149248.48136277738,
+  "probe_operation_counts": {
+    "classifier": 7710,
+    "encoder": 8071,
+    "kmeans": 480
+  },
+  "prior_probe_operation_counts": {
+    "classifier": 3855,
+    "encoder": 4036,
+    "kmeans": 240
+  },
+  "new_probe_operation_counts": {
+    "classifier": 3855,
+    "encoder": 4035,
+    "kmeans": 240
+  },
+  "combined_probe_operation_counts": {
+    "classifier": 7710,
+    "encoder": 8071,
+    "kmeans": 480
+  },
+  "prior_probe_session_seconds": 240.85351679999962,
+  "new_probe_session_seconds": 275.11805870000444,
+  "prior_failed_sessions_preserved": 1,
+  "prior_operation_seconds_max": {
+    "encoder": 0.07280320000018037,
+    "kmeans": 0.11082630000009885,
+    "classifier": 0
+  },
+  "prior_probe_ledger_sha256": "40374887106bf1ee5a756d5b0d8e4dee2bb72c1171977ac3633045b2d527732e",
+  "engineering_projection_not_absolute_or_statistical_bound": true,
+  "automatic_resume": false,
+  "execution_authorized": false
+}

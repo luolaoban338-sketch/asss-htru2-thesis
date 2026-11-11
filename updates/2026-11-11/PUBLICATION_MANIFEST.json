@@ -1,0 +1,479 @@
+{
+  "publication_date": "2026-11-11",
+  "evidence_cutoff": "2026-11-10",
+  "scope": "Curated research update after 2026-10-30; no scientific operations for publication",
+  "source_path_base": "Original thesis workspace; large_file_store refers to configured F storage",
+  "self_hash_note": "Manifest excludes itself and root README; local publication receipt covers both.",
+  "files": [
+    {
+      "path": "manuscript/A3_A4_Results_Discussion_20261101.md",
+      "bytes": 7854,
+      "sha256": "cbe1bafc54f3d8c665507f433a8adea56e9a9d70cbda26f561e8ed48bad2aa2e",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/synthesis_20261030/P4_20261103_delivered_20261101/English_Thesis_Results_Discussion.md",
+      "source_sha256": "5521a45f4eb862e82885d604c3cb40d19534bbadfe0f98a7e3c7af19e310f199",
+      "source_bytes": 7371,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "manuscript/A3_A4_Claim_Evidence_20261101.md",
+      "bytes": 9602,
+      "sha256": "e67be778b20f55d373b6ab6bd621e0e329bf5f5795129a415104385bde84dffa",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/synthesis_20261030/P4_20261103_delivered_20261101/Claim_evidence.md",
+      "source_sha256": "0379f1608a76eef12f447feaf435f9c85f1e2884513a9b722becab48b2cadbf7",
+      "source_bytes": 7834,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "manuscript/English_Thesis_Revision_20261107.md",
+      "bytes": 36268,
+      "sha256": "2f3755a14212637d202089dc24db758110feb1ca26a7feb2e8a35d646d0a958f",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/thesis_revision_adult_prep_20261107/exports/English_Thesis_Revision_20261107.md",
+      "source_sha256": "4cb888966e7c4dc2fe7117a1ce1de603280b7c62175dd200142cdc4c648c70ad",
+      "source_bytes": 35603,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "manuscript/Revision_Log_20261107.md",
+      "bytes": 2196,
+      "sha256": "71c47bc22b8c3049934a45c139451844f892af6ede7e65df6f76dfe4d5ee50dd",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/thesis_revision_adult_prep_20261107/manuscript/Revision_Log_20261107.md",
+      "source_sha256": "aed4919b89dc332aeefcbdcb0a1b1a0a147d82c0c2a71ca0e034ec53475c0515",
+      "source_bytes": 1749,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "manuscript/Evidence_and_Exhibit_Index_20261106.md",
+      "bytes": 14634,
+      "sha256": "04074061e1b9a6e7c870bc4f350b372e85ea19fbaf9ef42ebf2b7b808ee45c20",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/thesis_T5_20261106/support/Evidence_and_exhibit_index.md",
+      "source_sha256": "4c0d151b03275d875b3831b1eb1c27080cae9f28ab17b4bc516a3e9943ede086",
+      "source_bytes": 13478,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "reports/WDBC_Fivefold_20261105.md",
+      "bytes": 12608,
+      "sha256": "5f8d443ac7c3a363cc1f1e567c9cf8542e9bcf8c6c8ce8bc82cfe57fab63fffa",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_crossdataset_20261014/exports/A2_WDBC_Fivefold_20261105.md",
+      "source_sha256": "28dfe4864b0979248294c834680abb299ae5229c8049278e632cdefcecfce572",
+      "source_bytes": 12796,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [
+          159
+        ],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "protocols/R09_Proposed_Comparison_20261103.md",
+      "bytes": 11054,
+      "sha256": "94be2de8167ed638b4eaff3f3b05ef5c49f4145b30e7ef11aae2f3627baabfa7",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/researchwrite/r09_t2_20261103/exports/R09_无拟合比较方案.md",
+      "source_sha256": "96fc6c02ed9459128a715944017c73ac593333c5e7396b345895062975974466",
+      "source_bytes": 10622,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "protocols/Historical_Shapley_Rule_Review_20261103.md",
+      "bytes": 2713,
+      "sha256": "2bf63a6bec1c0d34e5d8fed71189c3fc38629faf13207dd931d19bf6cc644039",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/researchwrite/r09_t2_20261103/exports/历史Shapley规则核对表.md",
+      "source_sha256": "dfdda1f586d58e8bab1ae82cbaa5025cd75c0bd3e52e537da74e84f8f25642ff",
+      "source_bytes": 2320,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "results/a3_htru2_synthesis.json",
+      "bytes": 51836,
+      "sha256": "eb2acab69dd561eef6777b1e9522f59d82c6bc5501ed9a2bcfd650e7f171ce22",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/synthesis_20261030/20261031/a3_results.json",
+      "source_sha256": "6bdcca65f31110e9da5e6f5e6e6382b48fc8f86e09b3e447612143d84f3ef6dc",
+      "source_bytes": 54130,
+      "changes": [
+        "All scientific fields retained; only local paths mapped."
+      ]
+    },
+    {
+      "path": "results/a4_four_layer_synthesis.json",
+      "bytes": 661391,
+      "sha256": "f5baffbc589ad27966e05f74fc9d2889427bb75026e08e4c01e748f1c0f2eb7a",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/synthesis_20261030/P2_20261101_delivered_20261031/four_layers.json",
+      "source_sha256": "caed9a8977eb548516f8d57899ad06f1d895115832bc709d6077fc182ba801e5",
+      "source_bytes": 501078,
+      "changes": [
+        "All scientific fields retained; only local paths mapped."
+      ]
+    },
+    {
+      "path": "results/wdbc_five_fold.json",
+      "bytes": 20669,
+      "sha256": "4f01a9c389846732a78218e2d7783cb07a8bcd772e60dc0b96d19c6d681ccc7b",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/thesis_T5_20261106/qa/wdbc/saved_probability_checks.json",
+      "source_sha256": "8b63ca7ba75ed44d01cfa213322120251800dee6b4120eb8c6fff7ae906a076c",
+      "source_bytes": 161954,
+      "changes": [
+        "Retained all 40 scientific records, summaries and paired contrasts; omitted bulky per-check trace and source inventory. Local paths mapped."
+      ]
+    },
+    {
+      "path": "results/wdbc_five_fold_summary.csv",
+      "bytes": 901,
+      "sha256": "0d31d3336e00003a0c0eafacc987a694775415b53aebec51f38e34c04a55ea35",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/thesis_T5_20261106/qa/wdbc/saved_probability_checks.json",
+      "source_sha256": "8b63ca7ba75ed44d01cfa213322120251800dee6b4120eb8c6fff7ae906a076c",
+      "source_bytes": 161954,
+      "changes": [
+        "Flat exact-precision view of the saved five-fold summary; no metric recomputation."
+      ]
+    },
+    {
+      "path": "code/adult_exact/adapter.py",
+      "bytes": 12628,
+      "sha256": "ffbafeb369b394bc5699d7ff6d0a47b9a4f2f742761e07e9eed50cf51701135c",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/adapter.py",
+      "source_sha256": "ffbafeb369b394bc5699d7ff6d0a47b9a4f2f742761e07e9eed50cf51701135c",
+      "source_bytes": 12628
+    },
+    {
+      "path": "code/adult_exact/audit.py",
+      "bytes": 29937,
+      "sha256": "0fccad595076b41994f9f3f2d629dc6ee994747435d746a333164b832a9c1892",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/audit.py",
+      "source_sha256": "0fccad595076b41994f9f3f2d629dc6ee994747435d746a333164b832a9c1892",
+      "source_bytes": 29937
+    },
+    {
+      "path": "code/adult_exact/gate.py",
+      "bytes": 9618,
+      "sha256": "7082827bc54507c676914763402b0aecb7d01de8eac02f4a87e5f578fa8616e3",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/gate.py",
+      "source_sha256": "7082827bc54507c676914763402b0aecb7d01de8eac02f4a87e5f578fa8616e3",
+      "source_bytes": 9618
+    },
+    {
+      "path": "code/adult_exact/partitions.py",
+      "bytes": 20176,
+      "sha256": "6545f9e7b8b67c96ca0591f3ea50bd446aa9320afb64be197b7a5174018d1646",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/partitions.py",
+      "source_sha256": "6545f9e7b8b67c96ca0591f3ea50bd446aa9320afb64be197b7a5174018d1646",
+      "source_bytes": 20176
+    },
+    {
+      "path": "code/adult_exact/projection.py",
+      "bytes": 5040,
+      "sha256": "161ce48a64a4206aa632a1a5c5624247d07fcd0fc4366a12f079c2cd92284f9f",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/projection.py",
+      "source_sha256": "161ce48a64a4206aa632a1a5c5624247d07fcd0fc4366a12f079c2cd92284f9f",
+      "source_bytes": 5040
+    },
+    {
+      "path": "code/adult_exact/resource_binding.py",
+      "bytes": 5976,
+      "sha256": "f3ecd31fd3a5e1233460adff010779caad76b0c47f25fed87668547b78dcf5c2",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/resource_binding.py",
+      "source_sha256": "f3ecd31fd3a5e1233460adff010779caad76b0c47f25fed87668547b78dcf5c2",
+      "source_bytes": 5976
+    },
+    {
+      "path": "code/adult_exact/runtime.py",
+      "bytes": 27713,
+      "sha256": "edcac70c02d4e1cf6e5e732f46056f67eac5b27982904249e024d6b1cb6c168c",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/runtime.py",
+      "source_sha256": "edcac70c02d4e1cf6e5e732f46056f67eac5b27982904249e024d6b1cb6c168c",
+      "source_bytes": 27713
+    },
+    {
+      "path": "code/adult_exact/timing.py",
+      "bytes": 11894,
+      "sha256": "5520469bdc27fd9e727ed49887f680a116f02adf0310341cf87447ff62b2dc2e",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/timing.py",
+      "source_sha256": "5520469bdc27fd9e727ed49887f680a116f02adf0310341cf87447ff62b2dc2e",
+      "source_bytes": 11894
+    },
+    {
+      "path": "code/adult_exact/private_science/__init__.py",
+      "bytes": 84,
+      "sha256": "c8c6fb5859cb397d90c31806e5f9ac2d6eb16189cb8d2cbd2cdf9e565823b5cb",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/private_science/__init__.py",
+      "source_sha256": "c8c6fb5859cb397d90c31806e5f9ac2d6eb16189cb8d2cbd2cdf9e565823b5cb",
+      "source_bytes": 84
+    },
+    {
+      "path": "code/adult_exact/private_science/contracts.py",
+      "bytes": 5063,
+      "sha256": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/private_science/contracts.py",
+      "source_sha256": "eb70a3e13293bf5d892de81162806a5495d9064c4885e4c8bc17d27bfa45e762",
+      "source_bytes": 5063
+    },
+    {
+      "path": "code/adult_exact/private_science/engine.py",
+      "bytes": 21239,
+      "sha256": "8ae0b727bf53eb4f72fb5a0e5607669c62871c5a4b8f465a622f1b24c950b88e",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/private_science/engine.py",
+      "source_sha256": "8ae0b727bf53eb4f72fb5a0e5607669c62871c5a4b8f465a622f1b24c950b88e",
+      "source_bytes": 21239
+    },
+    {
+      "path": "code/adult_exact/private_science/evaluation.py",
+      "bytes": 1556,
+      "sha256": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/private_science/evaluation.py",
+      "source_sha256": "ea22ed8cd817d58e0a17c5b61a640dbd7dab05f5aa19ed1468312b78a84e94b4",
+      "source_bytes": 1556
+    },
+    {
+      "path": "code/adult_exact/private_science/preprocessing.py",
+      "bytes": 4928,
+      "sha256": "0abe09b907748609f6ef786ec11ab9d1ead85f727cf9022f4d29b58e46cc1e5c",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/private_science/preprocessing.py",
+      "source_sha256": "0abe09b907748609f6ef786ec11ab9d1ead85f727cf9022f4d29b58e46cc1e5c",
+      "source_bytes": 4928
+    },
+    {
+      "path": "code/adult_exact/private_science/shapley.py",
+      "bytes": 2859,
+      "sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/private_science/shapley.py",
+      "source_sha256": "f686f274a95ed5639b06a49538781063ebb0ce998b7e574abb7adc7d7fb7672a",
+      "source_bytes": 2859
+    },
+    {
+      "path": "code/adult_exact/tests/test_adapters_nofit.py",
+      "bytes": 19546,
+      "sha256": "4d6fb4a921d8564ffff19646543ff1e750ccdd4e3608957c291b6f2887ef6009",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_adapters_nofit.py",
+      "source_sha256": "4d6fb4a921d8564ffff19646543ff1e750ccdd4e3608957c291b6f2887ef6009",
+      "source_bytes": 19546
+    },
+    {
+      "path": "code/adult_exact/tests/test_exact_contract.py",
+      "bytes": 19758,
+      "sha256": "0701275a267e2a0a8e6cf413d0b0ff1248668e2f77639623f684fea69571ed60",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_exact_contract.py",
+      "source_sha256": "0701275a267e2a0a8e6cf413d0b0ff1248668e2f77639623f684fea69571ed60",
+      "source_bytes": 19758
+    },
+    {
+      "path": "code/adult_exact/tests/test_gate.py",
+      "bytes": 19833,
+      "sha256": "d2e882cc58e9d44168c5e3d8a49dba0b17f6749f5924cea9c1b8c0f1158e14a5",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_gate.py",
+      "source_sha256": "d2e882cc58e9d44168c5e3d8a49dba0b17f6749f5924cea9c1b8c0f1158e14a5",
+      "source_bytes": 19833
+    },
+    {
+      "path": "code/adult_exact/tests/test_partition_contracts.py",
+      "bytes": 7735,
+      "sha256": "a5925a81cbb3ab84710833d0a83b2726bd626fbf8f507471ef1437296e268af8",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_partition_contracts.py",
+      "source_sha256": "a5925a81cbb3ab84710833d0a83b2726bd626fbf8f507471ef1437296e268af8",
+      "source_bytes": 7735
+    },
+    {
+      "path": "code/adult_exact/tests/test_projection.py",
+      "bytes": 5280,
+      "sha256": "58545ce98a8ad790344b51f92ffc01ee261f792fd4350aded9da6cfa32c54f1b",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_projection.py",
+      "source_sha256": "58545ce98a8ad790344b51f92ffc01ee261f792fd4350aded9da6cfa32c54f1b",
+      "source_bytes": 5280
+    },
+    {
+      "path": "code/adult_exact/tests/test_rank_copy.py",
+      "bytes": 2097,
+      "sha256": "b1d95406ff397161c5a38bdc19fd9b54fdc870ce1ab38ef5d33d6f04dd4fcaf0",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_rank_copy.py",
+      "source_sha256": "b1d95406ff397161c5a38bdc19fd9b54fdc870ce1ab38ef5d33d6f04dd4fcaf0",
+      "source_bytes": 2097
+    },
+    {
+      "path": "code/adult_exact/tests/test_runtime.py",
+      "bytes": 22311,
+      "sha256": "b4a4699b17d956301f93120037620862525fd20c1b67e5b4ec6f8d9f027fc60f",
+      "kind": "byte_preserving_copy",
+      "source_workspace_relative": "thesis_adult_exact_20261110/tests/test_runtime.py",
+      "source_sha256": "b4a4699b17d956301f93120037620862525fd20c1b67e5b4ec6f8d9f027fc60f",
+      "source_bytes": 22311
+    },
+    {
+      "path": "protocols/adult_exact_scientific_config.json",
+      "bytes": 8074,
+      "sha256": "100425180f79f9b31706cb34a387f9fbca5f88db6a634c8647329e812815967b",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_adult_exact_20261110/config.json",
+      "source_sha256": "0f50ea159838cb72aef8534d565eac1187c1a24e29cb637b36e17461930dbc6c",
+      "source_bytes": 8592,
+      "changes": [
+        "Removed account reserve setting; local paths mapped. All scientific settings and inherited theoretical-bound provenance retained. This public copy is not an executable replacement freeze."
+      ]
+    },
+    {
+      "path": "protocols/adult_exact_resource_contract.json",
+      "bytes": 3800,
+      "sha256": "952ba9bb2ac940b2e6fdfc70fad0476096f71bc8148589057cbd90fc6d442ec0",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_adult_exact_20261110/resource_contract.json",
+      "source_sha256": "a264dfb9848175d73ef0095eeb446e46bbdc1ae15e94e44ef78abeb2f655b561",
+      "source_bytes": 3949,
+      "changes": [
+        "All resource-contract fields retained; historical no-fit status retained as part of the frozen source. See the current confirmation result for later gate status."
+      ]
+    },
+    {
+      "path": "protocols/Adult_Exact_Resource_Revision_20261110.md",
+      "bytes": 5248,
+      "sha256": "aebb824ea68b79ad67136756299f20932d17a94bd371b664aa650fe42453e699",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_adult_exact_20261110/docs/resource_revision_v3.md",
+      "source_sha256": "d009f6aa93654c27692b0eca4398c28df66dcb662b5c723e1f622046b4a1e70e",
+      "source_bytes": 4762,
+      "changes": {
+        "local_links": "converted to original workspace-relative source references; external links unchanged",
+        "local_paths": "mapped to project/ or large_file_store/",
+        "removed_original_lines": [],
+        "added_dated_copy_notice": true
+      }
+    },
+    {
+      "path": "results/adult_confirmation_runtime_gate.json",
+      "bytes": 1560,
+      "sha256": "b277389df88d8ae38dc0a11b9cde3871b96d264a1f3e4466fe3954eb19bb6062",
+      "kind": "derived",
+      "source_workspace_relative": "large_file_store/runs/adult_exact_20261110/runtime_gate.json",
+      "source_sha256": "93dc8eba03483a7894f325af408b8d6cb8e45c5a6fcb12f54674dd58cee867d1",
+      "source_bytes": 20550,
+      "changes": [
+        "Omitted 75-task file-hash inventory; all gate status, rates, counts, projection and limitations retained."
+      ]
+    },
+    {
+      "path": "results/adult_confirmation_status.json",
+      "bytes": 2924,
+      "sha256": "f19b08714b6eb80c6e7e805ddb147c3eb7f65beefa2d0bff3566371ac8a08ce1",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/adult_confirmation_20261110/state.json",
+      "source_sha256": "950e7faaa7a33b4b4f9abf85df2cdd58994e8ed67560d032696f19fc0a7148d1",
+      "source_bytes": 3820,
+      "changes": [
+        "Omitted account-usage controls and local artifact locations; retained scientific status, failed-history caveats and execution boundaries."
+      ]
+    },
+    {
+      "path": "results/adult_confirmation_independent_audit.json",
+      "bytes": 3652,
+      "sha256": "4907895099122de31ae75471b848a7d0ee3f33c01623dee0af8ebf58cccae163",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/adult_confirmation_20261110/independent/final_audit.json",
+      "source_sha256": "14b1713c523e96e3f4fd25da1bcd360df9c148da25b626bc3c76de1b0cd99e6f",
+      "source_bytes": 158617,
+      "changes": [
+        "Omitted bulky input-hash inventory; retained independent audit findings, reconstructed projection terms and limitations."
+      ]
+    },
+    {
+      "path": "results/adult_exact_nofit_validation.json",
+      "bytes": 906,
+      "sha256": "d201c76aead751aa01668fd5096478b8297f68606cf54dc073348bb367729c07",
+      "kind": "derived",
+      "source_workspace_relative": "outputs/adult_exact_nofit_20261110/state.json",
+      "source_sha256": "23b8d2459ffd24cc93202519ecc51f48507c54bd37a8ee8962166a3c52660ce2",
+      "source_bytes": 3128,
+      "changes": [
+        "Selected implementation/freeze and no-fit verification fields; this is the earlier same-day preparation result."
+      ]
+    },
+    {
+      "path": "results/a3_a4_scoped_closure.json",
+      "bytes": 769,
+      "sha256": "905210f321c6c3508a8e45c5293e67a3294322f5b3b637d89c4b3ca8a316de3f",
+      "kind": "derived",
+      "source_workspace_relative": "thesis_method_validation_20261018/synthesis_20261030/P4_20261103_delivered_20261101/state.json",
+      "source_sha256": "7b2f8a42153a03610e2beba681be8c51855cf7870145920570ef0300cd52cea4",
+      "source_bytes": 2037,
+      "changes": [
+        "Selected scientific fields; local paths mapped; scientific numbers unchanged."
+      ]
+    },
+    {
+      "path": "code/README.md",
+      "bytes": 1434,
+      "sha256": "9396b8b1e85d85fe6dc30939bdeceffc898917c4ba0ad808a536621825a27e7f",
+      "kind": "generated"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6801,
+      "sha256": "f77185a0e51d64e4bd76bdb8325478583443d346643867d213c598c95a30e213",
+      "kind": "generated"
+    }
+  ]
+}

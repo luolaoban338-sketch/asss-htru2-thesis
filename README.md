@@ -1,21 +1,24 @@
 # Thesis research: joint sample-feature selection and ASSS
 
-**Latest update: 30 October 2026.** Research materials for *A Unified Framework for Robust Strategic Sample and Feature Selection*. Author: Feiyang Luo; supervisor: Chi Zhao.
+**Latest update: 11 November 2026.** Research materials for *A Unified Framework for Robust Strategic Sample and Feature Selection*. Author: Feiyang Luo; supervisor: Chi Zhao.
 
 ## Research materials
 
 | Material | Open |
 | --- | --- |
-| Code, protocols, manuscript chapters and result extracts | [30 October research update](updates/2026-10-30/) |
-| File provenance and hashes | [Research manifest](updates/2026-10-30/PUBLICATION_MANIFEST.json) |
+| Latest manuscript, A3/A4 synthesis, WDBC fivefold results and Adult confirmation | [11 November research update](updates/2026-11-11/) |
+| New source provenance and hashes | [11 November manifest](updates/2026-11-11/PUBLICATION_MANIFEST.json) |
+| Earlier code, protocols, chapters and experiment reports | [30 October research update](updates/2026-10-30/) |
 
-The research update covers work since the 30 September meeting. Traditional HTRU2 and native PowerSHAP five-fold comparisons and all four prespecified synthetic layers have been delivered. WDBC is complete for folds 0-2 only; folds 3-4 are deferred, and Adult remains runtime-gated. A3/A4 synthesis, whole-stage closure and the thesis remain incomplete.
+A3 HTRU2 method comparisons and the four A4 synthetic diagnostic settings now have accepted synthesis and scoped closure. WDBC has all five development folds. Joint selection retains 14.6908% of WDBC training cells with mean F1 0.958229, versus 0.964939 for full data; outer F1 losses exceed 0.01 in folds 0 and 2. The latest English stage manuscript applies five revisions and remains subject to author/advisor review.
 
-The evidence does not establish overall ASSS superiority. On HTRU2, ASSS matches Mean Shapley and falls below the stronger baselines. The synthetic studies support a specified variance-estimation correction and a correlated-group redundancy effect, while showing mixed or adverse stability-penalty results. These are descriptive development findings.
+Adult's new exact-resource confirmation gate passed on 10 November after 75/75 training-only timing tasks and 165,440 independent checks, with an engineering projection of 41.457911 hours under the 48-hour threshold. The older 79.136235-hour failed gate is preserved. The new pass is not a main-experiment result or a time guarantee: Adult main has not run. R07 sufficiency, R08, full R09, A2 overall and the thesis remain incomplete.
 
-**Repository structure.** The original repository-root implementation and frozen inputs remain the 12 October sharing snapshot. New research materials are appended under `updates/2026-10-30`; its code is an inspection snapshot, not a complete standalone reproduction environment. Original full experiment archives are retained locally. No experiments were rerun to prepare this publication.
+The evidence does not establish overall ASSS superiority. On HTRU2, ASSS matches mean Shapley and falls below stronger baselines. Synthetic findings support specified diagnostic effects with mixed or adverse variability-penalty results. These are descriptive development findings.
 
-这是公开研究资料入口，访问不需要邀请或关注。可直接查看上面的代码、论文草稿、实验协议与结果资料。关注作者、Star或Watch仅用于后续跟踪，并非查看权限条件。论文尚未完成，结果及其限制均按实际证据报告。
+**Repository structure.** The root implementation and frozen inputs remain the 12 October sharing snapshot. Dated research updates are appended under `updates/`; their source code is an inspection snapshot, not a complete standalone reproduction environment. Full experiment archives remain local. No experiments were rerun to prepare the publication. Advisor-specific report files remain local.
+
+这是公开研究资料入口，可直接查看代码、论文草稿、实验协议与结果。最新资料涵盖 10 月 30 日之后至 11 月 10 日的实际交付；论文尚未完成，结果及限制按证据报告。历史文件中的状态以其原始日期为准，最新状态见 11 月 11 日更新。
 
 ## Run the historical HTRU2 demonstration
 

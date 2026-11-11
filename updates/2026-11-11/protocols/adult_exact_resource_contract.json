@@ -1,0 +1,149 @@
+{
+  "candidate_id": "adult-exact-resource-proposal-20261109",
+  "status": "implemented_no_fit_contract_pending_separate_confirmation_timing",
+  "implementation_complete": true,
+  "scientific_freeze_to_preserve": "750584024f931451d9f35fb7a69fb87bf1118b72b1ac073010048e5b675d38e4",
+  "scientific_parameters": {
+    "B": 4,
+    "M": 64,
+    "development_pool": 8000,
+    "outer_folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "learner": "lr",
+    "arms": [
+      "full",
+      "sample_only",
+      "feature_only",
+      "joint"
+    ]
+  },
+  "per_fold_utility_cycles": {
+    "0": 50091,
+    "1": 50346,
+    "2": 50382,
+    "3": 49956,
+    "4": 50484
+  },
+  "replay_fold0_utility_cycles": 50091,
+  "exact_clean_counts": {
+    "classifier": 302418,
+    "encoder": 303138,
+    "kmeans": 1248
+  },
+  "role_caps": {
+    "main": {
+      "classifier": 287667,
+      "encoder": 288659,
+      "kmeans": 600
+    },
+    "replay": {
+      "classifier": 56943,
+      "encoder": 57111,
+      "kmeans": 120
+    },
+    "audit": {
+      "classifier": 660,
+      "encoder": 1500,
+      "kmeans": 680
+    }
+  },
+  "classifier_buckets_by_role": {
+    "main": {
+      "reference": {
+        "clean": 5,
+        "retry": 5,
+        "total_cap": 10
+      },
+      "pool": {
+        "clean": 251639,
+        "retry": 36018,
+        "total_cap": 287657
+      }
+    },
+    "replay": {
+      "reference": {
+        "clean": 1,
+        "retry": 1,
+        "total_cap": 2
+      },
+      "pool": {
+        "clean": 50167,
+        "retry": 6774,
+        "total_cap": 56941
+      }
+    },
+    "audit": {
+      "reference": {
+        "clean": 6,
+        "retry": 6,
+        "total_cap": 12
+      },
+      "pool": {
+        "clean": 600,
+        "retry": 48,
+        "total_cap": 648
+      }
+    }
+  },
+  "preserved_retry_by_role": {
+    "main": {
+      "classifier": 36023,
+      "encoder": 36715,
+      "kmeans": 80
+    },
+    "replay": {
+      "classifier": 6775,
+      "encoder": 6883,
+      "kmeans": 16
+    },
+    "audit": {
+      "classifier": 54,
+      "encoder": 534,
+      "kmeans": 56
+    }
+  },
+  "total_caps_excluding_probe": {
+    "classifier": 345270,
+    "encoder": 347270,
+    "kmeans": 1400
+  },
+  "future_probe_proposed_caps": {
+    "classifier": 4200,
+    "encoder": 4500,
+    "kmeans": 300
+  },
+  "future_new_caps_including_probe": {
+    "classifier": 349470,
+    "encoder": 351770,
+    "kmeans": 1700
+  },
+  "prior_attempts_kept_separate": {
+    "classifier": 3855,
+    "encoder": 4036,
+    "kmeans": 240
+  },
+  "formula": "T_old_probe + T_new_probe + 3.75*(301350*tU + 1056*tO + 12*tR + 42840*tO + 12*tR + 44132*tE + 152*tK + 384*tG + 96*tS) + 3600",
+  "historical_rate_sensitivity_hours": 44.17126321045292,
+  "future_probe_time_cap_seconds": 7200,
+  "new_time_gate_cap_seconds": 172800,
+  "old_and_new_probe_time_must_both_be_charged": true,
+  "constraints": [
+    "Source and membership hashes must match frozen science",
+    "Pool/reference identities must be bound to controlled task identities and training membership",
+    "All attempted operations count before invocation, including interrupted and failed attempts",
+    "No borrowing between role and classifier-type caps",
+    "Deduct only the exact work of fully committed folds from dynamic remaining projection; never deduct incomplete packages",
+    "Refresh all timing maxima upward including pool and reference direct audit cycles",
+    "Require isolated implementation, no-fit audit, new freeze and separately authorized confirmation timing",
+    "Old failed gate cannot authorize this candidate; timing pass does not auto-authorize main"
+  ],
+  "execution_authorized": false,
+  "automatic_continuation": false,
+  "execution_revision": "exact-resources-v3-20261110",
+  "resource_contract_id": "adult-exact-resources-v3-20261110"
+}

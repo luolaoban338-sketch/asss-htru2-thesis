@@ -1,0 +1,93 @@
+{
+  "status": "passed_independent_audit",
+  "checked_utc": "2026-11-10T11:52:33.478277+00:00",
+  "checks": 165440,
+  "errors": [],
+  "missing": [],
+  "freeze_sha256": "cf6f82241847b674e24cfea814aa95ddf91f423e7064abbc4d14c8d2b9ccdc15",
+  "records_complete": 75,
+  "ledger": {
+    "present": true,
+    "sha256": "a649ed9364d741e9d09e73e99f628522a7fc23dde203113b61dc902acb27e7a9",
+    "counts": {
+      "classifier": 3855,
+      "encoder": 4035,
+      "kmeans": 240
+    },
+    "sessions": 75,
+    "completed_tasks": 75,
+    "operation_statuses": {
+      "success": 8130
+    },
+    "session_statuses": {
+      "complete": 75
+    },
+    "type_counts": {
+      "probe:pool": 3840,
+      "probe:reference": 15
+    },
+    "resource_events": 3915,
+    "cumulative_seconds": 275.11805870000444
+  },
+  "protected_entry_files": 590,
+  "new_probe_counts": {
+    "classifier": 3855,
+    "encoder": 4035,
+    "kmeans": 240
+  },
+  "prior_probe_counts": {
+    "classifier": 3855,
+    "encoder": 4036,
+    "kmeans": 240
+  },
+  "combined_probe_counts": {
+    "classifier": 7710,
+    "encoder": 8071,
+    "kmeans": 480
+  },
+  "new_probe_seconds": 275.11805870000444,
+  "prior_probe_seconds": 240.85351679999962,
+  "combined_probe_seconds": 515.9715755000041,
+  "measured_parameters": {
+    "t_utility": 0.0937365999998292,
+    "t_full_candidate": 0.16011379999963538,
+    "t_reference": 0.7782787000005555,
+    "t_encoder": 0.07280320000018037,
+    "t_kmeans": 0.12383730000055948,
+    "t_game_setup": 0.3818343000002642,
+    "t_selector_setup": 0.30255919999945036,
+    "T_probe_actual": 515.9715755000041
+  },
+  "projection_terms_before_multiplier": {
+    "utility": 28247.524409948528,
+    "other_cycles_including_direct_audit": 169.08017279961496,
+    "complete_training_reference_and_audit": 9.339344400006667,
+    "retry_classifier_pool": 6859.2751919843795,
+    "retry_classifier_reference": 9.339344400006667,
+    "retry_encoder": 3212.95082240796,
+    "retry_kmeans": 18.82326960008504,
+    "game_initializations_including_audit": 146.62437120010145,
+    "selector_setups_including_audit": 29.045683199947234
+  },
+  "projected_total_seconds": 149248.48136277738,
+  "projected_total_hours": 41.45791148966038,
+  "runtime_feasible": true,
+  "published_gate_comparison": "matched",
+  "timing_prediction_calls_inferred_from_complete_cycles": 3855,
+  "outer_test_predictions_observed_in_audited_timing_records": false,
+  "formula_reimplemented_independently_without_importing_frozen_runtime": true,
+  "new_fits_by_auditor": 0,
+  "new_predictions_by_auditor": 0,
+  "scientific_writes": 0,
+  "independent_retiming_performed": false,
+  "execution_authorized": false,
+  "automatic_continuation": false,
+  "limitations": [
+    "Read after finite workers exit; all SQLite connections are immutable read-only and source hashes are rechecked.",
+    "Timing retains robust-sampler membership digests and row counts, not selected row arrays. Their exact selected identities cannot be independently regenerated without new sampling fits. Audit checks frozen controlled binding, paired encoder/classifier digests, frozen evaluation/features and expected sizes; full/reference members are recomputed exactly.",
+    "Session HMAC keys are intentionally ephemeral. Audit validates recorded binding format and consistency but cannot reauthenticate discarded session keys.",
+    "Cycle and setup durations are frozen-execution observations; no independent retiming was performed.",
+    "The historical interrupted duration remains unknown; its previous conservative charge is preserved.",
+    "The runtime projection is an engineering allowance, not an absolute time guarantee."
+  ]
+}
